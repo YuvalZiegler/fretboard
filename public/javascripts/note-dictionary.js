@@ -21,8 +21,9 @@
 	 			   'mixolydian'		:	['P1', 'M2', 'M3', 'P4', 'P5', 'M6', 'm7'],
 	 			   'Aeolian'		:	['P1', 'M2', 'm3', 'P4', 'P5', 'm6', 'm7'],
 	 			   'Locrian'		:	['P1', 'm2', 'm3', 'P4', 'd5', 'm6', 'm7'],
-	 			   'harmonic major' 	: 	['P1', 'M2', 'M3', 'P4', 'P5', 'm6', 'M7'],
-	 			   'melodic major'	:	['P1', 'M2', 'M3', 'P4', 'P5', 'm6', 'm7']
+	 			   'harmonic major' : 	['P1', 'M2', 'M3', 'P4', 'P5', 'm6', 'M7'],
+	 			   'melodic major'	:	['P1', 'M2', 'M3', 'P4', 'P5', 'm6', 'm7'],
+                   'minor'          :   ['P1', 'M2', 'm3', 'P4', 'P5', 'm6', 'm7']
 		}
 	
 		var chords = {
@@ -78,9 +79,9 @@
 			return n;
 		}
 		function getNotes(key, intervals){
+            var keyIndex, newNotesArray, indexes;
 			// Are we working with a flat or a sharp scale/chord
 			var targetNotes = (key.charAt(1)==='b') ? notesFlat : notesSharp;
-			var keyIndex, newNotesArray, indexes;
 			// GET THE INDEX OF THE KEY FROM THE NOTES ARRAY
 			keyIndex = _.indexOf(targetNotes, key);
 			// CREATE A NEW NOTE ARRAY USING THE KEY AS A STARTING POINT
@@ -89,17 +90,26 @@
 			indexes = IntervalsToIndexes(intervals);
 			return IndexesToNotes(indexes,newNotesArray);
 		}
+
 		////////////////////////////////////////////////
 		// Public
 		////////////////////////////////////////////////
 		return {
-			getScale:function(key, scale){			
-				 
-                return {notes:getNotes(key, scales[scale] ), intervals: scales[scale]}
+			getScale:function(key, scale){
+                if (scales[scale]){
+                    return {notes:getNotes(key, scales[scale] ), intervals: scales[scale]}
+                }  else {
+                    return {notes:[],intervals:[]}
+                }
 			},
 			getChord:function(key, chord){
+
 				chord = (!chord) ? 'major' : chord;
-				return {notes:getNotes(key, chords[chord] ), intervals: chords[chord]}
+                if(chords[chord] && key){
+                    return {notes:getNotes(key, chords[chord] ), intervals: chords[chord]}
+                }  else {
+                    return {notes:[],intervals:[]}
+                }
 			},
             getAlldefinitions:function(){
                 var definitions = [],  modifiers = []
@@ -114,16 +124,18 @@
                 for(var key in scales) {
                     if(scales.hasOwnProperty(key)) {
                         modifiers.push(" "+key);
+
                     }
                 }
                // add sharp and flat nots to definitions
-               var l=modifiers.length-1
+               var l=modifiers.length
                for (var i=0; i<17; i++){
                    for (var j=0;j<l; j++)
                        definitions.push(noteList[i]+modifiers[j])
 
                }
-                return definitions
+
+              return definitions
             }
 		}
 	}
@@ -135,34 +147,3 @@
 // Sample Usage:
 // console.log("D minor chord:" + NoteDictionary.getChord("D", "minor"))
 // console.log("C major scale:" + NoteDictionary.getScale("C", "major"))
-
-/* CHORD MODIFIERS
-
-6,
-m6,
-6/9,
-maj7,
-7,
-7b5,
-7#5,
-m7,
-m7(maj7),
-m7b5,
-dim7,
-9,
-9b5,
-9#5,
-maj9,
-m9,
-m11,
-13,
-sus4,
-sus2,
-7sus4,
-7sus2,
-9sus4,
-9sus2,
-aug,
-dim,
-5
-*/

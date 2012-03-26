@@ -121,7 +121,10 @@ var App = (function (dict, $){
 
         initialize:function(options){
             _.bindAll(this,'render')
-            this.model = App.notesCollection.getModel(options.note)
+            this.note = options.note;
+            this.stringPosition = options.stringPosition;
+            this.model = App.notesCollection.getModel(this.note)
+
             this.model.bind('change', this.render);
             this.render();
         },
@@ -129,8 +132,10 @@ var App = (function (dict, $){
            if(this.model.attributes.active){
             $(this.el).html(this.model.attributes.note).removeClass('inactive').addClass(this.model.attributes.interval)
            } else {
-               $(this.el).html(this.model.attributes.note).removeClass().addClass('inactive')
+               $(this.el).html(this.model.attributes.note).removeClass().addClass('inactive ' + "pos-"+this.stringPosition)
            }
+
+
         }
     })
 
@@ -145,7 +150,7 @@ var App = (function (dict, $){
             var l = this.model.attributes.octave.length;
             for (var i=0; i<l; i++){
                 // creating views for each note
-                var n = new NoteView({note:this.model.attributes.octave[i]});
+                var n = new NoteView({note:this.model.attributes.octave[i], stringPosition:i});
                 $(this.el).append(n.el)
             }
 
@@ -183,7 +188,7 @@ var App = (function (dict, $){
 			
 			var element =  $(this.el).val()
             // TODO: move some of the responsibility of parsing input to the chord dictionary
-            //
+
 
 			if (element.length>0){
 				if (element.charAt(0).match(/^[a-gA-G]/)){
@@ -191,12 +196,15 @@ var App = (function (dict, $){
                         element.charAt(0).toUpperCase() + element.charAt(1)
                          :
                         element.charAt(0).toUpperCase();
-                    var modifier = element.substr(key.length);
-                    App.notesCollection.setActiveNotes(key, modifier);
-                } else {
-                    console.log(element.charAt(0))
+
+                    var modifier = element.substr(key.length).replace(/^\s+/,"");
+                    var n = (element.charCodeAt(key.length) == 32) ? true : false;
+                    App.notesCollection.setActiveNotes(key, modifier,n);
+
                 }
-			}
+			} else {
+                 App.notesCollection.setActiveNotes()
+            }
 		}
 	})
 	
@@ -209,11 +217,4 @@ var App = (function (dict, $){
 
     return App;
 })(NoteDictionary, jQuery)
-
-
-
-
-// TEMPORARY TESTS AND SAMPLES:
-// set chord Add true if setting a scale
-//App.notesCollection.setActiveNotes("C", "major", true);
 
