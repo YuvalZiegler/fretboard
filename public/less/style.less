@@ -1,0 +1,67 @@
+@import "bootstrap/bootstrap.less";
+
+* { box-sizing: border-box }
+
+body {
+
+  padding: 40px;
+}
+
+@import "bootstrap/responsive.less";
+
+
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+#neck {
+    display: table;
+    background: whiteSmoke;
+    padding: 20px;
+}
+
+ul.string {
+    dispay:table-row;
+
+
+}
+#neck li {
+    transition: all 1s ease 0s;
+    display: table-cell;
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.inactive {
+    color: hsla(0, 0%, 0%, .2);
+}
+
+.P1{background-color: #FF476C;}
+.m2{background-color: #ffb741;}
+.M2{background-color: #6a80ff;}
+.m3{background-color: #9f65ff;}
+.M3{background-color: #fd7cff;}
+.P4{background-color: #ffe73a;}
+.d5{background-color: #5bfffd;}
+.P5{background-color: #FFA49D;}
+.m6{background-color: #627061;}
+.M6{background-color: #b2d4a3;}
+.m7{background-color: #d4a6ba;}
+.M7{background-color: #b2d4a3;}
+
+
+
+
+/* ===== AutoComplete Styles ========================================================
+   Author:
+   ========================================================================== */
+
+
+.autocomplete-w1 { position:absolute; top:0px; left:0px; margin:8px 0 0 6px; /* IE6 fix: */ _background:none; _margin:0; }
+.autocomplete { border:1px solid #999; background:#FFF; cursor:default; text-align:left; max-height:350px; overflow:auto; margin:-6px 6px 6px -6px; /* IE6 specific: */ _height:350px;  _margin:0; _overflow-x:hidden; }
+.autocomplete .selected { background:#F0F0F0; }
+.autocomplete div { padding:2px 5px; white-space:nowrap; }
+.autocomplete strong { font-weight:normal; color:#3399FF; }

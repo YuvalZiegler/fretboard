@@ -168,28 +168,34 @@ var App = (function (dict, $){
 
 	var SearchView = Backbone.View.extend({	
 		el: '#search',
-        regEx:{
-          key:/^[A-G][b,#]/
-        },
+
 		events : {
 			'keyup' : 'handleEnter'
 		},
 
 		initialize: function (){
 			this.router = this.options.router;
+            $(this.el).autocomplete({lookup:dict.getAlldefinitions()})
 			$(this.el).focus();
 		},
 
 		handleEnter : function (e) {
 			
 			var element =  $(this.el).val()
-			
-			if (element.length>0){
-				
-				var key = (element.charAt(1) === "b" || element.charAt(1) === "#") ? element.substr(0,2) : element.charAt(0);
-                var modifier = element.substr(key.length);
+            // TODO: move some of the responsibility of parsing input to the chord dictionary
+            //
 
-                App.notesCollection.setActiveNotes(key, modifier);
+			if (element.length>0){
+				if (element.charAt(0).match(/^[a-gA-G]/)){
+				    var key = (element.charAt(1) === "b" || element.charAt(1) === "#") ?
+                        element.charAt(0).toUpperCase() + element.charAt(1)
+                         :
+                        element.charAt(0).toUpperCase();
+                    var modifier = element.substr(key.length);
+                    App.notesCollection.setActiveNotes(key, modifier);
+                } else {
+                    console.log(element.charAt(0))
+                }
 			}
 		}
 	})
@@ -198,16 +204,14 @@ var App = (function (dict, $){
     // INITIALIZING APP
     App.router =  new Router();
     Backbone.history.start({pushState: true})
-    
+
 	new NeckView();
 
     return App;
 })(NoteDictionary, jQuery)
 
-// TODO: fix sharp -> flat transition
 
 
-// Initialize notes and string collections
 
 // TEMPORARY TESTS AND SAMPLES:
 // set chord Add true if setting a scale

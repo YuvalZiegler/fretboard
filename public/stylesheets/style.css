@@ -5,8 +5,6 @@ body {
 }
 
 
-
-
 a {
   color: #00B7FF;
 }
@@ -19,7 +17,7 @@ a {
 
 ul.string {
     dispay:table-row;
-    box-shadow: inset 0PX 0PX 40px hsla(0, 0%, 0%, 0.2);
+
 
 }
 #neck li {
@@ -27,7 +25,6 @@ ul.string {
     display: table-cell;
     width: 80px;
 
-    box-shadow: inset 0PX 0PX 5px hsla(0, 0%, 0%, 0.2);
     hsla(0, 0%, 0%, 0.2);
     height: 50px;
     text-align: center;

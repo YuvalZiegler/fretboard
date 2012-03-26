@@ -3,7 +3,8 @@
 		////////////////
 		// Private	
 		////////////////
-        var	notes = ['A'	,'A#/Bb', 'B'	, 'C'	, 'C#/Db'	, 'D'	, 'D#/Eb'	, 'E'	, 'F'	, 'F#/Gb' 	, 'G'	, 'G#/Ab'	];
+        var noteList= ['A','A#','Bb','B','C','C#','Db','D','D#','Eb','E','F','F#','Gb','G','G#','Ab']
+        var	notes = ['A','A#/Bb', 'B', 'C','C#/Db','D','D#/Eb','E','F','F#/Gb','G','G#/Ab'];
 		var notesSharp = ['A'	,'A#', 'B'	, 'C'	, 'C#'	, 'D'	, 'D#'	, 'E'	, 'F'	, 'F#' 	, 'G'	, 'G#'	];
 		var	notesFlat = ['A'	,'Bb', 'B'	, 'C'	, 'Db'	, 'D'	, 'Eb'	, 'E'	, 'F'	, 'Gb' 	, 'G'	, 'Ab'	];
 
@@ -20,8 +21,8 @@
 	 			   'mixolydian'		:	['P1', 'M2', 'M3', 'P4', 'P5', 'M6', 'm7'],
 	 			   'Aeolian'		:	['P1', 'M2', 'm3', 'P4', 'P5', 'm6', 'm7'],
 	 			   'Locrian'		:	['P1', 'm2', 'm3', 'P4', 'd5', 'm6', 'm7'],
-	 			   'harmonicmajor' 	: 	['P1', 'M2', 'M3', 'P4', 'P5', 'm6', 'M7'],
-	 			   'melodicmajor'	:	['P1', 'M2', 'M3', 'P4', 'P5', 'm6', 'm7']
+	 			   'harmonic major' 	: 	['P1', 'M2', 'M3', 'P4', 'P5', 'm6', 'M7'],
+	 			   'melodic major'	:	['P1', 'M2', 'M3', 'P4', 'P5', 'm6', 'm7']
 		}
 	
 		var chords = {
@@ -99,7 +100,31 @@
 			getChord:function(key, chord){
 				chord = (!chord) ? 'major' : chord;
 				return {notes:getNotes(key, chords[chord] ), intervals: chords[chord]}
-			}
+			},
+            getAlldefinitions:function(){
+                var definitions = [],  modifiers = []
+
+                // convert the chords keys to an array of strings
+                for(var key in chords) {
+                    if(chords.hasOwnProperty(key)) {
+                        modifiers.push(key == 'major' ? '' : key);
+                    }
+                }
+                // convert the scale keys to an array of strings
+                for(var key in scales) {
+                    if(scales.hasOwnProperty(key)) {
+                        modifiers.push(" "+key);
+                    }
+                }
+               // add sharp and flat nots to definitions
+               var l=modifiers.length-1
+               for (var i=0; i<17; i++){
+                   for (var j=0;j<l; j++)
+                       definitions.push(noteList[i]+modifiers[j])
+
+               }
+                return definitions
+            }
 		}
 	}
 	
