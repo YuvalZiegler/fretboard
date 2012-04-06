@@ -1,6 +1,6 @@
 @import "bootstrap/bootstrap.less";
 
-* { box-sizing: border-box }
+// * { box-sizing: border-box }
 
 body {
 
@@ -17,22 +17,25 @@ body {
 #neck {
     display: table;
     background: whiteSmoke;
-    padding: 20px;
+    padding: 8x;
 }
+ul, ol {
+ margin:0;
+}
+
 
 ul.string {
     dispay:table-row;
 
-
 }
 #neck li {
-    transition: all 1s ease 0s;
+    .transition(all 1s ease 0s);
     display: table-cell;
-    width: 80px;
+    min-width: 80px;
     height: 50px;
     text-align: center;
     vertical-align: middle;
-    border-radius: 20px;
+
 }
 
 .inactive {
@@ -53,7 +56,9 @@ ul.string {
 .M7{background-color: #b2d4a3;}
 
 
-
+pos-0{
+     .box-shadow(-4px 0px 5px rgba(0,0,0,0.2) inset);
+}
 
 /* ===== AutoComplete Styles ========================================================
    Author:

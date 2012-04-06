@@ -2,7 +2,7 @@
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![e  ndif]-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -15,7 +15,7 @@
 
 	<link rel="stylesheet/less" href="less/style.less">
 	<script src="javascripts/libs/less-1.2.1.min.js"></script>
-	
+
 	<!-- Use SimpLESS (Win/Linux/Mac) or LESS.app (Mac) to compile your .less files
 	to style.css, and replace the 2 lines above by this one:
 
@@ -23,26 +23,65 @@
 	 -->
 
 	<script src="javascripts/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+    <!-- Templates -->
+    <script id='definitionTemplate' type='text/html'>
+        <article id="definition">
+            <h1>{{name}}</h1>
+            <h2>{{notes}}</h2>
+            <h3>{{intervals}}</h3>
+            <p>{{definition}}</p>
+        </article>
+    </script>
+
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<header id="branding">
+    <h1>TITLE</h1>
+    <h2>tag-shmag</h2>
 
-<div>
-    <input id="search"/>
+    <p>Lorem 8-bit brunch skateboard messenger bag hoodie lomo. Odd future stumptown etsy seitan lomo cosby sweater. Tofu messenger bag photo booth fap fingerstache, post-ironic food truck lo-fi twee cosby sweater semiotics high life terry richardson. Readymade kogi banksy, salvia helvetica chillwave direct trade aesthetic stumptown pop-up umami seitan marfa +1. Bushwick swag.</p>
+</header>
+
+<div id="chord-navigator">
+   <input id="search"/>
    <ul id="neck"></ul>
+
+</div>
+<div id="dictionary">
+    <div id="chord-definition"></div>
 </div>
 
 
-
-
+<!-- LIB -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="javascripts/libs/jquery-1.7.1.js"><\/script>')</script>
 
 <script src="javascripts/libs/underscore.js"></script>
 <script src="javascripts/libs/backbone.js"></script>
-<script src="javascripts/libs/jquery.autocomplete.js"></script>
+<script src="javascripts/libs/jquery.autocomplete-min.js"></script>
+<script src="javascripts/underscore.config.js"></script>
+
+<!-- load router and dict -->
 <script src="javascripts/note-dictionary.js"></script>
-<script src="javascripts/app.js"></script>
+<script src="javascripts/router/router.js"></script>
+
+<!-- load models -->
+<script src="javascripts/models/note.collection.js"></script>
+<script src="javascripts/models/note.model.js"></script>
+<script src="javascripts/models/string.model.js"></script>
+<script src="javascripts/models/string.collection.js"></script>
+<script src="javascripts/models/chord.definition.model.js"></script>
+
+<!-- load views -->
+<script src="javascripts/views/search.js"></script>
+<script src="javascripts/views/note.js"></script>
+<script src="javascripts/views/string.js"></script>
+<script src="javascripts/views/neck.js"></script>
+<script src="javascripts/views/chord.definition.js"></script>
+
+<!-- load the app -->
+<script src="javascripts/main.js"></script>
 <!-- end scripts-->
 
 
