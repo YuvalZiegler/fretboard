@@ -16,7 +16,6 @@ var App = (function (App){
             App.searchView = new App.SearchView();
             App.chordDefinitionView = new App.ChordDefinitionView({model: new App.ChordDefinitionModel()});
 
-
         },
 
         setInstrument : function(name){
@@ -29,14 +28,13 @@ var App = (function (App){
 
             var strings = (instrument[name]) ? instrument[name] : instrument["guitar"];
 
-            this.createStringCollection(strings);
+            this.createFretboardView(strings);
         },
 
-        createStringCollection: function(strings){
-
+        createFretboardView: function(strings){
             App.stringsCollection.reset();
             App.stringsCollection.initialize(strings)
-
+            App.fretboard = new App.FretboardView();
         }
     });
 

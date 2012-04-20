@@ -10,7 +10,7 @@ var App = (function (App){
         App.router =  new App.Router();
         Backbone.history.start({pushState: true})
         // Might want to move this to the router:
-        new App.NeckView();
+
     }
     return App;
 
@@ -18,3 +18,5 @@ var App = (function (App){
 
 
 App.start();
+
+//var dat = new DAT.GUI({})
