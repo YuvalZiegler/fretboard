@@ -9,7 +9,6 @@ var App = (function (App){
     App.start = function(){
         App.router =  new App.Router();
         Backbone.history.start({pushState: true})
-        // Might want to move this to the router:
 
     }
     return App;
