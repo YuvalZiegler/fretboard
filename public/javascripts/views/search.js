@@ -15,25 +15,10 @@ var App = (function (App) {
 
         handleEnter : function (e) {
 
-            var element =  $(this.el).val()
-
-            if (element.length>0){
-                // test if between A-G (or a-g)
-                if (element.charAt(0).match(/^[a-gA-G]/)){
-                    // Test if sharp or flat
-                    var key = (element.charAt(1) === "b" || element.charAt(1) === "#") ?
-                        element.charAt(0).toUpperCase() + element.charAt(1)
-                        :
-                        element.charAt(0).toUpperCase();
-                    // trim left space from modifier if exist
-                    var modifier = element.substr(key.length).replace(/^\s+/,"");
-                    var n = (element.charCodeAt(key.length) == 32) ? true : false;
-                    App.notesCollection.setActiveNotes(key, modifier,n);
-
-                }
-            } else {
-                App.notesCollection.setActiveNotes()
+            if ($(this.el).val()){
+                   App.notesCollection.setActiveNotes( $(this.el).val());
             }
+
         }
     })
     return App;

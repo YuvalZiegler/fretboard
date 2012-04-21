@@ -11,13 +11,13 @@ var App = (function (App) {
             _.bindAll(this,'update');
             App.dispatcher.on("chordChange", this.update)
         },
-        update:function (chord) {
+        update:function (e) {
 
-            var name = chord.key+""+chord.modifier;
-            var query = NoteDictionary.getChord(chord.key,  chord.modifier)
-            var int =  query.intervals;
+            var name = e.key+""+ (e.chord==="major" ? "" : e.chord );
+
+            var int =  e.intervals;
             // check for flat sharp variations
-            var notes =  _.map(query.notes, function(note){
+            var notes =  _.map(e.notes, function(note){
                 if (note.length > 1){
                     if (App.notesCollection.flatNeutralSharp>=0 ){
                         note = note.substr(0,2)

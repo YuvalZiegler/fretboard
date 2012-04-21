@@ -13,20 +13,23 @@ var App = (function (App) {
             for (var i = 0;  i< 12 ; i++){
                 this.add(new App.NoteModel({note:octave[i]}));
             }
+            _.bindAll(this,'activate');
+            App.dispatcher.on("chordChange", this.activate)
+            App.dispatcher.on("scaleChange", this.activate)
         },
 
         getModel:function(note){
             return _.find( this.models, function(t){ return t.attributes.note===note})
         },
 
-        activate: function(notes){
+        activate: function(e){
             _.each(this.models, function(model){
                 model.reset();
             })
-            for (var i=0, l = notes.notes.length; i<l; i++){
-                var note= notes.notes[i];
+            for (var i=0, l = e.notes.length; i<l; i++){
+                var note= e.notes[i];
                 var target = this.getModel(note);
-                var interval = notes.intervals[i];
+                var interval = e.intervals[i];
                 // THIS TRIGGERS A CHANGE EVENT IN THE MODEL
                 target.set({active:true, interval:interval});
 
@@ -34,26 +37,23 @@ var App = (function (App) {
 
         },
 
-        setActiveNotes:function(key, intervals, scale){
+        setActiveNotes:function(query){
 
-            if (key && key.length>1){
-                var c = key.charAt(1)
-                if (c ==="#"){
-                    this.flatNeutralSharp = 1
+            var result = this.dictionary.parseIn(query);
+            if(result && result.notes.length!==0) {
+                if (result.notes[0].length>1){
+                    var c = result.notes[0].charAt(1)
+                    if (c ==="#"){
+                        this.flatNeutralSharp = 1
+                    } else {
+                        this.flatNeutralSharp = -1
+                    }
+
                 } else {
-                    this.flatNeutralSharp = -1
+                    flatNeutralSharp = 0
                 }
-
-            } else {
-                flatNeutralSharp = 0
-            }
-            var n = scale ? this.dictionary.getScale(key, intervals) : this.dictionary.getChord(key, intervals);
-
-            if(n.notes.length!==0) {
-                var e = scale ? "scaleChange" : "chordChange";
-                this.activate(n);
-                App.dispatcher.trigger(e,{key:key, modifier:intervals,isScale:n})
-
+                var e = result.isScale ? "scaleChange" : "chordChange";
+                App.dispatcher.trigger(e,result)
             }
 
         }

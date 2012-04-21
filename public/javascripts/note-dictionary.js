@@ -88,28 +88,50 @@ var NoteDictionary = (function (){
         return IndexesToNotes(indexes,newNotesArray);
     }
 
+    function validateKey(key){
+        if (key && key.length>0){
+        // test if between A-G (or a-g)
+        if (key.charAt(0).match(/^[a-gA-G]/)){
+            // Test if sharp or flat
+            return (key.charAt(1) === "b" || key.charAt(1) === "#") ?
+                key.charAt(0).toUpperCase() + key.charAt(1)
+                :
+                key.charAt(0).toUpperCase();
+            }
+        }
+    }
+
     ////////////////////////////////////////////////
     // Public
     ////////////////////////////////////////////////
     return {
+        // will return a chord or a scale from string query: parseIn("C major")
+        parseIn: function (query){
+            if (query.length>0){
+                var key = validateKey(query);
+                // trim left space from modifier if exist
+                var modifier = query.substr(key.length).replace(/^\s+/,"");
+                return query.charCodeAt(key.length) === 32 ? this.getScale(key,modifier) : this.getChord(key,modifier);
+            } else {
+                return false;
+            }
+
+        },
         getScale:function(key, scale){
+            //key = validateKey(key);
             if (scales[scale]){
-
-                return {notes:getNotes(key, scales[scale].intervals ), intervals: scales[scale].intervals}
-
+                return {key:key, scale:scale, notes:getNotes(key, scales[scale].intervals ), intervals: scales[scale].intervals, isScale:true}
             }  else {
-                return {notes:[],intervals:[]}
+                return {key:key, scale:scale, notes:[],intervals:[], isScale:true}
             }
         },
         getChord:function(key, chord){
-
+            //key = validateKey(key);
             chord = (!chord) ? 'major' : chord;
             if(chords[chord] && key){
-
-                return {notes:getNotes(key, chords[chord].intervals ), intervals: chords[chord].intervals}
-
+                return {key:key, chord:chord, notes:getNotes(key, chords[chord].intervals ), intervals: chords[chord].intervals, isScale:false}
             }  else {
-                return {notes:[],intervals:[]}
+                return {key:key, chord:chord, notes:[],intervals:[],isScale:false}
             }
         },
         getAlldefinitions:function(){
@@ -135,8 +157,6 @@ var NoteDictionary = (function (){
                    definitions.push(noteList[i]+modifiers[j])
 
            }
-
-
           return definitions
         }
     }
@@ -144,3 +164,5 @@ var NoteDictionary = (function (){
 
 })();
 
+// Export for mocha tests
+if (typeof exports !== 'undefined') exports = module.exports = NoteDictionary;
