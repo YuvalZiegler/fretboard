@@ -58,16 +58,37 @@ var NoteDictionary = (function (){
                 '5'	    	: {intervals:['P1','P5']}
     }
 
+    function notesToChord(noteArray){
+        var intr =  IndexesToValues(notesToIndexes(noteArray), intervals);
+
+        var result = _.keys(chords)
+
+        for (var i=0, l=result.length; i<l; i++){
+
+            if( _.isEqual(chords[result[i]].intervals, intr) ){
+                return ( result[i]);
+            };
+        }
+
+    }
+    function notesToIndexes(noteArray){
+        var indexesArray = [];
+        var n = shiftNotes(_.indexOf(notes, noteArray[0]))
+        for (var i=0, l=noteArray.length; i<l; i++) {
+            indexesArray.push(_.indexOf(n, noteArray[i]));
+        }
+        return indexesArray;
+    }
     function IntervalsToIndexes(intervalArray){
         var indexesArray = [];
-        for (var i=0, length=intervalArray.length; i<intervalArray.length; i++) {
+        for (var i=0, l=intervalArray.length; i<l; i++) {
             indexesArray.push(_.indexOf(intervals, intervalArray[i]));
         }
         return indexesArray;
     }
-    function IndexesToNotes(indexesArray, noteArray){
+    function IndexesToValues(indexesArray, valuesArray){
         var n = [];
-        for (var i=0, length=indexesArray.length; i<indexesArray.length; i++) { n.push(noteArray[indexesArray[i]]); }
+        for (var i=0, length=indexesArray.length; i<indexesArray.length; i++) { n.push(valuesArray[indexesArray[i]]); }
         return n;
     }
     function shiftNotes (keyIndex){
@@ -76,49 +97,48 @@ var NoteDictionary = (function (){
         return n;
     }
     function getNotes(key, intervals){
-        var keyIndex, newNotesArray, indexes;
+        var newNotesArray, indexes;
         // Are we working with a flat or a sharp scale/chord
         var targetNotes = (key.charAt(1)==='b') ? notesFlat : notesSharp;
-        // GET THE INDEX OF THE KEY FROM THE NOTES ARRAY
-        keyIndex = _.indexOf(targetNotes, key);
         // CREATE A NEW NOTE ARRAY USING THE KEY AS A STARTING POINT
         newNotesArray = shiftNotes( _.indexOf(targetNotes, key));
         // Convert the intervals to Indexes and retrieve the notes from the newNotesArray
         indexes = IntervalsToIndexes(intervals);
-        return IndexesToNotes(indexes,newNotesArray);
+        return IndexesToValues(indexes,newNotesArray);
     }
-
     function validateKey(key){
-        if (key && key.length>0){
+        // TODO: DECIDE ON ACTION WHEN KEY IS NOT IN A-G Range
         // test if between A-G (or a-g)
-        if (key.charAt(0).match(/^[a-gA-G]/)){
+        if (key && key.length>0 && key.charAt(0).match(/^[a-gA-G]/)){
             // Test if sharp or flat
             return (key.charAt(1) === "b" || key.charAt(1) === "#") ?
                 key.charAt(0).toUpperCase() + key.charAt(1)
                 :
                 key.charAt(0).toUpperCase();
-            }
         }
+
     }
 
     ////////////////////////////////////////////////
     // Public
     ////////////////////////////////////////////////
     return {
-        // will return a chord or a scale from string query: parseIn("C major")
-        parseIn: function (query){
+        // will return a chord or a scale from string query: parseQuery("C major")
+        parseQuery: function (query){
             if (query.length>0){
                 var key = validateKey(query);
                 // trim left space from modifier if exist
-                var modifier = query.substr(key.length).replace(/^\s+/,"");
-                return query.charCodeAt(key.length) === 32 ? this.getScale(key,modifier) : this.getChord(key,modifier);
+                if(key){
+                    var modifier = query.substr(key.length).replace(/^\s+/,"");
+                    return query.charCodeAt(key.length) === 32 ? this.getScale(key,modifier) : this.getChord(key,modifier);
+                }
             } else {
                 return false;
             }
 
         },
         getScale:function(key, scale){
-            //key = validateKey(key);
+
             if (scales[scale]){
                 return {key:key, scale:scale, notes:getNotes(key, scales[scale].intervals ), intervals: scales[scale].intervals, isScale:true}
             }  else {
@@ -126,7 +146,6 @@ var NoteDictionary = (function (){
             }
         },
         getChord:function(key, chord){
-            //key = validateKey(key);
             chord = (!chord) ? 'major' : chord;
             if(chords[chord] && key){
                 return {key:key, chord:chord, notes:getNotes(key, chords[chord].intervals ), intervals: chords[chord].intervals, isScale:false}
@@ -134,10 +153,42 @@ var NoteDictionary = (function (){
                 return {key:key, chord:chord, notes:[],intervals:[],isScale:false}
             }
         },
-        getAlldefinitions:function(){
+        getChordsOfScale:function(query, returnAsObject){
+            var scale = this.parseQuery(query), scaleNotes = scale.notes, triads = [], chordArray = [];
+            for (var i=0, l=scale.notes.length; i<l ; i++){
+                triads[i] = notesToChord([scaleNotes[0],scaleNotes[2],scaleNotes[4]]);
+                if (scaleNotes[0].length>2){scaleNotes[0]= scaleNotes[0].substr(0,2)}
+
+                returnAsObject ? chordArray.push(this.getChord(scaleNotes[0],triads[i])) :
+                                 chordArray.push( scaleNotes[0]+""+(triads[i]==="major"? "":triads[i]));
+                scaleNotes.push(scaleNotes.shift());
+            }
+            return chordArray;
+        },
+        isChordInScale:function(chord,scale){
+           return (_.intersection(chord.notes,scale.notes).length === chord.notes.length);
+        },
+        getScalesOfChord:function(query, returnAsObject){
+            var chord= this.parseQuery(query), scalesArray = [], noteArray;
+            if(chord.key.charAt(1)=="b") {noteArray=notesFlat} else {noteArray=notesSharp}
+            // loop through all notes
+            for (var i=0, l = noteArray.length; i<l; i++){
+               // loop through all scales
+               for (var mod in scales){
+                if (mod!="chromatic"){
+                    var scale = this.parseQuery(noteArray[i]+" "+ mod);
+                    if (this.isChordInScale(chord, scale)){
+                        returnAsObject ? scalesArray.push(scale) :
+                                         scalesArray.push(noteArray[i] + " " + scale.scale);
+                    }
+                }
+               }
+            }
+            return scalesArray;
+        },
+        getAllDefinitions:function(){
             var definitions = [],  modifiers = []
 
-            // convert the chords keys to an array of strings
             for(var key in chords) {
                 if(chords.hasOwnProperty(key)) {
                     modifiers.push(key == 'major' ? '' : key);
@@ -160,7 +211,6 @@ var NoteDictionary = (function (){
           return definitions
         }
     }
-
 
 })();
 

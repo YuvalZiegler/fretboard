@@ -9,14 +9,14 @@ var App = (function (App) {
         initialize: function (){
             _.bindAll(this)
             this.router = this.options.router;
-            $(this.el).autocomplete({lookup:NoteDictionary.getAlldefinitions(), onSelect: this.handleEnter })
+            $(this.el).autocomplete({lookup:NoteDictionary.getAllDefinitions(), onSelect: this.handleEnter })
             $(this.el).focus();
         },
 
         handleEnter : function (e) {
 
             if ($(this.el).val()){
-                   App.notesCollection.setActiveNotes( $(this.el).val());
+                   App.notesCollection.setActiveNotes($(this.el).val());
             }
 
         }

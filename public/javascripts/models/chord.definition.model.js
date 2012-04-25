@@ -12,9 +12,7 @@ var App = (function (App) {
             App.dispatcher.on("chordChange", this.update)
         },
         update:function (e) {
-
             var name = e.key+""+ (e.chord==="major" ? "" : e.chord );
-
             var int =  e.intervals;
             // check for flat sharp variations
             var notes =  _.map(e.notes, function(note){
@@ -29,7 +27,6 @@ var App = (function (App) {
             })
 
             this.set({name:name, intervals:int, notes:notes});
-
         }
     });
 

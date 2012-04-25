@@ -39,7 +39,7 @@ var App = (function (App) {
 
         setActiveNotes:function(query){
 
-            var result = this.dictionary.parseIn(query);
+            var result = this.dictionary.parseQuery(query);
             if(result && result.notes.length!==0) {
                 if (result.notes[0].length>1){
                     var c = result.notes[0].charAt(1)
