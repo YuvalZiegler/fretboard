@@ -7,7 +7,7 @@ var NoteDictionary = (function (){
     var	notes =         ['A','A#/Bb', 'B', 'C','C#/Db','D','D#/Eb','E','F','F#/Gb','G','G#/Ab'];
     var notesSharp =    ['A'	,'A#', 'B'	, 'C'	, 'C#'	, 'D'	, 'D#'	, 'E'	, 'F'	, 'F#' 	, 'G'	, 'G#'	];
     var	notesFlat =     ['A'	,'Bb', 'B'	, 'C'	, 'Db'	, 'D'	, 'Eb'	, 'E'	, 'F'	, 'Gb' 	, 'G'	, 'Ab'	];
-    var intervals	=   ['P1'	, 'm2'	, 'M2'	, 'm3'	, 'M3'		, 'P4'	, 'd5'	, 'P5'	, 'm6'	, 'M6'	, 'm7'	, 'M7' ];
+    var intervals	=   ['P1'	, 'm2'	, 'M2'	, 'm3'	, 'M3'	, 'P4'	, 'd5'	, 'P5'	, 'm6'	, 'M6'	, 'm7'	, 'M7' ];
 
     var scales = {
                'chromatic'      :   {intervals:intervals},
@@ -154,13 +154,14 @@ var NoteDictionary = (function (){
             }
         },
         getChordsOfScale:function(query, returnAsObject){
-            var scale = this.parseQuery(query), scaleNotes = scale.notes, triads = [], chordArray = [];
+            var scale = this.parseQuery(query), scaleNotes = scale.notes, triads = [], chordArray = [], key;
             for (var i=0, l=scale.notes.length; i<l ; i++){
                 triads[i] = notesToChord([scaleNotes[0],scaleNotes[2],scaleNotes[4]]);
-                if (scaleNotes[0].length>2){scaleNotes[0]= scaleNotes[0].substr(0,2)}
 
-                returnAsObject ? chordArray.push(this.getChord(scaleNotes[0],triads[i])) :
-                                 chordArray.push( scaleNotes[0]+""+(triads[i]==="major"? "":triads[i]));
+                key = (scaleNotes[0].length>2) ? scaleNotes[0].substr(0,2) : scaleNotes[0]
+
+                returnAsObject ? chordArray.push(this.getChord(key,triads[i])) :
+                                 chordArray.push( key+""+(triads[i]==="major"? "":triads[i]));
                 scaleNotes.push(scaleNotes.shift());
             }
             return chordArray;
@@ -216,3 +217,4 @@ var NoteDictionary = (function (){
 
 // Export for mocha tests
 if (typeof exports !== 'undefined') exports = module.exports = NoteDictionary;
+
