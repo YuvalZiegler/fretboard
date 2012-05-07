@@ -1,0 +1,17 @@
+h1= title
+p Welcome to #{title}
+div#chord-navigator
+  input#search
+  ul#neck
+div#dictionary
+  div#chord-definition
+  
+script#definitionTemplate(type="text/html")
+  <article id="definition">
+  <h1>{{name}}</h1>
+  <h2>{{notes}}</h2>
+  <h3>{{intervals}}</h3>
+  <p>{{definition}}</p>
+  </article>
+
+  
