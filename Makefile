@@ -13,9 +13,12 @@ css-dev:
 css-prod:
 	@./node_modules/stylus/bin/stylus -c -u nib ./public/stylesheets/stylus/style.styl --out ./public/stylesheets/
 
+bootstrap:
+	@./node_modules/stylus/bin/stylus -c -u bootstrap-stylus ./public/stylesheets/stylus/style-bootstrap.styl --out ./public/stylesheets/
 
 css-to-stylus:
 	@./node_modules/stylus/bin/stylus --css ./public/stylesheets/style.css ./public/stylesheets/stylus/style.styl
 	@echo Converted CSS to Styl
-		
+
+build: 		
 .PHONY: test, css, style
