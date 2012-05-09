@@ -1,17 +1,22 @@
-@import nib
-
-reset-html5()
+@import bootstrap
+//@import nib
+//reset-html5()
 
 body
   padding: 40px
+  background: url('http://subtlepatterns.com/patterns/irongrip.png')
+
+#content
+  width: 1024px;
+  margin: 0 auto;
 
 #neck
   display: table
-  background: whiteSmoke
-  padding: 8x
+  padding: 8px
 
 ul,ol
   margin: 0
+  padding: 0
 
 ul.string
   dispay: table-row
@@ -19,13 +24,16 @@ ul.string
 #neck li
   transition: all 1s ease 0s
   display: table-cell
-  min-width: 80px
-  height: 50px
+  width: 60px
+  height: 60px
   text-align: center
   vertical-align: middle
+  border-radius: 50px
+  box-shadow: 0px 0px 5px rgba(255,255,255,0.5) inset
+  color:white
 
-.inactive
-  color: rgba(0,0,0,0.2)
+#neck li.inactive
+  color: rgba(255,255,255,0.3)
 
 .P1
   background-color: #ff476c
