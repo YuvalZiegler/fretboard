@@ -1,9 +1,4 @@
-REPORTER = spec
-test:
-	@NODE_ENV=test ./node_modules/.bin/mocha \
-		--reporter $(REPORTER)
-
-less-to-css:
+less:
 	@lessc ./public/stylesheets/less/style.less ./public/stylesheets/style.css -x --yui-compress
 	@echo DONE!
 
@@ -20,5 +15,27 @@ css-to-stylus:
 	@./node_modules/stylus/bin/stylus --css ./public/stylesheets/style.css ./public/stylesheets/stylus/style.styl
 	@echo Converted CSS to Styl
 
-build: 		
-.PHONY: test, css, style
+autosave:
+	node /usr/local/lib/node_modules/autosave/bin/autosave
+
+pack-js:
+	cat ./public/javascripts/libs/jquery-1.7.1.js > ./public/javascripts/app.js
+	cat ./public/javascripts/libs/underscore.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/libs/backbone.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/underscore.config.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/note-dictionary.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/router/router.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/models/note.collection.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/models/note.model.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/models/string.model.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/models/string.collection.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/models/chord.definition.model.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/views/search.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/views/note.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/views/string.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/views/fretboard.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/views/chord.definition.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/main.js >> ./public/javascripts/app.js
+	uglifyjs -nc -nm ./public/javascripts/app.js > ./public/javascripts/app.min.js
+			
+.PHONY: test, css, style, css-prod, bootstrap, css-to-stylus, autosave

@@ -18,10 +18,17 @@ var App = (function (App){
             this.render();
         },
         render:function(){
+          
             if(this.model.attributes.active){
-                $(this.el).html(this.model.attributes.note).removeClass('inactive').addClass(this.model.attributes.interval)
+                $(this.el)
+                .html(this.model.attributes.note)
+                .removeClass('inactive')
+                .addClass(this.model.attributes.interval)
             } else {
-                $(this.el).html(this.model.attributes.note).removeClass().addClass('inactive ' + "pos-"+this.stringPosition)
+                $(this.el)
+                .html(this.model.attributes.note)
+                .removeClass()
+                .addClass('inactive ' + "pos-"+this.stringPosition)
             }
 
 

@@ -3,7 +3,9 @@ var NoteDictionary = (function (){
     ////////////////////////////////////////////////
     // Private
     ////////////////////////////////////////////////
-    var noteList =      ['A','A#','Bb','B','C','C#','Db','D','D#','Eb','E','F','F#','Gb','G','G#','Ab']
+    // TODO:  Add [A,B,C,D,E,F,G] Array to determine note order then sort through the notes Array using the interval indexes to determine if the note is sharp ot flat
+    // var letters =       ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+    var noteList =      ['A','A#','Bb','B','C','C#','Db','D','D#','Eb','E','F','F#','Gb','G','G#','Ab'];
     var	notes =         ['A','A#/Bb', 'B', 'C','C#/Db','D','D#/Eb','E','F','F#/Gb','G','G#/Ab'];
     var notesSharp =    ['A'	,'A#', 'B'	, 'C'	, 'C#'	, 'D'	, 'D#'	, 'E'	, 'F'	, 'F#' 	, 'G'	, 'G#'	];
     var	notesFlat =     ['A'	,'Bb', 'B'	, 'C'	, 'Db'	, 'D'	, 'Eb'	, 'E'	, 'F'	, 'Gb' 	, 'G'	, 'Ab'	];
@@ -59,12 +61,12 @@ var NoteDictionary = (function (){
     }
 
     function notesToChord(noteArray){
+
         var intr =  IndexesToValues(notesToIndexes(noteArray), intervals);
 
         var result = _.keys(chords)
 
         for (var i=0, l=result.length; i<l; i++){
-
             if( _.isEqual(chords[result[i]].intervals, intr) ){
                 return ( result[i]);
             };
@@ -72,29 +74,17 @@ var NoteDictionary = (function (){
 
     }
     function notesToIndexes(noteArray){
-        var indexesArray = [];
         var n = shiftNotes(_.indexOf(notes, noteArray[0]))
-        for (var i=0, l=noteArray.length; i<l; i++) {
-            indexesArray.push(_.indexOf(n, noteArray[i]));
-        }
-        return indexesArray;
+        return _.map(noteArray , function (note) { return(_.indexOf(n, note)) });
     }
     function IntervalsToIndexes(intervalArray){
-        var indexesArray = [];
-        for (var i=0, l=intervalArray.length; i<l; i++) {
-            indexesArray.push(_.indexOf(intervals, intervalArray[i]));
-        }
-        return indexesArray;
+        return _.map(intervalArray, function(int){return _.indexOf(intervals, int)});
     }
     function IndexesToValues(indexesArray, valuesArray){
-        var n = [];
-        for (var i=0, length=indexesArray.length; i<indexesArray.length; i++) { n.push(valuesArray[indexesArray[i]]); }
-        return n;
+        return _.map(indexesArray, function (i){ return valuesArray[i] })
     }
     function shiftNotes (keyIndex){
-        var n = notes.slice(keyIndex);
-        for (var i=0; i<keyIndex; i++) { n.push(notes[i]); }
-        return n;
+       return notes.slice(keyIndex).concat(notes.slice(0,keyIndex));
     }
     function getNotes(key, intervals){
         var newNotesArray, indexes;
@@ -138,7 +128,6 @@ var NoteDictionary = (function (){
 
         },
         getScale:function(key, scale){
-
             if (scales[scale]){
                 return {key:key, scale:scale, notes:getNotes(key, scales[scale].intervals ), intervals: scales[scale].intervals, isScale:true}
             }  else {
@@ -154,7 +143,12 @@ var NoteDictionary = (function (){
             }
         },
         getChordsOfScale:function(query, returnAsObject){
-            var scale = this.parseQuery(query), scaleNotes = scale.notes, triads = [], chordArray = [], key;
+            var scale = this.parseQuery(query),
+                scaleNotes = scale.notes,
+                triads = [],
+                chordArray = [],
+                key;
+
             for (var i=0, l=scale.notes.length; i<l ; i++){
                 triads[i] = notesToChord([scaleNotes[0],scaleNotes[2],scaleNotes[4]]);
 
