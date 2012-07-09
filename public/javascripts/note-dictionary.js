@@ -61,17 +61,13 @@ var NoteDictionary = (function (){
     }
 
     function notesToChord(noteArray){
-
         var intr =  IndexesToValues(notesToIndexes(noteArray), intervals);
-
-        var result = _.keys(chords)
-
-        for (var i=0, l=result.length; i<l; i++){
-            if( _.isEqual(chords[result[i]].intervals, intr) ){
-                return ( result[i]);
-            };
-        }
-
+        var result = _.keys(chords) ;
+        return _.filter(result, function(i){
+            if (_.isEqual(intr,chords[i].intervals)) {
+                return i;
+            }
+        });
     }
     function notesToIndexes(noteArray){
         var n = shiftNotes(_.indexOf(notes, noteArray[0]))
