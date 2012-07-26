@@ -19,9 +19,6 @@ autosave:
 	node /usr/local/lib/node_modules/autosave/bin/autosave
 
 pack-js:
-	cat ./public/javascripts/libs/jquery-1.7.1.js > ./public/javascripts/app.js
-	cat ./public/javascripts/libs/underscore.js >> ./public/javascripts/app.js
-	cat ./public/javascripts/libs/backbone.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/underscore.config.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/note-dictionary.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/router/router.js >> ./public/javascripts/app.js
