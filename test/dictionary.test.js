@@ -18,7 +18,7 @@ describe('NoteDictionary', function(){
 
   describe('.parseQuery("C")', function(){    
     it('should return a C major chord', function(){        
-        console.log(dict.parseQuery('C'));
+        //console.log(dict.parseQuery('C'));
         dict.parseQuery('C').should.have.property('chord', 'major');
     });
   });

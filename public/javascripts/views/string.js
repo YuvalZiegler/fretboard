@@ -6,7 +6,7 @@ var App = (function (App) {
         className:'string',
 
         initialize:function(){
-            _.bindAll(this,'render')
+            _.bindAll(this,'render');
             this.render();
         },
 

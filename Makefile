@@ -1,3 +1,6 @@
+test:
+	@./node_modules/.bin/mocha -R spec
+
 less:
 	@lessc ./public/stylesheets/less/style.less ./public/stylesheets/style.css -x --yui-compress
 	@echo DONE!
@@ -19,7 +22,7 @@ autosave:
 	node /usr/local/lib/node_modules/autosave/bin/autosave
 
 pack-js:
-	cat ./public/javascripts/underscore.config.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/underscore.config.js > ./public/javascripts/app.js
 	cat ./public/javascripts/note-dictionary.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/router/router.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/models/note.collection.js >> ./public/javascripts/app.js
@@ -33,6 +36,7 @@ pack-js:
 	cat ./public/javascripts/views/fretboard.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/views/chord.definition.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/main.js >> ./public/javascripts/app.js
-	uglifyjs -nc -nm ./public/javascripts/app.js > ./public/javascripts/app.min.js
-			
-.PHONY: test, css, style, css-prod, bootstrap, css-to-stylus, autosave
+	uglifyjs -nc -nm --no-seqs ./public/javascripts/app.js > ./public/javascripts/app.min.js
+	
+		
+.PHONY: test css style css-prod bootstrap css-to-stylus autosave
