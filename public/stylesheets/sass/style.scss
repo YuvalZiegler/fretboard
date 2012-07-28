@@ -1,0 +1,8 @@
+// Project: https://github.com/thomas-mcdonald/bootstrap-sass/
+// Need to configure a variable or two? Simply define the value of the variable you want to change before importing Bootstrap.
+$baseFontSize: 16px;
+///// I gather this file is a starting point for the project.
+@import "bootstrap";
+
+// Include responsive Bootstrap styles
+@import "bootstrap-responsive";

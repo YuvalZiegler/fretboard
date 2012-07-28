@@ -421,8 +421,9 @@ button.btn::-moz-focus-inner,input[type=submit].btn::-moz-focus-inner{padding:0;
 .media-grid a{float:left;padding:4px;margin:0 0 18px 20px;border:1px solid #ddd;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.075);-moz-box-shadow:0 1px 1px rgba(0,0,0,0.075);box-shadow:0 1px 1px rgba(0,0,0,0.075);}
 .media-grid a img{display:block}
 .media-grid a:hover{border-color:#0069d6;-webkit-box-shadow:0 1px 4px rgba(0,105,214,0.25);-moz-box-shadow:0 1px 4px rgba(0,105,214,0.25);box-shadow:0 1px 4px rgba(0,105,214,0.25)}
-body{padding:40px;background:url("http://subtlepatterns.com/patterns/irongrip.png")}
+body{padding:40px;background:url("../images/noise.png"),#2f2f30}
 #content{width:1024px;margin:0 auto}
+header h1{margin-bottom:18px;font-size:30px;line-height:84px;background-image:URL('../images/title.png');background-repeat:no-repeat;overflow:hidden;text-indent:-9999px}
 #neck{display:table;padding:8px}
 ul,ol{margin:0;padding:0}
 ul.string{dispay:table-row}

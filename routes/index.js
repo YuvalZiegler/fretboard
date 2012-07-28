@@ -3,6 +3,9 @@
  * GET home page.
  */
 
-exports.index = function(req, res){   
-   res.render('index', { title: 'Fretboard', layout: 'layout-min.jade' });
+
+
+exports.index = function(req, res){
+    var layout = req.app.settings.env == "development" ? 'layout.jade' : 'layout-min.jade'
+    res.render('index', { title: 'Fretboard', layout: layout });
 };

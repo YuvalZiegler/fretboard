@@ -10,11 +10,9 @@ var App = (function (App){
         App.router =  new App.Router();
         Backbone.history.start({pushState: true})
     }
+
     return App;
 
 })(App||{});
 
-
 App.start();
-
-//var dat = new DAT.GUI({})

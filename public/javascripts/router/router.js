@@ -25,7 +25,6 @@ var App = (function (App){
         },
 
         createFretboardView: function(strings){
-
             App.searchView = App.searchView  || new App.SearchView();
             App.chordDefinitionView = App.chordDefinitionView || new App.ChordDefinitionView({model: new App.ChordDefinitionModel()});
             App.stringsCollection = App.stringsCollection || new App.StringCollection([]);
