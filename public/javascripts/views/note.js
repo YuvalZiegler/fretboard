@@ -6,8 +6,8 @@
 var App = (function (App){
 
     App.NoteView = Backbone.View.extend({
-        tagName:'li',
-        className:'inactive',
+
+        className:'note',
 
         initialize:function(options){
             _.bindAll(this,'render')
@@ -28,7 +28,7 @@ var App = (function (App){
                 $(this.el)
                 .html(this.model.attributes.note)
                 .removeClass()
-                .addClass('inactive ' + "pos-"+this.stringPosition)
+                .addClass('note inactive ' + "pos-"+this.stringPosition)
             }
 
 

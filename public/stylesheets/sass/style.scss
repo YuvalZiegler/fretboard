@@ -35,15 +35,12 @@ header h1 {
   display: table;
   padding: 8px
 }
-ul,ol {
-  margin: 0;
-  padding: 0
-}
-ul.string {
+
+.string {
   display: block;
   height: 70px;
 }
-#neck li {
+.note {
   -webkit-transition: all;
   -moz-transition: all;
   -ms-transition: all;
@@ -62,7 +59,7 @@ ul.string {
   box-shadow: 0;
   //color: #dad7c8;
 }
-#neck li.inactive {
+.inactive {
   color: rgba(255,255,255,0.3)
 }
 

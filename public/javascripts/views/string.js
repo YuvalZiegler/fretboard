@@ -2,7 +2,7 @@ var App = (function (App) {
 
     App.StringView = Backbone.View.extend({
 
-        tagName:'ul',
+        tagName:'div',
         className:'string',
 
         initialize:function(){

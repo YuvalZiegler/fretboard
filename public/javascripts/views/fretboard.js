@@ -1,6 +1,6 @@
 var App = (function (App) {
     App.FretboardView = Backbone.View.extend({
-        el:'ul#neck',
+        el:'#neck',
 
         initialize:function(options){
 

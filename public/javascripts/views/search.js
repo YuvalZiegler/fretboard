@@ -19,7 +19,7 @@ var App = (function (App) {
                   try {
                         App.notesCollection.setActiveNotes($(this.el).val());
                   } catch (e) {
-                      $(this.el).val(e)
+                       //console.log('App.dispatcher.trigger("onError",e)', e)
                   }
             }
         }
