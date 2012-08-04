@@ -13,10 +13,14 @@ var App = (function (App) {
             $(this.el).focus();
         },
 
-        handleEnter : function (e) {
+        handleEnter : function (keyEvent) {
 
             if ($(this.el).val()){
-                   App.notesCollection.setActiveNotes($(this.el).val());
+                  try{
+                        App.notesCollection.setActiveNotes($(this.el).val());
+                  }  catch (e) {
+                      console.log(e);
+                  }
             }
 
         }

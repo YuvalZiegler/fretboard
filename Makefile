@@ -24,6 +24,9 @@ css-to-stylus:
 autosave:
 	node /usr/local/lib/node_modules/autosave/bin/autosave
 
+graph:
+	madge --image graph.png ./node_modules
+
 pack-js:
 	cat ./public/javascripts/underscore.config.js > ./public/javascripts/app.js
 	cat ./public/javascripts/note-dictionary.js >> ./public/javascripts/app.js
@@ -42,4 +45,4 @@ pack-js:
 	uglifyjs -nc -nm --no-seqs ./public/javascripts/app.js > ./public/javascripts/app.min.js
 	
 		
-.PHONY: test css style css-prod bootstrap css-to-stylus autosave compass
+.PHONY: test css style css-prod bootstrap css-to-stylus autosave compass graph

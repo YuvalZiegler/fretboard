@@ -2,7 +2,7 @@
 * In this file you should write your main styles. (or centralize your imports)
 * Import this file using the following HTML or equivalent:
 * <link href="/stylesheets/style.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,50 +24,50 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, /Library/Ruby/Gems/1.8/gems/compass-0.11.7/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P1 {
   background-color: #ff003d;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #990025 -4px -9px 30px inset, #ff668b 1px 4px 7px inset;
@@ -78,7 +78,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m2 {
   background-color: #ffb741;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #da8700 -4px -9px 30px inset, #ffdea7 1px 4px 7px inset;
@@ -89,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M2 {
   background-color: #6a80ff;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #0429ff -4px -9px 30px inset, #d0d7ff 1px 4px 7px inset;
@@ -100,7 +100,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m3 {
   background-color: #9f65ff;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #6000fe -4px -9px 30px inset, #dfcbff 1px 4px 7px inset;
@@ -111,7 +111,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M3 {
   background-color: #fd7cff;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fb16ff -4px -9px 30px inset, #ffe2ff 1px 4px 7px inset;
@@ -122,7 +122,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P4 {
   background-color: #ffe73a;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #d3b900 -4px -9px 30px inset, #fff3a0 1px 4px 7px inset;
@@ -133,18 +133,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .d5 {
-  background-color: #5bfffd;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #00f4f1 -4px -9px 30px inset, #c1fffe 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #00f4f1 -4px -9px 30px inset, #c1fffe 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #00f4f1 -4px -9px 30px inset, #c1fffe 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #00f4f1 -4px -9px 30px inset, #c1fffe 1px 4px 7px inset;
-  color: #005b5a;
+  background-color: #5bc7c6;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #308c8b -4px -9px 30px inset, #a7e1e0 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #308c8b -4px -9px 30px inset, #a7e1e0 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #308c8b -4px -9px 30px inset, #a7e1e0 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #308c8b -4px -9px 30px inset, #a7e1e0 1px 4px 7px inset;
+  color: #091a1a;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P5 {
   background-color: #ffa49d;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff4537 -4px -9px 30px inset, white 1px 4px 7px inset;
@@ -155,7 +155,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m6 {
   background-color: #627061;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #323932 -4px -9px 30px inset, #95a394 1px 4px 7px inset;
@@ -166,7 +166,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M6 {
   background-color: #b2d4a3;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
@@ -177,7 +177,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m7 {
   background-color: #d4a6ba;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #b36185 -4px -9px 30px inset, #f5ebef 1px 4px 7px inset;
@@ -188,7 +188,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 23, sass/partials/_varsAndMixins.scss */
+/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M7 {
   background-color: #b2d4a3;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
@@ -199,29 +199,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
 }
 
-/* line 15, sass/style.scss */
+/* line 15, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 19, sass/style.scss */
+/* line 19, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 body {
   padding: 40px;
-  background: url('/./public/images/../images/noise.png?1343468874'), -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #2f2f30), color-stop(100%, #2f2f30));
-  background: url('/./public/images/../images/noise.png?1343468874'), -webkit-linear-gradient(top left, #2f2f30, #2f2f30);
-  background: url('/./public/images/../images/noise.png?1343468874'), -moz-linear-gradient(top left, #2f2f30, #2f2f30);
-  background: url('/./public/images/../images/noise.png?1343468874'), -o-linear-gradient(top left, #2f2f30, #2f2f30);
-  background: url('/./public/images/../images/noise.png?1343468874'), -ms-linear-gradient(top left, #2f2f30, #2f2f30);
-  background: url('/./public/images/../images/noise.png?1343468874'), linear-gradient(top left, #2f2f30, #2f2f30);
+  font-family: "Helvetica";
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #2f2f30), color-stop(100%, #2f2f30)), url('../images/../images/noise.png?1343850113');
+  background: -webkit-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
+  background: -moz-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
+  background: -o-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
+  background: -ms-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
+  background: linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
 }
 
-/* line 25, sass/style.scss */
+/* line 25, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #content {
-  width: 1024px;
+  width: 100%;
   margin: 0 auto;
 }
 
-/* line 30, sass/style.scss */
+/* line 30, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 header h1 {
   display: block;
   width: 352px;
@@ -232,25 +233,25 @@ header h1 {
   text-indent: -9999px;
 }
 
-/* line 34, sass/style.scss */
+/* line 34, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #neck {
   display: table;
   padding: 8px;
 }
 
-/* line 38, sass/style.scss */
+/* line 38, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 ul, ol {
   margin: 0;
   padding: 0;
 }
 
-/* line 42, sass/style.scss */
+/* line 42, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 ul.string {
   display: block;
   height: 70px;
 }
 
-/* line 46, sass/style.scss */
+/* line 46, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #neck li {
   -webkit-transition: all;
   -moz-transition: all;
@@ -270,19 +271,19 @@ ul.string {
   box-shadow: 0;
 }
 
-/* line 65, sass/style.scss */
+/* line 65, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #neck li.inactive {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 70, sass/style.scss */
+/* line 70, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 pos-0 {
   -webkit-box-shadow: -4px;
   -moz-box-shadow: -4px;
   box-shadow: -4px;
 }
 
-/* line 75, sass/style.scss */
+/* line 75, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete-w1 {
   position: absolute;
   top: 0;
@@ -292,7 +293,7 @@ pos-0 {
   _margin: 0;
 }
 
-/* line 83, sass/style.scss */
+/* line 83, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete {
   border: 1px solid #999;
   background: #fff;
@@ -306,24 +307,24 @@ pos-0 {
   overflow-x: hidden;
 }
 
-/* line 95, sass/style.scss */
+/* line 95, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete .selected {
   background: #f0f0f0;
 }
 
-/* line 98, sass/style.scss */
+/* line 98, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete div {
   padding: 2px 5px;
   white-space: nowrap;
 }
 
-/* line 102, sass/style.scss */
+/* line 102, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete strong {
   font-weight: normal;
   color: #39f;
 }
 
-/* line 107, sass/style.scss */
+/* line 107, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input, textarea {
   -moz-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -335,11 +336,11 @@ input, textarea {
   height: 30px;
   border-radius: 30px;
   margin: 10px;
-  padding-left: 20px;
+  font-size: 16px;
   padding-left: 36px;
   color: #DAD7C8;
 }
-/* line 120, sass/style.scss */
+/* line 125, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input:focus, textarea:focus {
   outline: none;
 }

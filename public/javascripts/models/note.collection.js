@@ -26,6 +26,7 @@ var App = (function (App) {
             _.each(this.models, function(model){
                 model.reset();
             })
+
             for (var i=0, l = e.notes.length; i<l; i++){
                 var note= e.notes[i];
                 var target = this.getModel(note);
@@ -57,7 +58,6 @@ var App = (function (App) {
             }
 
         }
-
 
     });
 

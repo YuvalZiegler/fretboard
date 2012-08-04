@@ -17,8 +17,8 @@ var App = (function (App){
             this.model.bind('change', this.render);
             this.render();
         },
+
         render:function(){
-          
             if(this.model.attributes.active){
                 $(this.el)
                 .html(this.model.attributes.note)

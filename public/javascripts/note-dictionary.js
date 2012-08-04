@@ -93,7 +93,7 @@ var NoteDictionary = (function (){
         return IndexesToValues(indexes,newNotesArray);
     }
     function validateKey(key){
-        // TODO: DECIDE ON ACTION WHEN KEY IS NOT IN A-G Range
+        // TODO: Return error when key is not in range
         // test if between A-G (or a-g)
         if (key && key.length>0 && key.charAt(0).match(/^[a-gA-G]/)){
             // Test if sharp or flat
@@ -101,6 +101,8 @@ var NoteDictionary = (function (){
                 key.charAt(0).toUpperCase() + key.charAt(1)
                 :
                 key.charAt(0).toUpperCase();
+        } else {
+            throw( "Oy! Not a note, hint (A - G)" );
         }
 
     }
