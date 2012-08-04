@@ -16,13 +16,12 @@ var App = (function (App) {
         handleEnter : function (keyEvent) {
 
             if ($(this.el).val()){
-                  try{
+                  try {
                         App.notesCollection.setActiveNotes($(this.el).val());
-                  }  catch (e) {
-                      console.log(e);
+                  } catch (e) {
+                      $(this.el).val(e)
                   }
             }
-
         }
     })
     return App;
