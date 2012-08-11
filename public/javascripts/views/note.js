@@ -21,14 +21,13 @@ var App = (function (App){
         render:function(){
             if(this.model.attributes.active){
                 $(this.el)
-                .html(this.model.attributes.note)
-                .removeClass('inactive')
-                .addClass(this.model.attributes.interval + " active")
+                .html('<div class="note active">' + this.model.attributes.note + '</div>')
+                .addClass(this.model.attributes.interval)
             } else {
                 $(this.el)
-                .html(this.model.attributes.note)
+                .html('<div class="note inactive">' + this.model.attributes.note + '</div>')
                 .removeClass()
-                .addClass('fret inactive ' + "pos-"+this.stringPosition)
+                .addClass('fret ' + "pos-"+this.stringPosition)
             }
 
 
