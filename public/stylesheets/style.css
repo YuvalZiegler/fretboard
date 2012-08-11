@@ -67,136 +67,216 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P1 {
   background-color: #ff003d;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #990025 -4px -9px 30px inset, #ff668b 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #990025 -4px -9px 30px inset, #ff668b 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #990025 -4px -9px 30px inset, #ff668b 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #990025 -4px -9px 30px inset, #ff668b 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #cc0031 -4px -9px 30px inset, #ff3364 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #cc0031 -4px -9px 30px inset, #ff3364 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #cc0031 -4px -9px 30px inset, #ff3364 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #cc0031 -4px -9px 30px inset, #ff3364 1px 4px 7px inset;
   color: black;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m2 {
   background-color: #ffb741;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #da8700 -4px -9px 30px inset, #ffdea7 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #da8700 -4px -9px 30px inset, #ffdea7 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #da8700 -4px -9px 30px inset, #ffdea7 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #da8700 -4px -9px 30px inset, #ffdea7 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffa40e -4px -9px 30px inset, #ffca74 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffa40e -4px -9px 30px inset, #ffca74 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffa40e -4px -9px 30px inset, #ffca74 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffa40e -4px -9px 30px inset, #ffca74 1px 4px 7px inset;
   color: #412800;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M2 {
   background-color: #6a80ff;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #0429ff -4px -9px 30px inset, #d0d7ff 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #0429ff -4px -9px 30px inset, #d0d7ff 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #0429ff -4px -9px 30px inset, #d0d7ff 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #0429ff -4px -9px 30px inset, #d0d7ff 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3755ff -4px -9px 30px inset, #9dabff 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3755ff -4px -9px 30px inset, #9dabff 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3755ff -4px -9px 30px inset, #9dabff 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3755ff -4px -9px 30px inset, #9dabff 1px 4px 7px inset;
   color: #00106a;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m3 {
   background-color: #9f65ff;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #6000fe -4px -9px 30px inset, #dfcbff 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #6000fe -4px -9px 30px inset, #dfcbff 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #6000fe -4px -9px 30px inset, #dfcbff 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #6000fe -4px -9px 30px inset, #dfcbff 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7f32ff -4px -9px 30px inset, #bf98ff 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7f32ff -4px -9px 30px inset, #bf98ff 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7f32ff -4px -9px 30px inset, #bf98ff 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7f32ff -4px -9px 30px inset, #bf98ff 1px 4px 7px inset;
   color: #260065;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M3 {
   background-color: #fd7cff;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fb16ff -4px -9px 30px inset, #ffe2ff 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fb16ff -4px -9px 30px inset, #ffe2ff 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fb16ff -4px -9px 30px inset, #ffe2ff 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fb16ff -4px -9px 30px inset, #ffe2ff 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fc49ff -4px -9px 30px inset, #feafff 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fc49ff -4px -9px 30px inset, #feafff 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fc49ff -4px -9px 30px inset, #feafff 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fc49ff -4px -9px 30px inset, #feafff 1px 4px 7px inset;
   color: #7a007c;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P4 {
   background-color: #ffe73a;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #d3b900 -4px -9px 30px inset, #fff3a0 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #d3b900 -4px -9px 30px inset, #fff3a0 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #d3b900 -4px -9px 30px inset, #fff3a0 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #d3b900 -4px -9px 30px inset, #fff3a0 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffe107 -4px -9px 30px inset, #ffed6d 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffe107 -4px -9px 30px inset, #ffed6d 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffe107 -4px -9px 30px inset, #ffed6d 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffe107 -4px -9px 30px inset, #ffed6d 1px 4px 7px inset;
   color: #3a3300;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .d5 {
   background-color: #5bc7c6;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #308c8b -4px -9px 30px inset, #a7e1e0 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #308c8b -4px -9px 30px inset, #a7e1e0 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #308c8b -4px -9px 30px inset, #a7e1e0 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #308c8b -4px -9px 30px inset, #a7e1e0 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3db2b1 -4px -9px 30px inset, #81d4d3 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3db2b1 -4px -9px 30px inset, #81d4d3 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3db2b1 -4px -9px 30px inset, #81d4d3 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3db2b1 -4px -9px 30px inset, #81d4d3 1px 4px 7px inset;
   color: #091a1a;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P5 {
   background-color: #ffa49d;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff4537 -4px -9px 30px inset, white 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff4537 -4px -9px 30px inset, white 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff4537 -4px -9px 30px inset, white 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff4537 -4px -9px 30px inset, white 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff756a -4px -9px 30px inset, #ffd3d0 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff756a -4px -9px 30px inset, #ffd3d0 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff756a -4px -9px 30px inset, #ffd3d0 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff756a -4px -9px 30px inset, #ffd3d0 1px 4px 7px inset;
   color: #9d0b00;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m6 {
   background-color: #627061;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #323932 -4px -9px 30px inset, #95a394 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #323932 -4px -9px 30px inset, #95a394 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #323932 -4px -9px 30px inset, #95a394 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #323932 -4px -9px 30px inset, #95a394 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #4a5549 -4px -9px 30px inset, #7a8b79 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #4a5549 -4px -9px 30px inset, #7a8b79 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #4a5549 -4px -9px 30px inset, #7a8b79 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #4a5549 -4px -9px 30px inset, #7a8b79 1px 4px 7px inset;
   color: black;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M6 {
   background-color: #b2d4a3;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
   color: #345226;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m7 {
   background-color: #d4a6ba;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #b36185 -4px -9px 30px inset, #f5ebef 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #b36185 -4px -9px 30px inset, #f5ebef 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #b36185 -4px -9px 30px inset, #f5ebef 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #b36185 -4px -9px 30px inset, #f5ebef 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #c3849f -4px -9px 30px inset, #e5c8d5 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #c3849f -4px -9px 30px inset, #e5c8d5 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #c3849f -4px -9px 30px inset, #e5c8d5 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #c3849f -4px -9px 30px inset, #e5c8d5 1px 4px 7px inset;
   color: #53283b;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
 }
 
-/* line 23, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M7 {
   background-color: #b2d4a3;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #78b45d -4px -9px 30px inset, #ecf4e9 1px 4px 7px inset;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
   color: #345226;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  border-radius: 50px;
+}
+
+/* line 35, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+.inset, .string, input, textarea {
+  -moz-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
 /* line 15, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
@@ -242,42 +322,33 @@ header h1 {
 /* line 39, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .string {
   display: block;
-  height: 70px;
+  margin: 5px 0;
+  padding: 0 30px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 43, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
-.note {
-  -webkit-transition: all;
-  -moz-transition: all;
-  -ms-transition: all;
-  -o-transition: all;
-  transition: all;
+/* line 47, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+.fret {
   display: table-cell;
   width: 60px;
   height: 60px;
   text-align: center;
   vertical-align: middle;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  -webkit-box-shadow: 0;
-  -moz-box-shadow: 0;
-  box-shadow: 0;
 }
 
-/* line 62, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 55, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .inactive {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 67, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 60, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 pos-0 {
   -webkit-box-shadow: -4px;
   -moz-box-shadow: -4px;
   box-shadow: -4px;
 }
 
-/* line 72, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 65, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete-w1 {
   position: absolute;
   top: 0;
@@ -287,7 +358,7 @@ pos-0 {
   margin: 0;
 }
 
-/* line 80, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 73, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete {
   border: 1px solid #999;
   background: #fff;
@@ -301,29 +372,25 @@ pos-0 {
   overflow-x: hidden;
 }
 
-/* line 92, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 85, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete .selected {
   background: #f0f0f0;
 }
 
-/* line 95, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 88, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete div {
   padding: 2px 5px;
   white-space: nowrap;
 }
 
-/* line 99, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 92, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete strong {
   font-weight: normal;
   color: #39f;
 }
 
-/* line 104, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 98, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input, textarea {
-  -moz-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
-  -o-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
   background: #262627;
   border: none;
   width: 330px;
@@ -334,7 +401,7 @@ input, textarea {
   padding-left: 36px;
   color: #DAD7C8;
 }
-/* line 122, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 116, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input:focus, textarea:focus {
   outline: none;
 }

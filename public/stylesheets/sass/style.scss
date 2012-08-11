@@ -37,27 +37,20 @@ header h1 {
 }
 
 .string {
+  @extend .inset;
   display: block;
-  height: 70px;
+  margin: 5px 0;
+  padding:0 30px;
+  background: rgba(0, 0, 0, 0.2);
+
 }
-.note {
-  -webkit-transition: all;
-  -moz-transition: all;
-  -ms-transition: all;
-  -o-transition: all;
-  transition: all;
+.fret {
   display: table-cell;
   width: 60px;
   height: 60px;
   text-align: center;
   vertical-align: middle;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  border-radius: 50px;
-  -webkit-box-shadow: 0;
-  -moz-box-shadow: 0;
-  box-shadow: 0;
-  //color: #dad7c8;
+  
 }
 .inactive {
   color: rgba(255,255,255,0.3)
@@ -101,9 +94,10 @@ pos-0 {
   color: #39f;
   
 }
+
 input,textarea {
   
-  @include box-shadow(0 1px rgba(white,.25),0 -1px rgba(black,.5), inset 0 1px 8px rgba(black,.25)  );  
+  @extend .inset;
 
   background: #262627;
 

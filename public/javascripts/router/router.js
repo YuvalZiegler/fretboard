@@ -14,14 +14,13 @@ var App = (function (App){
         },
 
         setInstrument : function(name){
-            // TODO: Move the instrument object into a database or create a reusable object outside this function maybe in a seperate file
             var instrument = {
                 "bass":     ["E", "A", "D", "G"],
                 "guitar":   ["E", "A", "D", "G", "B", "E"],
                 "ukulele":  ["G", "C", "E", "A"]
             }
 
-            var strings = instrument[name] || instrument["guitar"];
+            var strings = instrument[name.toLowerCase()] || instrument["guitar"];
             this.createFretboardView(strings);
         },
 

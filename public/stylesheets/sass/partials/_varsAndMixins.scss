@@ -1,6 +1,7 @@
 $baseFontSize: 16px;
 $intervalList: P1, m2, M2, m3, M3, P4, d5, P5, m6, M6, m7, M7;
-  $colors: #ff003d, #ffb741, #6a80ff, #9f65ff, #fd7cff, #ffe73a, #5BC7C6, #ffa49d, #627061, #b2d4a3, #d4a6ba, #b2d4a3;
+$colors: #ff003d, #ffb741, #6a80ff, #9f65ff, #fd7cff, #ffe73a, #5BC7C6, #ffa49d, #627061, #b2d4a3, #d4a6ba, #b2d4a3;
+// $images: 
 
 // 
 // replace text with image
@@ -23,12 +24,14 @@ $i: 1;
   .#{$interval} {
     $color:nth($colors, $i);
     background-color: $color;
-    @include box-shadow(rgba(0,0,0,0.5) 2px 2px 8px,
-             darken($color, 20) -4px -9px 30px inset, 
-             lighten($color, 20) 1px 4px 7px inset);
-
+    @include box-shadow(rgba(0,0,0,0.5) 2px 2px 8px, darken($color, 10) -4px -9px 30px inset, lighten($color, 10) 1px 4px 7px inset);
     color:darken($color, 50);
     @include text-shadow(rgba(255,255,255,0.5) 1px 1px 1px);
+    @include border-radius(50px);
   }
   $i: $i+1;
+}
+
+.inset{
+  @include box-shadow(0 1px rgba(white,.25),0 -1px rgba(black,.5), inset 0 1px 8px rgba(black,.25)  );  
 }
