@@ -4,7 +4,8 @@ var App = (function (App){
 
         routes:{
             '':  'setInstrument',
-            'instrument/:name' : 'setInstrument'
+            'instrument/:name' : 'setInstrument',
+            'tuning/:strings' : 'setTuning'
         },
         initialize:function(options){
             // Setup the event dispatcher and an octave of NoteModels
@@ -21,6 +22,11 @@ var App = (function (App){
             }
 
             var strings = instrument[name] || instrument["guitar"];
+            this.createFretboardView(strings);
+        },
+
+        setTuning : function(tuning){
+            var strings = tuning.toUpperCase().split(",");
             this.createFretboardView(strings);
         },
 

@@ -32,6 +32,9 @@ app.configure('production', function(){
 
 // Routes
 app.get('/', routes.index);
+app.get('/instrument/:name', routes.index);
+app.get('/tuning/:strings', routes.index);
+
 
 
 
