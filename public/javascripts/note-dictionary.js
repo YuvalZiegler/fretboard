@@ -51,6 +51,8 @@ var NoteDictionary = (function (){
                 'm11'		: {intervals:['P1','m3','P4','P5','m7']},
                 '13'		: {intervals:['P1','M3','P5','M6','m7']},
                 'maj13'		: {intervals:['P1','M3','P5','M6','M7']},
+                'maj7b6'    : {intervals:['P1','M3','P5','m6','M7']},
+                'm7b6'      : {intervals:['P1','m3','P5','m6','M7']},
                 'sus4'		: {intervals:['P1','P4','P5']},
                 'sus2'		: {intervals:['P1','M2','P5']},
                 '7sus4'		: {intervals:['P1','P4','P5','m7']},

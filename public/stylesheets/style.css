@@ -256,12 +256,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M7 {
-  background-color: #b2d4a3;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
-  color: #345226;
+  background-color: #a2d4e3;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7bc2d7 -4px -9px 30px inset, #c9e6ef 1px 4px 7px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7bc2d7 -4px -9px 30px inset, #c9e6ef 1px 4px 7px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7bc2d7 -4px -9px 30px inset, #c9e6ef 1px 4px 7px inset;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7bc2d7 -4px -9px 30px inset, #c9e6ef 1px 4px 7px inset;
+  color: #1f5667;
   text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -288,12 +288,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   padding: 40px;
   font-family: "Helvetica";
-  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #2f2f30), color-stop(100%, #2f2f30)), url('../images/../images/noise.png?1343850113');
-  background: -webkit-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
-  background: -moz-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
-  background: -o-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
-  background: -ms-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
-  background: linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1343850113');
+  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #2f2f30), color-stop(100%, #2f2f30)), url('../images/../images/noise.png?1344772558');
+  background: -webkit-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
+  background: -moz-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
+  background: -o-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
+  background: -ms-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
+  background: linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
 }
 
 /* line 25, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
@@ -306,7 +306,7 @@ body {
 header h1 {
   display: block;
   width: 352px;
-  height: 84px;
+  height: 105px;
   background-image: URL("../images/title.png");
   background-repeat: no-repeat;
   overflow: hidden;
@@ -316,39 +316,49 @@ header h1 {
 /* line 34, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #neck {
   display: table;
-  padding: 8px;
+  padding: 0 4px;
+  margin: 10px;
 }
 
-/* line 39, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 40, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .string {
   display: block;
   margin: 5px 0;
-  padding: 0 30px;
   background: rgba(0, 0, 0, 0.2);
 }
 
 /* line 47, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .fret {
   display: table-cell;
-  width: 60px;
+  width: 80px;
   height: 60px;
   text-align: center;
   vertical-align: middle;
+  border-right: 2px solid rgba(255, 255, 255, 0.05);
 }
 
-/* line 55, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 57, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+.note {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+/* line 65, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .inactive {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 60, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
-pos-0 {
-  -webkit-box-shadow: -4px;
-  -moz-box-shadow: -4px;
-  box-shadow: -4px;
+/* line 70, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+.pos-0 {
+  background: rgba(255, 255, 255, 0.03);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 65, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 74, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete-w1 {
   position: absolute;
   top: 0;
@@ -358,7 +368,7 @@ pos-0 {
   margin: 0;
 }
 
-/* line 73, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 82, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete {
   border: 1px solid #999;
   background: #fff;
@@ -372,24 +382,24 @@ pos-0 {
   overflow-x: hidden;
 }
 
-/* line 85, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 94, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete .selected {
   background: #f0f0f0;
 }
 
-/* line 88, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 97, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete div {
   padding: 2px 5px;
   white-space: nowrap;
 }
 
-/* line 92, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 101, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete strong {
   font-weight: normal;
   color: #39f;
 }
 
-/* line 98, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 107, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input, textarea {
   background: #262627;
   border: none;
@@ -401,7 +411,7 @@ input, textarea {
   padding-left: 36px;
   color: #DAD7C8;
 }
-/* line 116, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 125, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input:focus, textarea:focus {
   outline: none;
 }

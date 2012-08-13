@@ -33,34 +33,43 @@ header h1 {
 
 #neck {
   display: table;
-  padding: 8px
+  padding: 0 4px;
+  margin: 10px;
 }
 
 .string {
   @extend .inset;
   display: block;
   margin: 5px 0;
-  padding:0 30px;
   background: rgba(0, 0, 0, 0.2);
 
 }
 .fret {
   display: table-cell;
-  width: 60px;
+  width: 80px;
   height: 60px;
   text-align: center;
   vertical-align: middle;
+  border-right: 2px solid rgba(255, 255, 255, 0.05);
+}
   
+
+.note {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 40px;
 }
 .inactive {
   color: rgba(255,255,255,0.3)
 }
 
 
-pos-0 {
-  -webkit-box-shadow: -4px;
-  -moz-box-shadow: -4px;
-  box-shadow: -4px
+.pos-0 {
+  background: rgba(255, 255, 255, 0.03);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 .autocomplete-w1 {
   position: absolute;

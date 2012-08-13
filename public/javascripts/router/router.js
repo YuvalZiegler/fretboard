@@ -19,8 +19,8 @@ var App = (function (App){
                 "guitar":   ["E", "A", "D", "G", "B", "E"],
                 "ukulele":  ["G", "C", "E", "A"]
             }
-
-            var strings = instrument[name.toLowerCase()] || instrument["guitar"];
+            name ? name.toLowerCase() : name = "guitar"
+            var strings = instrument[name];
             this.createFretboardView(strings);
         },
 

@@ -4,16 +4,18 @@ var App = (function (App) {
         defaults:{
             name:undefined,
             notes:undefined,
-            intervals:[],
-            definition:''
+            intervals:[]
         },
         initialize:function(options){
             _.bindAll(this,'update');
             App.dispatcher.on("chordChange", this.update)
         },
-        update:function (e) {
+        update:function (e){
+            //console.log(e);
+
             var name = e.key+""+ (e.chord==="major" ? "" : e.chord );
             var int =  e.intervals;
+
             // check for flat sharp variations
             var notes =  _.map(e.notes, function(note){
                 if (note.length > 1){
@@ -26,7 +28,7 @@ var App = (function (App) {
                 return note
             })
 
-            this.set({name:name, intervals:int, notes:notes});
+            this.set({key:e.key, name:name, intervals:int, notes:notes});
         }
     });
 

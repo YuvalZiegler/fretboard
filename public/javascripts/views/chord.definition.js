@@ -1,4 +1,7 @@
+
+
 var App = (function (App) {
+
     App.ChordDefinitionView = Backbone.View.extend({
 
         el: '#chord-definition',
@@ -10,7 +13,6 @@ var App = (function (App) {
         },
 
         render: function(){
-
             var json = this.model.toJSON();
             $(this.el).html(_.template(this.template, json));
             return this;
