@@ -1,6 +1,5 @@
 var App = (function (App) {
 
-
     App.NotesCollection = Backbone.Collection.extend({
 
         dictionary:  NoteDictionary,

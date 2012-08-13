@@ -9,8 +9,7 @@ div#content
     div#chord-definition
   
 script#definitionTemplate(type="text/html")
-  <article id="definition">
-  <h1><span class='name'>Name:</span> <%=name%></h1>
-  <ul class="note-list"><span class='notes'>Notes:</span><% _.each(notes,function(n, index){print("<li class='note " + intervals[index] + " '>" + n + "</li>")})%></ul>
-  <ul class="interval-list"><span class='notes'>Intervals:</span><% _.each(intervals,function(n, index){print("<li class='note " + intervals[index] + " '>" + n + "</li>")})%></ul>
-  </article>
+  article#definition
+    h1 <%=name%>
+    ul.note-list <% _.each(notes,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>
+    ul.interval-list <% _.each(intervals,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>
