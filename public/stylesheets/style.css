@@ -288,12 +288,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   padding: 40px;
   font-family: "Helvetica";
-  background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #2f2f30), color-stop(100%, #2f2f30)), url('../images/../images/noise.png?1344772558');
-  background: -webkit-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
-  background: -moz-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
-  background: -o-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
-  background: -ms-linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
-  background: linear-gradient(top left, #2f2f30, #2f2f30), url('../images/../images/noise.png?1344772558');
+  background: url('../images/noise.png?1344772558'), -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #2f2f30), color-stop(100%, #2f2f30));
+  background: url('../images/noise.png?1344772558'), -webkit-linear-gradient(top left, #2f2f30, #2f2f30);
+  background: url('../images/noise.png?1344772558'), -moz-linear-gradient(top left, #2f2f30, #2f2f30);
+  background: url('../images/noise.png?1344772558'), -o-linear-gradient(top left, #2f2f30, #2f2f30);
+  background: url('../images/noise.png?1344772558'), -ms-linear-gradient(top left, #2f2f30, #2f2f30);
+  background: url('../images/noise.png?1344772558'), linear-gradient(top left, #2f2f30, #2f2f30);
 }
 
 /* line 25, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
@@ -414,4 +414,21 @@ input, textarea {
 /* line 125, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input:focus, textarea:focus {
   outline: none;
+}
+
+/* line 131, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+#definition > h1 {
+  color: #DAD7C8;
+  font-size: 28px;
+  padding: 0 14px 10px;
+}
+
+/* line 136, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+ul.note-list, ul.interval-list {
+  padding: 0 8px;
+}
+
+/* line 139, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+li.note {
+  margin: 4px 4px;
 }

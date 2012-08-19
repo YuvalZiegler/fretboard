@@ -19,7 +19,7 @@
 body {
   padding: 40px;
   font-family: "Helvetica";
-  @include background(linear-gradient(top left, #2f2f30, #2f2f30), image-url('../images/noise.png'));
+  @include background(image-url('noise.png'),linear-gradient(top left, #2f2f30, #2f2f30));
 }
  
 #content {
@@ -125,6 +125,19 @@ input,textarea {
   &:focus{
    outline: none;
   }
+}
+// Note Dicitionary
+
+#definition > h1 {
+color: #DAD7C8;
+font-size: 28px;
+padding: 0 14px 10px;
+}
+ul.note-list, ul.interval-list {
+  padding: 0 8px;
+}
+li.note {
+margin: 4px 4px;
 }
 
 // Include responsive Bootstrap styles
