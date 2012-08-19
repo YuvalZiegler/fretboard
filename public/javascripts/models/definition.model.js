@@ -9,11 +9,17 @@ var App = (function (App) {
         initialize:function(options){
             _.bindAll(this,'update');
             App.dispatcher.on("chordChange", this.update)
+            App.dispatcher.on("scaleChange", this.update)
         },
         update:function (e){
-            //console.log(e);
 
-            var name = e.key+""+ (e.chord==="major" ? "" : e.chord );
+            var name;
+            if (e.isScale) {
+                name = e.key+" " + e.scale ;
+            }  else    {
+                name = e.key+""+ (e.chord==="major" ? "" : e.chord );
+            }
+
             var int =  e.intervals;
 
             // check for flat sharp variations

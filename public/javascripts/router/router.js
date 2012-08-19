@@ -25,7 +25,7 @@ var App = (function (App){
         },
 
         setTuning : function(tuning){
-            var strings = tuning.toUpperCase().split(",");
+            var strings = tuning.split(",");
             this.createFretboardView(strings);
         },
 

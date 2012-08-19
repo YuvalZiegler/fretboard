@@ -1,5 +1,3 @@
-
-
 var App = (function (App) {
 
     App.ChordDefinitionView = Backbone.View.extend({

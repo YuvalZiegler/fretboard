@@ -95,7 +95,7 @@ var NoteDictionary = (function (){
         return IndexesToValues(indexes,newNotesArray);
     }
     function validateKey(key){
-        // TODO: Return error when key is not in range
+
         // test if between A-G (or a-g)
         if (key && key.length>0 && key.charAt(0).match(/^[a-gA-G]/)){
             // Test if sharp or flat

@@ -35,12 +35,12 @@ pack-js:
 	cat ./public/javascripts/models/note.model.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/models/string.model.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/models/string.collection.js >> ./public/javascripts/app.js
-	cat ./public/javascripts/models/chord.definition.model.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/models/definition.model.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/views/search.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/views/note.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/views/string.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/views/fretboard.js >> ./public/javascripts/app.js
-	cat ./public/javascripts/views/chord.definition.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/views/definition.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/main.js >> ./public/javascripts/app.js
 	uglifyjs -nc -nm --no-seqs ./public/javascripts/app.js > ./public/javascripts/app.min.js
 	
