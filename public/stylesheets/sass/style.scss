@@ -19,22 +19,30 @@
 body {
   padding: 40px;
   font-family: "Helvetica";
-  @include background(image-url('noise.png'),linear-gradient(top left, #2f2f30, #2f2f30));
+  @include background(image-url('noise.png'),linear-gradient(top, $backgroundColor, $backgroundColor));
 }
- 
+.left{
+  float:left;
+}
 #content {
-  width: 100%;
-  margin: 0 auto
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header{
+  width:100%;
+  float:left;
 }
 
 header h1 {
-  @include replaceWithImage('../images/title.png');
+  font-family: $ff1;
+  color: $font-color;
+  font-size: 79px;
+  line-height: 80px;
 }
 
 #neck {
+  clear:both;
   display: table;
-  padding: 0 4px;
-  margin: 10px;
 }
 
 .string {
@@ -46,7 +54,7 @@ header h1 {
 }
 .fret {
   display: table-cell;
-  width: 80px;
+  width: 100px;
   height: 60px;
   text-align: center;
   vertical-align: middle;
@@ -108,7 +116,7 @@ input,textarea {
   
   @extend .inset;
 
-  background: #262627;
+  background: transparent;
 
   border: none;
 
@@ -120,24 +128,41 @@ input,textarea {
   font-size: 16px;
   padding-left: 36px;
 
-  color: #DAD7C8;
+  color: $font-color;
 
   &:focus{
    outline: none;
   }
 }
 // Note Dicitionary
+#definition{
+  @extend .inset;
+  display: table;
+  float: right;
+  margin: 6px 0px;
+  padding: 10px 30px 10px 6px;
+  border-radius: 60px;
+}
+.name {
 
-#definition > h1 {
-color: #DAD7C8;
-font-size: 28px;
-padding: 0 14px 10px;
+
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.name > h1 {
+  color: $font-color;
+  font-family:$ff1;
+  font-size: 30px;
+  border-right:1px solid;
+  padding: 0px 14px 12px;
 }
 ul.note-list, ul.interval-list {
   padding: 0 8px;
 }
 li.note {
-margin: 4px 4px;
+  margin: 4px 4px;
 }
 
 // Include responsive Bootstrap styles

@@ -1,9 +1,12 @@
+$ff1: 'Sail';// 'Lovers Quarrel';
 $baseFontSize: 16px;
+$font-color:#DAD7C8;
+$backgroundColor: #222;
 $intervalList: P1, m2, M2, m3, M3, P4, d5, P5, m6, M6, m7, M7;
-$colors: #ff003d, #ffb741, #6a80ff, #9f65ff, #fd7cff, #ffe73a, #5BC7C6, #ffa49d, #627061, #b2d4a3, #d4a6ba, #a2d4e3;
+$colors: #f4223b,#ff8694,#fcbe00,#125f3a,#02ad5b,#693b7c,#995da8,#ff8111,#165caa,#4198f9,#717171,#9f9f9f;
 // $images: 
 
-// 
+//
 // replace text with image
 //
 @mixin replaceWithImage($image) {
@@ -17,16 +20,16 @@ $colors: #ff003d, #ffb741, #6a80ff, #9f65ff, #fd7cff, #ffe73a, #5BC7C6, #ffa49d,
 }
 // 
 // Traverse over interval and color lists and create classes;
-//
-
 $i: 1;
+// VER I
+
 @each $interval in $intervalList {
   .#{$interval} {
     $color:nth($colors, $i);
     background-color: $color;
-    @include box-shadow(rgba(0,0,0,0.5) 2px 2px 8px, darken($color, 10) -4px -9px 30px inset, lighten($color, 10) 1px 4px 7px inset);
-    color:darken($color, 50);
-    @include text-shadow(rgba(255,255,255,0.5) 1px 1px 1px);
+    @include box-shadow(rgba(0,0,0,0.2) 2px 2px 8px, darken($color, 10) -4px -9px 30px inset, lighten($color, 30) 1px 1px 3px inset);
+    color:lighten($color, 50);
+    //@include text-shadow(rgba(0,0,0,0.5) 1px 1px 1px);
     @include border-radius(50px);
   }
   $i: $i+1;

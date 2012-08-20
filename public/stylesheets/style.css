@@ -67,15 +67,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P1 {
-  background-color: #ff003d;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #cc0031 -4px -9px 30px inset, #ff3364 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #cc0031 -4px -9px 30px inset, #ff3364 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #cc0031 -4px -9px 30px inset, #ff3364 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #cc0031 -4px -9px 30px inset, #ff3364 1px 4px 7px inset;
-  color: black;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #f4223b;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #d80b23 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #d80b23 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #d80b23 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #d80b23 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
+  color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -84,15 +83,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m2 {
-  background-color: #ffb741;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffa40e -4px -9px 30px inset, #ffca74 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffa40e -4px -9px 30px inset, #ffca74 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffa40e -4px -9px 30px inset, #ffca74 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffa40e -4px -9px 30px inset, #ffca74 1px 4px 7px inset;
-  color: #412800;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #ff8694;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff5367 -4px -9px 30px inset, white 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff5367 -4px -9px 30px inset, white 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff5367 -4px -9px 30px inset, white 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff5367 -4px -9px 30px inset, white 1px 1px 3px inset;
+  color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -101,15 +99,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M2 {
-  background-color: #6a80ff;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3755ff -4px -9px 30px inset, #9dabff 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3755ff -4px -9px 30px inset, #9dabff 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3755ff -4px -9px 30px inset, #9dabff 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3755ff -4px -9px 30px inset, #9dabff 1px 4px 7px inset;
-  color: #00106a;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #fcbe00;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #c99800 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #c99800 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #c99800 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #c99800 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
+  color: #fffefc;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -118,15 +115,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m3 {
-  background-color: #9f65ff;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7f32ff -4px -9px 30px inset, #bf98ff 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7f32ff -4px -9px 30px inset, #bf98ff 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7f32ff -4px -9px 30px inset, #bf98ff 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7f32ff -4px -9px 30px inset, #bf98ff 1px 4px 7px inset;
-  color: #260065;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #125f3a;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0a3420 -4px -9px 30px inset, #32d888 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0a3420 -4px -9px 30px inset, #32d888 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0a3420 -4px -9px 30px inset, #32d888 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0a3420 -4px -9px 30px inset, #32d888 1px 1px 3px inset;
+  color: #88e8ba;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -135,15 +131,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M3 {
-  background-color: #fd7cff;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fc49ff -4px -9px 30px inset, #feafff 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fc49ff -4px -9px 30px inset, #feafff 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fc49ff -4px -9px 30px inset, #feafff 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #fc49ff -4px -9px 30px inset, #feafff 1px 4px 7px inset;
-  color: #7a007c;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #02ad5b;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #017b40 -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #017b40 -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #017b40 -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #017b40 -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
+  color: #b0fed9;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -152,15 +147,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P4 {
-  background-color: #ffe73a;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffe107 -4px -9px 30px inset, #ffed6d 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffe107 -4px -9px 30px inset, #ffed6d 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffe107 -4px -9px 30px inset, #ffed6d 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ffe107 -4px -9px 30px inset, #ffed6d 1px 4px 7px inset;
-  color: #3a3300;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #693b7c;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #4c2b59 -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #4c2b59 -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #4c2b59 -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #4c2b59 -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
+  color: #e0cee8;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -169,15 +163,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .d5 {
-  background-color: #5bc7c6;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3db2b1 -4px -9px 30px inset, #81d4d3 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3db2b1 -4px -9px 30px inset, #81d4d3 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3db2b1 -4px -9px 30px inset, #81d4d3 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #3db2b1 -4px -9px 30px inset, #81d4d3 1px 4px 7px inset;
-  color: #091a1a;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #995da8;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #7c4989 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #7c4989 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #7c4989 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #7c4989 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
+  color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -186,15 +179,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P5 {
-  background-color: #ffa49d;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff756a -4px -9px 30px inset, #ffd3d0 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff756a -4px -9px 30px inset, #ffd3d0 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff756a -4px -9px 30px inset, #ffd3d0 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #ff756a -4px -9px 30px inset, #ffd3d0 1px 4px 7px inset;
-  color: #9d0b00;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #ff8111;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #dd6800 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #dd6800 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #dd6800 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #dd6800 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
+  color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -203,15 +195,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m6 {
-  background-color: #627061;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #4a5549 -4px -9px 30px inset, #7a8b79 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #4a5549 -4px -9px 30px inset, #7a8b79 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #4a5549 -4px -9px 30px inset, #7a8b79 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #4a5549 -4px -9px 30px inset, #7a8b79 1px 4px 7px inset;
-  color: black;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #165caa;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #10447d -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #10447d -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #10447d -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #10447d -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
+  color: #c7def8;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -220,15 +211,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M6 {
-  background-color: #b2d4a3;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #95c480 -4px -9px 30px inset, #cfe4c6 1px 4px 7px inset;
-  color: #345226;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #4198f9;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #107df7 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #107df7 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #107df7 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #107df7 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
+  color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -237,15 +227,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m7 {
-  background-color: #d4a6ba;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #c3849f -4px -9px 30px inset, #e5c8d5 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #c3849f -4px -9px 30px inset, #e5c8d5 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #c3849f -4px -9px 30px inset, #e5c8d5 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #c3849f -4px -9px 30px inset, #e5c8d5 1px 4px 7px inset;
-  color: #53283b;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #717171;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #585858 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #585858 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #585858 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #585858 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
+  color: #f1f1f1;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -254,15 +243,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M7 {
-  background-color: #a2d4e3;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7bc2d7 -4px -9px 30px inset, #c9e6ef 1px 4px 7px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7bc2d7 -4px -9px 30px inset, #c9e6ef 1px 4px 7px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7bc2d7 -4px -9px 30px inset, #c9e6ef 1px 4px 7px inset;
-  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px, #7bc2d7 -4px -9px 30px inset, #c9e6ef 1px 4px 7px inset;
-  color: #1f5667;
-  text-shadow: rgba(255, 255, 255, 0.5) 1px 1px 1px;
+  background-color: #9f9f9f;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #868686 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #868686 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #868686 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #868686 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
+  color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   -o-border-radius: 50px;
@@ -271,8 +259,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 50px;
 }
 
-/* line 35, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
-.inset, .string, input, textarea {
+/* line 38, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+.inset, .string, input, textarea, #definition {
   -moz-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
   -o-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -288,56 +276,63 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   padding: 40px;
   font-family: "Helvetica";
-  background: url('../images/noise.png?1344772558'), -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #2f2f30), color-stop(100%, #2f2f30));
-  background: url('../images/noise.png?1344772558'), -webkit-linear-gradient(top left, #2f2f30, #2f2f30);
-  background: url('../images/noise.png?1344772558'), -moz-linear-gradient(top left, #2f2f30, #2f2f30);
-  background: url('../images/noise.png?1344772558'), -o-linear-gradient(top left, #2f2f30, #2f2f30);
-  background: url('../images/noise.png?1344772558'), -ms-linear-gradient(top left, #2f2f30, #2f2f30);
-  background: url('../images/noise.png?1344772558'), linear-gradient(top left, #2f2f30, #2f2f30);
+  background: url('../images/noise.png?1344772558'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222222), color-stop(100%, #222222));
+  background: url('../images/noise.png?1344772558'), -webkit-linear-gradient(top, #222222, #222222);
+  background: url('../images/noise.png?1344772558'), -moz-linear-gradient(top, #222222, #222222);
+  background: url('../images/noise.png?1344772558'), -o-linear-gradient(top, #222222, #222222);
+  background: url('../images/noise.png?1344772558'), -ms-linear-gradient(top, #222222, #222222);
+  background: url('../images/noise.png?1344772558'), linear-gradient(top, #222222, #222222);
 }
 
-/* line 25, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+.left {
+  float: left;
+}
+
+/* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #content {
-  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* line 30, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 31, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+header {
+  width: 100%;
+  float: left;
+}
+
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 header h1 {
-  display: block;
-  width: 352px;
-  height: 105px;
-  background-image: URL("../images/title.png");
-  background-repeat: no-repeat;
-  overflow: hidden;
-  text-indent: -9999px;
+  font-family: "Sail";
+  color: #dad7c8;
+  font-size: 79px;
+  line-height: 80px;
 }
 
-/* line 34, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 43, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #neck {
+  clear: both;
   display: table;
-  padding: 0 4px;
-  margin: 10px;
 }
 
-/* line 40, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 48, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .string {
   display: block;
   margin: 5px 0;
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 47, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 55, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .fret {
   display: table-cell;
-  width: 80px;
+  width: 100px;
   height: 60px;
   text-align: center;
   vertical-align: middle;
   border-right: 2px solid rgba(255, 255, 255, 0.05);
 }
 
-/* line 57, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 65, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .note {
   display: inline-block;
   width: 40px;
@@ -347,18 +342,18 @@ header h1 {
   line-height: 40px;
 }
 
-/* line 65, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 73, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .inactive {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 70, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 78, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .pos-0 {
   background: rgba(255, 255, 255, 0.03);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 74, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 82, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete-w1 {
   position: absolute;
   top: 0;
@@ -368,7 +363,7 @@ header h1 {
   margin: 0;
 }
 
-/* line 82, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 90, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete {
   border: 1px solid #999;
   background: #fff;
@@ -382,26 +377,26 @@ header h1 {
   overflow-x: hidden;
 }
 
-/* line 94, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 102, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete .selected {
   background: #f0f0f0;
 }
 
-/* line 97, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 105, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete div {
   padding: 2px 5px;
   white-space: nowrap;
 }
 
-/* line 101, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 109, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete strong {
   font-weight: normal;
   color: #39f;
 }
 
-/* line 107, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 115, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input, textarea {
-  background: #262627;
+  background: transparent;
   border: none;
   width: 330px;
   height: 30px;
@@ -409,26 +404,43 @@ input, textarea {
   margin: 10px;
   font-size: 16px;
   padding-left: 36px;
-  color: #DAD7C8;
+  color: #dad7c8;
 }
-/* line 125, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 133, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input:focus, textarea:focus {
   outline: none;
 }
 
-/* line 131, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
-#definition > h1 {
-  color: #DAD7C8;
-  font-size: 28px;
-  padding: 0 14px 10px;
+/* line 138, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+#definition {
+  display: table;
+  float: right;
+  margin: 6px 0px;
+  padding: 10px 30px 10px 6px;
+  border-radius: 60px;
 }
 
-/* line 136, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 146, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+.name {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 154, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+.name > h1 {
+  color: #dad7c8;
+  font-family: "Sail";
+  font-size: 30px;
+  border-right: 1px solid;
+  padding: 0px 14px 12px;
+}
+
+/* line 161, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 ul.note-list, ul.interval-list {
   padding: 0 8px;
 }
 
-/* line 139, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 164, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 li.note {
   margin: 4px 4px;
 }

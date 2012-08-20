@@ -1,15 +1,17 @@
 div#content
+
   header
-    h1= title
+    div.left
+      h1= title
+      input#search(type="text", name="search", placeholder="Enter scale or chord name")
+    div#chord-definition
 
   div#chord-navigator
-    input#search(type="text", name="search", placeholder="Enter scale or chord name")
     #neck
-  div#dictionary
-    div#chord-definition
   
 script#definitionTemplate(type="text/html")
   article#definition
-    h1 <%=name%>
+    div.name
+      h1 <%=name%>
     ul.note-list <% _.each(notes,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>
     ul.interval-list <% _.each(intervals,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>
