@@ -1,3 +1,4 @@
+/*global Backbone _ NoteDictionary */
 var App = (function (App) {
     App.SearchView = Backbone.View.extend({
         el: '#search',
@@ -9,12 +10,11 @@ var App = (function (App) {
         initialize: function (){
             _.bindAll(this);
             this.router = this.options.router;
-            $(this.el).autocomplete({lookup:NoteDictionary.getAllDefinitions(), onSelect: this.handleEnter })
+            $(this.el).autocomplete({lookup:NoteDictionary.getAllDefinitions(), onSelect: this.handleEnter });
             $(this.el).focus();
         },
 
         handleEnter : function (keyEvent) {
-
             if ($(this.el).val()){
                   try {
                         App.notesCollection.setActiveNotes($(this.el).val());
@@ -23,6 +23,6 @@ var App = (function (App) {
                   }
             }
         }
-    })
+    });
     return App;
 })(App || {});

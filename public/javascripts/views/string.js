@@ -1,3 +1,4 @@
+/*global Backbone _ NoteDictionary */
 var App = (function (App) {
 
     App.StringView = Backbone.View.extend({
@@ -18,10 +19,10 @@ var App = (function (App) {
             for (var i=0; i<l; i++){
                 // creating views for each note
                 var n = new App.NoteView({note:this.model.attributes.octave[i], stringPosition:i});
-                $(this.el).append(n.el)
+                $(this.el).append(n.el);
             }
 
         }
-    })
+    });
     return App;
 })(App || {});

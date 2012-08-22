@@ -1,3 +1,4 @@
+/*global Backbone _ NoteDictionary */
 var App = (function (App) {
     App.FretboardView = Backbone.View.extend({
         el:'#neck',
@@ -12,6 +13,6 @@ var App = (function (App) {
             }
 
         }
-    })
+    });
     return App;
 })(App || {});

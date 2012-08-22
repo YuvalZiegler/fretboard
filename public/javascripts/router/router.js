@@ -1,3 +1,4 @@
+/*global Backbone _ NoteDictionary */
 var App = (function (App){
 
     App.Router = Backbone.Router.extend({
@@ -18,8 +19,8 @@ var App = (function (App){
                 "bass":     ["E", "A", "D", "G"],
                 "guitar":   ["E", "A", "D", "G", "B", "E"],
                 "ukulele":  ["G", "C", "E", "A"]
-            }
-            name ? name.toLowerCase() : name = "guitar"
+            };
+            name = name ? name.toLowerCase() : "guitar";
             var strings = instrument[name];
             this.createFretboardView(strings);
         },
@@ -34,7 +35,7 @@ var App = (function (App){
             App.chordDefinitionView = App.chordDefinitionView || new App.ChordDefinitionView({model: new App.ChordDefinitionModel()});
             App.stringsCollection = App.stringsCollection || new App.StringCollection([]);
             App.stringsCollection.reset();
-            App.stringsCollection.initialize(strings)
+            App.stringsCollection.initialize(strings);
             App.fretboard =  App.fretboard || new App.FretboardView();
         }
     });

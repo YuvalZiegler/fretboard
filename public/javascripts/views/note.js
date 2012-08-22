@@ -1,8 +1,5 @@
-/**
- * Author: YZ
- * Date: 4/6/12
- * Time: 11:44 AM
- */
+/*global Backbone _ NoteDictionary */
+
 var App = (function (App){
 
     App.NoteView = Backbone.View.extend({
@@ -10,16 +7,16 @@ var App = (function (App){
         className:'fret',
 
         initialize:function(options){
-            _.bindAll(this,'render')
+            _.bindAll(this,'render');
             this.note = options.note;
             this.stringPosition = options.stringPosition;
-            this.model = App.notesCollection.getModel(this.note)
+            this.model = App.notesCollection.getModel(this.note);
             this.model.bind('change', this.render);
             // set fret classes
             $(this.el)
                 .html('<div class="note inactive">' + this.model.attributes.note + '</div>')
                 .removeClass()
-                .addClass('fret ' + "pos-"+this.stringPosition)
+                .addClass('fret ' + "pos-"+this.stringPosition);
             this.render();
         },
 
@@ -30,12 +27,12 @@ var App = (function (App){
               
             } else {
                 $(this.el)
-                .html('<div class="note inactive">' + this.model.attributes.note + '</div>')
+                .html('<div class="note inactive">' + this.model.attributes.note + '</div>');
                
             }
 
 
         }
-    })
+    });
     return App;
 })(App||{});

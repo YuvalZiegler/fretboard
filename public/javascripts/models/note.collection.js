@@ -1,3 +1,4 @@
+/*global Backbone _ NoteDictionary */
 var App = (function (App) {
 
     App.NotesCollection = Backbone.Collection.extend({
@@ -13,18 +14,18 @@ var App = (function (App) {
                 this.add(new App.NoteModel({note:octave[i]}));
             }
             _.bindAll(this,'activate');
-            App.dispatcher.on("chordChange", this.activate)
-            App.dispatcher.on("scaleChange", this.activate)
+            App.dispatcher.on("chordChange", this.activate);
+            App.dispatcher.on("scaleChange", this.activate);
         },
 
         getModel:function(note){
-            return _.find( this.models, function(t){ return t.attributes.note===note})
+            return _.find( this.models, function(t){ return t.attributes.note===note;});
         },
 
         activate: function(e){
             _.each(this.models, function(model){
                 model.reset();
-            })
+            });
 
             for (var i=0, l = e.notes.length; i<l; i++){
                 var note= e.notes[i];
@@ -42,18 +43,18 @@ var App = (function (App) {
             var result = this.dictionary.parseQuery(query);
             if(result && result.notes.length!==0) {
                 if (result.notes[0].length>1){
-                    var c = result.notes[0].charAt(1)
+                    var c = result.notes[0].charAt(1);
                     if (c ==="#"){
-                        this.flatNeutralSharp = 1
+                        this.flatNeutralSharp = 1;
                     } else {
-                        this.flatNeutralSharp = -1
+                        this.flatNeutralSharp = -1;
                     }
 
                 } else {
-                    flatNeutralSharp = 0
+                    this.flatNeutralSharp = 0;
                 }
                 var e = result.isScale ? "scaleChange" : "chordChange";
-                App.dispatcher.trigger(e,result)
+                App.dispatcher.trigger(e,result);
             }
 
         }

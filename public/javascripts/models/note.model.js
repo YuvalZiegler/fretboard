@@ -1,3 +1,4 @@
+/*global Backbone */
 var App = (function (App) {
 
     App.NoteModel = Backbone.Model.extend({
