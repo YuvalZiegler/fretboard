@@ -24,8 +24,6 @@ css-to-stylus:
 autosave:
 	node /usr/local/lib/node_modules/autosave/bin/autosave
 
-graph:
-	madge --image graph.png ./node_modules
 
 pack-js:
 	cat ./public/javascripts/underscore.config.js > ./public/javascripts/app.js

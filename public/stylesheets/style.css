@@ -69,11 +69,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P1 {
-  background-color: #f4223b;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #d80b23 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #d80b23 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #d80b23 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #d80b23 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
+  background-color: #c00a1f;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f10c27 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f10c27 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f10c27 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f10c27 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
   color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -85,11 +85,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m2 {
-  background-color: #ff8694;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff5367 -4px -9px 30px inset, white 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff5367 -4px -9px 30px inset, white 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff5367 -4px -9px 30px inset, white 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff5367 -4px -9px 30px inset, white 1px 1px 3px inset;
+  background-color: #ff3950;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff6c7d -4px -9px 30px inset, white 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff6c7d -4px -9px 30px inset, white 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff6c7d -4px -9px 30px inset, white 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff6c7d -4px -9px 30px inset, white 1px 1px 3px inset;
   color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -101,11 +101,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M2 {
-  background-color: #fcbe00;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #c99800 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #c99800 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #c99800 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #c99800 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
+  background-color: #b08400;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #e3ab00 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #e3ab00 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #e3ab00 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #e3ab00 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
   color: #fffefc;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -117,11 +117,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m3 {
-  background-color: #125f3a;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0a3420 -4px -9px 30px inset, #32d888 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0a3420 -4px -9px 30px inset, #32d888 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0a3420 -4px -9px 30px inset, #32d888 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0a3420 -4px -9px 30px inset, #32d888 1px 1px 3px inset;
+  background-color: #061f13;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0e4a2d -4px -9px 30px inset, #32d888 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0e4a2d -4px -9px 30px inset, #32d888 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0e4a2d -4px -9px 30px inset, #32d888 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0e4a2d -4px -9px 30px inset, #32d888 1px 1px 3px inset;
   color: #88e8ba;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -133,11 +133,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M3 {
-  background-color: #02ad5b;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #017b40 -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #017b40 -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #017b40 -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #017b40 -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
+  background-color: #016133;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #02944e -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #02944e -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #02944e -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #02944e -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
   color: #b0fed9;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -149,11 +149,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P4 {
-  background-color: #693b7c;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #4c2b59 -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #4c2b59 -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #4c2b59 -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #4c2b59 -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
+  background-color: #3d2248;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #5a336b -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #5a336b -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #5a336b -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #5a336b -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
   color: #e0cee8;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -165,11 +165,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .d5 {
-  background-color: #995da8;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #7c4989 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #7c4989 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #7c4989 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #7c4989 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
+  background-color: #6d4078;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #8b5299 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #8b5299 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #8b5299 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #8b5299 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
   color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -181,11 +181,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P5 {
-  background-color: #ff8111;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #dd6800 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #dd6800 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #dd6800 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #dd6800 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
+  background-color: #c45c00;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f77400 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f77400 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f77400 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f77400 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
   color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -197,11 +197,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m6 {
-  background-color: #165caa;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #10447d -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #10447d -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #10447d -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #10447d -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
+  background-color: #0d3766;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #135093 -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #135093 -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #135093 -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #135093 -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
   color: #c7def8;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -213,11 +213,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M6 {
-  background-color: #4198f9;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #107df7 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #107df7 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #107df7 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #107df7 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
+  background-color: #0771e6;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #288bf8 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #288bf8 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #288bf8 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #288bf8 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
   color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -229,11 +229,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m7 {
-  background-color: #717171;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #585858 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #585858 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #585858 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #585858 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
+  background-color: #4b4b4b;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #646464 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #646464 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #646464 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #646464 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
   color: #f1f1f1;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -245,11 +245,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 27, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M7 {
-  background-color: #9f9f9f;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #868686 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #868686 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
-  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #868686 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #868686 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
+  background-color: #797979;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #929292 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #929292 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #929292 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
+  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #929292 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
   color: white;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -426,7 +426,7 @@ input:focus, textarea:focus {
   vertical-align: middle;
 }
 
-/* line 154, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 151, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .name > h1 {
   color: #dad7c8;
   font-family: "Sail";
@@ -435,12 +435,12 @@ input:focus, textarea:focus {
   padding: 0px 14px 12px;
 }
 
-/* line 161, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 158, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 ul.note-list, ul.interval-list {
   padding: 0 8px;
 }
 
-/* line 164, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 161, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 li.note {
   margin: 4px 4px;
 }
