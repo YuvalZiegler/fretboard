@@ -6,10 +6,13 @@ var App = (function (App) {
             key:undefined,
             octave:[]
         },
-        initialize:function(){
+        initialize:function(options){
 
-            this.set({key: this.attributes.key}, {silent:true});
-            this.set({octave:NoteDictionary.parseQuery(this.attributes.key+" chromatic").notes}, {silent:true});
+            this.tuneString(options.key, true);
+
+        },
+        tuneString:function(key, silent){
+            this.set({key:key, octave:NoteDictionary.parseQuery(key+" chromatic").notes}, {silent:silent});
         }
 
     });

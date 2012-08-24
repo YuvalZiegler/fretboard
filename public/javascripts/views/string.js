@@ -5,27 +5,28 @@ var App = (function (App) {
 
         tagName:'div',
         className:'string',
+        noteModels:[],
 
         initialize:function(){
-            _.bindAll(this,'render');
+            _.bindAll(this,'render','update');
 
+            this.model.bind('change', this.update);
             this.render();
         },
 
         render: function(){
 
-
-            var l = this.model.attributes.octave.length;
-
-            for (var i=0; i<l; i++){
+            for (var i= 0; i<12; i++){
                 // creating views for each note
                 var n = new App.NoteView({note:this.model.attributes.octave[i], stringPosition:i});
-
                 $(this.el).append(n.el);
             }
 
         },
         update: function(){
+            $(this.el).children().remove();
+            this.render();
+
 
         }
     });

@@ -6,7 +6,7 @@ var App = (function (App) {
 
             strings.reverse();
             for (var i=0, l=strings.length; i<l; i++){
-                console.log(strings[i]);
+
                 this.add(new App.StringModel({key:strings[i]}));
             }
         }
