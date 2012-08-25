@@ -8,6 +8,7 @@
 
 // Project: https://github.com/thomas-mcdonald/bootstrap-sass/
 // Need to configure a variable or two? Simply define the value of the variable you want to change before importing Bootstrap.
+@import "partials/_font-awesome.scss";
 @import "partials/_varsAndMixins";
 ///// I gather this file is a starting point for the project.
 //@import "bootstrap";
@@ -19,6 +20,7 @@
 body {
   padding: 40px;
   font-family: "Helvetica";
+  color:$font-color;
   @include background(image-url('noise.png'),linear-gradient(top, $backgroundColor, $backgroundColor));
 }
 .left{
@@ -115,11 +117,8 @@ header h1 {
 input,textarea {
   
   @extend .inset;
-
   background: transparent;
-
   border: none;
-
   width: 330px;
   height: 30px;
 
