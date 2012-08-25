@@ -1439,7 +1439,7 @@ header h1 {
 }
 
 /* line 45, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
-#neck {
+#fretboard {
   clear: both;
   display: table;
 }
