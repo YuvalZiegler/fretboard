@@ -8,8 +8,8 @@ var App = (function (App) {
         UI: $('#stringUITemplate'),
         events: {
             "click .remove": "destroy",
-            "click .tuneUp": "tuneUp",
-            "click .tuneDown": "tuneDown"
+            "click .shiftRight": "tuneUp",
+            "click .shiftLeft": "tuneDown"
         },
 
         initialize:function(){

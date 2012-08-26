@@ -1,8 +1,5 @@
 test:
-	@./node_modules/.bin/mocha -R spec
-
-autosave:
-	node /usr/local/lib/node_modules/autosave/bin/autosave
+	@./node_modules/mocha/bin/mocha -R spec
 
 
 pack-js:
@@ -23,4 +20,4 @@ pack-js:
 	uglifyjs -nc -nm --no-seqs ./public/javascripts/app.js > ./public/javascripts/app.min.js
 	
 		
-.PHONY: test autosave pack-js
+.PHONY: test pack-js
