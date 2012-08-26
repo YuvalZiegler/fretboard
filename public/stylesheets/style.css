@@ -1402,6 +1402,13 @@ ul.icons li .icon-large:before {
 }
 
 /* line 20, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+div.stringUI a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.2);
+  padding: 0 5px;
+}
+
+/* line 26, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 body {
   padding: 40px;
   font-family: "Helvetica";
@@ -1413,24 +1420,24 @@ body {
   background: url('../images/noise.png?1345902527'), linear-gradient(top, #222222, #222222);
 }
 
-/* line 26, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 32, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .left {
   float: left;
 }
 
-/* line 29, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 35, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 #content {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
-/* line 33, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 39, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 header {
   width: 100%;
   float: left;
 }
 
-/* line 38, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 44, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 header h1 {
   font-family: "Sail";
   color: #dad7c8;
@@ -1438,30 +1445,41 @@ header h1 {
   line-height: 80px;
 }
 
-/* line 45, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 51, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 #fretboard {
   clear: both;
   display: table;
+  width: 100%;
 }
 
-/* line 50, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 57, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .string {
   display: block;
   margin: 5px 0;
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* line 57, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 64, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .fret {
   display: table-cell;
-  width: 100px;
+  width: 90px;
   height: 60px;
   text-align: center;
   vertical-align: middle;
   border-right: 2px solid rgba(255, 255, 255, 0.05);
 }
 
-/* line 67, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 73, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+.stringUI {
+  display: table-cell;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+/* line 82, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .note {
   display: inline-block;
   width: 40px;
@@ -1471,18 +1489,18 @@ header h1 {
   line-height: 40px;
 }
 
-/* line 75, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 90, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .inactive {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 80, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 95, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .pos-0 {
   background: rgba(255, 255, 255, 0.03);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 84, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 99, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete-w1 {
   position: absolute;
   top: 0;
@@ -1492,7 +1510,7 @@ header h1 {
   margin: 0;
 }
 
-/* line 92, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 107, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete {
   border: 1px solid #999;
   background: #fff;
@@ -1506,24 +1524,24 @@ header h1 {
   overflow-x: hidden;
 }
 
-/* line 104, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 119, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete .selected {
   background: #f0f0f0;
 }
 
-/* line 107, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 122, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete div {
   padding: 2px 5px;
   white-space: nowrap;
 }
 
-/* line 111, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 126, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete strong {
   font-weight: normal;
   color: #39f;
 }
 
-/* line 117, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 132, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 input, textarea {
   background: transparent;
   border: none;
@@ -1535,12 +1553,12 @@ input, textarea {
   padding-left: 36px;
   color: #dad7c8;
 }
-/* line 132, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 147, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 input:focus, textarea:focus {
   outline: none;
 }
 
-/* line 137, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 152, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 #definition {
   display: table;
   float: right;
@@ -1549,13 +1567,13 @@ input:focus, textarea:focus {
   border-radius: 60px;
 }
 
-/* line 145, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 160, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .name {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 150, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 165, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 .name > h1 {
   color: #dad7c8;
   font-family: "Sail";
@@ -1564,12 +1582,12 @@ input:focus, textarea:focus {
   padding: 0px 14px 12px;
 }
 
-/* line 157, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 172, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 ul.note-list, ul.interval-list {
   padding: 0 8px;
 }
 
-/* line 160, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 175, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
 li.note {
   margin: 4px 4px;
 }

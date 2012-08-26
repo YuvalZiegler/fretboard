@@ -17,6 +17,12 @@
    box-sizing: border-box;
 }
 
+div.stringUI a {
+
+  text-decoration: none;
+  color:rgba(255,255,255,0.2);
+  padding:0 5px;
+}
 body {
   padding: 40px;
   font-family: "Helvetica";
@@ -27,7 +33,7 @@ body {
   float:left;
 }
 #content {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 header{
@@ -45,6 +51,7 @@ header h1 {
 #fretboard {
   clear:both;
   display: table;
+  width: 100%;
 }
 
 .string {
@@ -56,13 +63,21 @@ header h1 {
 }
 .fret {
   display: table-cell;
-  width: 100px;
+  width: 90px;
   height: 60px;
   text-align: center;
   vertical-align: middle;
   border-right: 2px solid rgba(255, 255, 255, 0.05);
 }
-  
+
+.stringUI{
+  display: table-cell;
+  width: 120px;
+  height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 2px solid rgba(255, 255, 255, 0.05);
+}
 
 .note {
   display: inline-block;
