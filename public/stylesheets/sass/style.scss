@@ -17,12 +17,6 @@
    box-sizing: border-box;
 }
 
-div.stringUI a {
-
-  text-decoration: none;
-  color:rgba(255,255,255,0.2);
-  padding:0 5px;
-}
 body {
   padding: 40px;
   font-family: "Helvetica";
@@ -59,6 +53,7 @@ header h1 {
   display: block;
   margin: 5px 0;
   background: rgba(0, 0, 0, 0.2);
+  @include border-radius(20px 0 0 20px);
 
 }
 .fret {
@@ -176,5 +171,14 @@ li.note {
   margin: 4px 4px;
 }
 
+div.stringUI a {
+  font-size: 19px;
+  text-decoration: none;
+  color:rgba(255,255,255,0.2);
+  padding:0 5px;
+  &:hover{
+    color:$font-color;
+  }
+}
 // Include responsive Bootstrap styles
 //@import "bootstrap-responsive";

@@ -5,12 +5,15 @@ var App = (function (App) {
 
         tagName:'div',
         className:'string',
-        noteModels:[],
-
+        UI: $('#stringUITemplate'),
+        events: {
+            "click .remove": "destroy",
+            "click .tuneUp": "tuneUp",
+            "click .tuneDown": "tuneDown"
+        },
 
         initialize:function(){
             _.bindAll(this,'render','update');
-
             this.model.bind('change', this.update);
 
             this.render();
@@ -18,16 +21,12 @@ var App = (function (App) {
         },
 
         render: function(){
-            $(this.el).append("<div class='stringUI locked'>" +
-                "<a href='javascript:void(0)' rel='add' ><span class='icon-plus-sign'></span></a>" +
-                "<a href='javascript:void(0)' rel='delete' ><span class='icon-remove-sign'></span></a>" +
-                "<a href='javascript:void(0)' rel='tuneDown' ><span class='icon-circle-arrow-left'></span></a>" +
-                "<a href='javascript:void(0)' rel='tuneUp'><span class='icon-circle-arrow-right'></span></a>" +
-                "</div>");
-
+            console.log(this.model);
+            console.log("render")
+            // creating string UI
+            $(this.el).append(this.UI.html());
+            // creating views for each note
             for (var i= 0; i<12; i++){
-
-                // creating views for each note
                 var n = new App.NoteView({note:this.model.attributes.octave[i], stringPosition:i});
                 $(this.el).append(n.el);
             }
@@ -37,7 +36,20 @@ var App = (function (App) {
         update: function(){
             $(this.el).empty();
             this.render();
+        },
 
+        destroy:function(){
+          this.remove();
+        },
+
+        tuneUp:function(){
+            var octave = this.model.get('octave');
+            this.model.tuneString(octave[1]);
+        },
+
+        tuneDown:function(){
+            var octave = this.model.get('octave');
+            this.model.tuneString(octave[octave.length-1]);
         }
     });
     return App;
