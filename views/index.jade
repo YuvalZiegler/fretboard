@@ -3,15 +3,10 @@ div#content
   header
     div.left
       h1= title
-      input#search(type="text", name="search", placeholder="Enter scale or chord name")
+      input#search(type="text", name="search", placeholder="Enter scale or chord name", class="icon-search")
     div#chord-definition
 
   div#chord-navigator
     #fretboard
   
-script#definitionTemplate(type="text/html")
-  article#definition
-    div.name
-      h1 <%=name%>
-    ul.note-list <% _.each(notes,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>
-    ul.interval-list <% _.each(intervals,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>
+include definition.template.jade
