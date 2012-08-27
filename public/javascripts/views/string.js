@@ -8,8 +8,9 @@ var App = (function (App) {
         UI: $('#stringUITemplate'),
         events: {
             "click .remove": "destroy",
-            "click .shiftRight": "tuneUp",
-            "click .shiftLeft": "tuneDown"
+            "click .shiftRight": "tuneDown",
+            "click .shiftLeft": "tuneUp",
+            "click .add": "addString"
         },
 
         initialize:function(){
@@ -21,8 +22,6 @@ var App = (function (App) {
         },
 
         render: function(){
-            console.log(this.model);
-            console.log("render")
             // creating string UI
             $(this.el).append(this.UI.html());
             // creating views for each note
@@ -31,7 +30,6 @@ var App = (function (App) {
                 $(this.el).append(n.el);
             }
 
-
         },
         update: function(){
             $(this.el).empty();
@@ -39,7 +37,8 @@ var App = (function (App) {
         },
 
         destroy:function(){
-          this.remove();
+            this.model.collection.remove(this.model);
+
         },
 
         tuneUp:function(){
@@ -50,6 +49,11 @@ var App = (function (App) {
         tuneDown:function(){
             var octave = this.model.get('octave');
             this.model.tuneString(octave[octave.length-1]);
+        },
+
+        addString:function(){
+            var index = _.indexOf(this.model.collection.models,this.model);
+            this.model.collection.add(new App.StringModel({key:"C"}), {at:index+1});
         }
     });
     return App;

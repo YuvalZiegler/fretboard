@@ -5,7 +5,9 @@ var App = (function (App) {
         el:'#fretboard',
 
         initialize:function(options){
-            _.bindAll(this, 'render');
+            _.bindAll(this, 'render', 'update');
+            App.stringsCollection.on('remove', this.update);
+            App.stringsCollection.on('add', this.update);
             this.render();
         },
 
@@ -13,8 +15,12 @@ var App = (function (App) {
             for (var i=0, l = App.stringsCollection.models.length; i<l ; i++ ){
                 var string = new App.StringView({model:App.stringsCollection.models[i]});
                 $(this.el).append(string.el);
-
             }
+        },
+        update: function(e){
+            $(this.el).empty();
+            this.render();
+            console.log("update function triggered in FretBoard view",e);
         }
 
 
