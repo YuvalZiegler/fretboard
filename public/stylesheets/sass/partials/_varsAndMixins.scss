@@ -35,8 +35,8 @@ $i: 1;
 @each $interval in $intervalList {
   .#{$interval} {
     $color:nth($colors, $i);
-    background-color: darken($color, 15);//$color;
-    @include box-shadow(rgba(0,0,0,0.2) 2px 2px 8px, darken($color, 5) -4px -9px 30px inset, lighten($color, 30) 1px 1px 3px inset);
+    background-color: $color;//darken($color, 15);//$color;
+    //@include box-shadow(rgba(0,0,0,0.2) 2px 2px 8px, darken($color, 5) -4px -9px 30px inset, lighten($color, 30) 1px 1px 3px inset);
     color:lighten($color, 50);
     //@include text-shadow(rgba(0,0,0,0.5) 1px 1px 1px);
     @include border-radius(50px);

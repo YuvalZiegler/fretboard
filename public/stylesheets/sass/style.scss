@@ -21,7 +21,7 @@ body {
   padding: 40px;
   font-family: "Helvetica";
   color:$font-color;
-  @include background(image-url('noise.png'),linear-gradient(top, $backgroundColor, $backgroundColor));
+  @include background(image-url('assault.png'),linear-gradient(top, $backgroundColor, $backgroundColor));
 }
 .left{
   float:left;

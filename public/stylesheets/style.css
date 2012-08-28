@@ -1223,10 +1223,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P1 {
-  background-color: #c00a1f;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f10c27 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f10c27 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f10c27 -4px -9px 30px inset, #fbb4bc 1px 1px 3px inset;
+  background-color: #f4223b;
   color: white;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1237,10 +1234,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m2 {
-  background-color: #ff3950;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff6c7d -4px -9px 30px inset, white 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff6c7d -4px -9px 30px inset, white 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #ff6c7d -4px -9px 30px inset, white 1px 1px 3px inset;
+  background-color: #ff8694;
   color: white;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1251,10 +1245,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M2 {
-  background-color: #b08400;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #e3ab00 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #e3ab00 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #e3ab00 -4px -9px 30px inset, #ffe596 1px 1px 3px inset;
+  background-color: #fcbe00;
   color: #fffefc;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1265,10 +1256,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m3 {
-  background-color: #061f13;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0e4a2d -4px -9px 30px inset, #32d888 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0e4a2d -4px -9px 30px inset, #32d888 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #0e4a2d -4px -9px 30px inset, #32d888 1px 1px 3px inset;
+  background-color: #125f3a;
   color: #88e8ba;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1279,10 +1267,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M3 {
-  background-color: #016133;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #02944e -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #02944e -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #02944e -4px -9px 30px inset, #4bfda8 1px 1px 3px inset;
+  background-color: #02ad5b;
   color: #b0fed9;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1293,10 +1278,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P4 {
-  background-color: #3d2248;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #5a336b -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #5a336b -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #5a336b -4px -9px 30px inset, #b589c7 1px 1px 3px inset;
+  background-color: #693b7c;
   color: #e0cee8;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1307,10 +1289,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .d5 {
-  background-color: #6d4078;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #8b5299 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #8b5299 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #8b5299 -4px -9px 30px inset, #d8c1dd 1px 1px 3px inset;
+  background-color: #995da8;
   color: white;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1321,10 +1300,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P5 {
-  background-color: #c45c00;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f77400 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f77400 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #f77400 -4px -9px 30px inset, #ffd2aa 1px 1px 3px inset;
+  background-color: #ff8111;
   color: white;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1335,10 +1311,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m6 {
-  background-color: #0d3766;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #135093 -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #135093 -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #135093 -4px -9px 30px inset, #6da9ec 1px 1px 3px inset;
+  background-color: #165caa;
   color: #c7def8;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1349,10 +1322,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M6 {
-  background-color: #0771e6;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #288bf8 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #288bf8 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #288bf8 -4px -9px 30px inset, #d5e8fe 1px 1px 3px inset;
+  background-color: #4198f9;
   color: white;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1363,10 +1333,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m7 {
-  background-color: #4b4b4b;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #646464 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #646464 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #646464 -4px -9px 30px inset, #bebebe 1px 1px 3px inset;
+  background-color: #717171;
   color: #f1f1f1;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1377,10 +1344,7 @@ ul.icons li .icon-large:before {
 
 /* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M7 {
-  background-color: #797979;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #929292 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
-  -moz-box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #929292 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
-  box-shadow: rgba(0, 0, 0, 0.2) 2px 2px 8px, #929292 -4px -9px 30px inset, #ebebeb 1px 1px 3px inset;
+  background-color: #9f9f9f;
   color: white;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
@@ -1406,11 +1370,11 @@ body {
   padding: 40px;
   font-family: "Helvetica";
   color: #dad7c8;
-  background: url('../images/noise.png?1344772558'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222222), color-stop(100%, #222222));
-  background: url('../images/noise.png?1344772558'), -webkit-linear-gradient(top, #222222, #222222);
-  background: url('../images/noise.png?1344772558'), -moz-linear-gradient(top, #222222, #222222);
-  background: url('../images/noise.png?1344772558'), -o-linear-gradient(top, #222222, #222222);
-  background: url('../images/noise.png?1344772558'), linear-gradient(top, #222222, #222222);
+  background: url('../images/assault.png?1339701544'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222222), color-stop(100%, #222222));
+  background: url('../images/assault.png?1339701544'), -webkit-linear-gradient(top, #222222, #222222);
+  background: url('../images/assault.png?1339701544'), -moz-linear-gradient(top, #222222, #222222);
+  background: url('../images/assault.png?1339701544'), -o-linear-gradient(top, #222222, #222222);
+  background: url('../images/assault.png?1339701544'), linear-gradient(top, #222222, #222222);
 }
 
 /* line 26, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
