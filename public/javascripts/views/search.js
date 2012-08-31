@@ -8,21 +8,31 @@ var App = (function (App) {
         },
 
         initialize: function (){
-            _.bindAll(this);
+            _.bindAll(this, 'render','handleEnter');
             this.router = this.options.router;
             $(this.el).autocomplete({lookup:NoteDictionary.getAllDefinitions(), onSelect: this.handleEnter });
+            $(this.el).on('keydown', this.handleEnter);
+            App.dispatcher.on("chordChange", this.render);
+            App.dispatcher.on("scaleChange", this.render);
             $(this.el).focus();
         },
 
-        handleEnter : function (keyEvent) {
+        handleEnter : function (event) {
+
             if ($(this.el).val()){
                   try {
                         App.notesCollection.setActiveNotes($(this.el).val());
                   } catch (e) {
-                       //console.log('App.dispatcher.trigger("onError",e)', e)
+                       console.log('App.dispatcher.trigger("onError",e)', e);
                   }
             }
+        },
+        render:function(e){
+            if (e.query!== $(this.el).val()) {
+                $(this.el).val(e.query);
+            }
         }
+
     });
     return App;
 })(App || {});

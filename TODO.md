@@ -3,8 +3,8 @@
 - adding strings re-renders all strings
  
 # UI
+* Note Selector
 - Note Name / Interval Name / Freq - switch
-- Note Selector
 - Scale / Chord Switch
 - Free form mode (turn intervals on to create custom chords) (?)
 - Save & Share Options
@@ -22,6 +22,6 @@
 - Smart Vs Hard Coded ??? - MAYBE NOT
 
 # Design
-* Style autocomplete
+
 - design UI elements
 - create interval font(?)

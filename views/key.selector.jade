@@ -1,0 +1,2 @@
+script#keySelector(type="text/html")
+  ul.note-list <% _.each(notes,function(n, index){ print("<a href='#" + n + "'<li class='note'>" + n + "</li>") })%>

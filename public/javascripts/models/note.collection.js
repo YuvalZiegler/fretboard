@@ -33,7 +33,6 @@ var App = (function (App) {
                 var interval = e.intervals[i];
                 // THIS TRIGGERS A CHANGE EVENT IN THE MODEL
                 target.set({active:true, interval:interval});
-
             }
 
         },
@@ -53,6 +52,7 @@ var App = (function (App) {
                 } else {
                     this.flatNeutralSharp = 0;
                 }
+                result.query = query;
                 var e = result.isScale ? "scaleChange" : "chordChange";
                 App.dispatcher.trigger(e,result);
             }

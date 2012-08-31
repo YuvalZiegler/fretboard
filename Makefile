@@ -1,6 +1,5 @@
-\test:
+test:
 	@./node_modules/mocha/bin/mocha -R spec
-
 
 pack-js:
 	cat ./public/javascripts/underscore.config.js > ./public/javascripts/app.js
