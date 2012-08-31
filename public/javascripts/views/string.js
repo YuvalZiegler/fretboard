@@ -16,12 +16,12 @@ var App = (function (App) {
         initialize:function(){
             _.bindAll(this,'render','update');
             this.model.bind('change', this.update);
-
             this.render();
 
         },
 
         render: function(){
+
             // creating string UI
             $(this.el).append(this.UI.html());
             // creating views for each note
@@ -29,6 +29,7 @@ var App = (function (App) {
                 var n = new App.NoteView({note:this.model.attributes.octave[i], stringPosition:i});
                 $(this.el).append(n.el);
             }
+           
 
         },
         update: function(){

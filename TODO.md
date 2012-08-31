@@ -1,6 +1,8 @@
+# ISSUES:
+- changes in url should not completely refresh page - should be a one page app.
+- adding strings re-renders all strings
+ 
 # UI
-- String Tune Up and Down
-- String Add remove
 - Note Name / Interval Name / Freq - switch
 - Note Selector
 - Scale / Chord Switch
@@ -17,9 +19,9 @@
 - should be clickable and update the rest of the UI.
 
 # Note Dictionary
-- Smart Vs Hard Coded ???
+- Smart Vs Hard Coded ??? - MAYBE NOT
 
 # Design
-- Style autocomplete
+* Style autocomplete
 - design UI elements
-- create font(?)
+- create interval font(?)

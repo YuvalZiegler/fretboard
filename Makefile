@@ -1,4 +1,4 @@
-test:
+\test:
 	@./node_modules/mocha/bin/mocha -R spec
 
 
