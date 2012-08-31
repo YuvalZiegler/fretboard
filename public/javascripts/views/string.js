@@ -15,6 +15,7 @@ var App = (function (App) {
 
         initialize:function(){
             _.bindAll(this,'render','update');
+            this.UI.remove();
             this.model.bind('change', this.update);
             this.render();
 

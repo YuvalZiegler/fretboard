@@ -8,7 +8,7 @@ var App = (function (App) {
 
 
         initialize: function(){
-            var octave = NoteDictionary.getScale("A","chromatic").notes;
+            var octave = NoteDictionary.parseQuery("A chromatic").notes;
 
             for (var i = 0;  i< 12 ; i++){
                 this.add(new App.NoteModel({note:octave[i]}));
