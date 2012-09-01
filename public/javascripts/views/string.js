@@ -39,8 +39,9 @@ var App = (function (App) {
         },
 
         destroy:function(){
-            this.model.collection.remove(this.model);
-
+            if (this.model.collection.models.length>1) {
+              this.model.collection.remove(this.model);
+            }
         },
 
         tuneUp:function(){
