@@ -24,4 +24,5 @@
 # Design
 
 - design UI elements
+- consider bootstrap for autocomplete modal and popover components
 - create interval font(?)

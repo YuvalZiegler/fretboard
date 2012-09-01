@@ -15,6 +15,7 @@ pack-js:
 	cat ./public/javascripts/views/string.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/views/fretboard.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/views/definition.js >> ./public/javascripts/app.js
+	cat ./public/javascripts/views/related.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/main.js >> ./public/javascripts/app.js
 	uglifyjs -nc -nm --no-seqs ./public/javascripts/app.js > ./public/javascripts/app.min.js
 	

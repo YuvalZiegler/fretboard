@@ -9,7 +9,6 @@ var App = (function (App) {
 
         initialize: function (){
             _.bindAll(this, 'render','handleEnter');
-            this.router = this.options.router;
             $(this.el).autocomplete({lookup:NoteDictionary.getAllDefinitions(), onSelect: this.handleEnter });
             $(this.el).on('keydown', this.handleEnter);
             App.dispatcher.on("chordChange", this.render);

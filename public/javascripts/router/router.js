@@ -34,6 +34,7 @@ var App = (function (App){
             App.searchView = App.searchView  || new App.SearchView();
             App.chordDefinitionView = App.chordDefinitionView || new App.ChordDefinitionView({model: new App.ChordDefinitionModel()});
             App.stringsCollection = App.stringsCollection || new App.StringCollection([]);
+            App.relatedView = App.relatedView || new App.RelatedView();
             App.stringsCollection.reset();
             App.stringsCollection.initialize(strings);
             App.fretboard =  App.fretboard || new App.FretboardView();
