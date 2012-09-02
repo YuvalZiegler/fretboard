@@ -16,7 +16,11 @@
 * {
    box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color:$font-color;
 
+}
 body {
   padding: 40px;
   font-family: "Helvetica";
@@ -181,5 +185,29 @@ div.stringUI a {
     color:$font-color;
   }
 }
+
+// Related chords
+#related {
+  @extend .inset;
+  margin: 10px;
+  padding: 0 10px;
+  @include border-radius(12px);
+  h1 {
+  font-family: "Sail";
+  font-size: 22px;
+  float: left;
+  line-height: 38px;
+ }
+}
+.tag {
+
+  display: inline;
+  margin: 0px 2px;
+  padding: 0px 2px;
+  line-height: 40px;
+  text-decoration: none;
+
+}
+
 // Include responsive Bootstrap styles
 //@import "bootstrap-responsive";
