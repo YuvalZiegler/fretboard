@@ -23,7 +23,6 @@ var App = (function (App) {
                html="<h1>the "+e.query+" chord appears in the following scales:</h1><ul>";
            }
            for (var i=0,l=result.length; i<l; i++){
-
                 html+="<a href='#'><li class='tag'>"+result[i]+"</li></a>";
            }
            html+="</ul>";
