@@ -1,6 +1,7 @@
 script#definitionTemplate(type="text/html")
-  article#definition
+  article.definition
     div.name
-      h1 <%=name%>
+      h1
+        a.tag(href="#"):<%=name%>
     ul.note-list <% _.each(notes,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>
     ul.interval-list <% _.each(intervals,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>

@@ -147,7 +147,7 @@ input,textarea {
   }
 }
 // Note Dicitionary
-#definition{
+.definition{
   @extend .inset;
   display: table;
   float: right;
@@ -187,21 +187,53 @@ div.stringUI a {
 // Related chords
 #related {
   @extend .inset;
-  margin: 10px;
+  margin: 10px 0;
   padding: 0 10px;
-  @include border-radius(12px);
+
   h1 {
+    clear: right;
     font-family: "Sail";
-    font-size: 22px;
+    font-size: 32px;
     float: left;
-    line-height: 38px;
+    line-height: 48px;
+    text-align: center;
+    display: block;
+    width: 100%;
+
+  }
+
+  .definition {
+    width: 32%;
+    float:left;
+    margin:5px;
+    //box-shadow:none;
+    padding: 2px 10px 5px 10px;
+    border-radius: 16px;
+
+    h1{
+      font-size: 16px;
+      width: 97px;
+      text-align: center;
+      line-height: 18px;
+      padding: 10px;
+    }
+    .note {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      text-align: center;
+      font-size: 10px;
+      line-height: 25px;
+    }
+    ul.note-list, ul.interval-list {
+      padding: 8px;
+      float: left;
+    }
+
   }
 }
 .tag {
-  display: inline;
-  margin: 0px 2px;
-  padding: 0px 2px;
-  line-height: 40px;
+
   text-decoration: none;
 }
 

@@ -1,9 +1,15 @@
 /*global Backbone _ NoteDictionary */
+
 var App = (function (App) {
+
+
     App.RelatedView = Backbone.View.extend({
         el: '#related',
+        dict:NoteDictionary,
+        template: $('#definitionTemplate').html(),
+
         events:{
-            "click .tag":          "submitQuery"
+            "click .tag": "submitQuery"
         },
 
         initialize: function (){
@@ -14,21 +20,41 @@ var App = (function (App) {
         },
 
         render:function(e){
-           var result,html;
+           var html,result,
+               regEx= /\Bmajor/;
+               var trim = function (o){
+                   console.log(o.charAt(2));
+                     return o.charAt(2)==="/" ?  o.substr(0,2) : o;
+               };
+
+
            if (e.isScale) {
-               result = NoteDictionary.getChordsOfScale(e.query);
-               html="<h1>"+e.query+" scale includes the following chords:</h1><ul>";
+               result = this.dict.getChordsOfScale(e.query);
+               html="<h1>"+e.query+" scale includes the following chords:</h1>";
            } else {
-               result = NoteDictionary.getScalesOfChord(e.query);
-               html="<h1>the "+e.query+" chord appears in the following scales:</h1><ul>";
+               result = this.dict.getScalesOfChord(e.query);
+               html="<h1>the "+e.query+" chord appears in the following scales:</h1>";
            }
+
            for (var i=0,l=result.length; i<l; i++){
-                html+="<a href='#'><li class='tag'>"+result[i]+"</li></a>";
+
+               var json = this.dict.parseQuery(result[i]);
+
+               var notes = _.map(json.notes, trim);
+               json.notes= notes;
+               json.name= result[i].replace(regEx,"");
+
+
+               html+=(_.template(this.template, json));
+
+
            }
-           html+="</ul>";
+
            $(this.el).html(html);
         },
+
         submitQuery:function(e){
+
            App.notesCollection.setActiveNotes(e.srcElement.innerText);
         }
 

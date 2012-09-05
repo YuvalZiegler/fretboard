@@ -9,7 +9,7 @@ var App = (function (App) {
         initialize: function(){
             _.bindAll(this, 'render');
             this.model.bind('change', this.render);
-            $('#definitionTemplate').remove();
+            //$('#definitionTemplate').remove();
         },
 
         render: function(){
