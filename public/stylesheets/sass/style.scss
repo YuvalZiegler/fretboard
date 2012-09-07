@@ -40,10 +40,12 @@ header{
 }
 
 header h1 {
+  @include text-shadow(2px 2px 1px rgba(black,0.5));
   font-family: $ff1;
   color: $font-color;
   font-size: 79px;
   line-height: 80px;
+
 }
 
 #fretboard {
@@ -191,6 +193,7 @@ div.stringUI a {
   padding: 0 10px;
 
   h1 {
+    @include text-shadow(2px 2px 1px rgba(black,0.5));
     clear: right;
     font-family: "Sail";
     font-size: 32px;
@@ -204,13 +207,13 @@ div.stringUI a {
 
   .definition {
     width: 32%;
-    float:left;
-    margin:5px;
-    //box-shadow:none;
-    padding: 2px 10px 5px 10px;
+    float: left;
+    margin: 5px;
+    padding: 0px 0px 0px 0px;
     border-radius: 16px;
 
     h1{
+      @include text-shadow(2px 2px 1px rgba(black,0.5));
       font-size: 16px;
       width: 97px;
       text-align: center;
@@ -222,8 +225,9 @@ div.stringUI a {
       width: 25px;
       height: 25px;
       text-align: center;
-      font-size: 10px;
-      line-height: 25px;
+      font-size: 8px;
+      letter-spacing: 1px;
+      line-height: 26px;
     }
     ul.note-list, ul.interval-list {
       padding: 8px;

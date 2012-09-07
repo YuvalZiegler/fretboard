@@ -1403,20 +1403,21 @@ header {
 
 /* line 42, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 header h1 {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   font-family: "Sail";
   color: #dad7c8;
   font-size: 79px;
   line-height: 80px;
 }
 
-/* line 49, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 51, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #fretboard {
   clear: both;
   display: table;
   width: 100%;
 }
 
-/* line 55, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 57, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .string {
   display: block;
   margin: 5px 10px;
@@ -1427,7 +1428,7 @@ header h1 {
   border-radius: 20px 0 0 20px;
 }
 
-/* line 61, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 63, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .fret {
   display: table-cell;
   width: 8%;
@@ -1437,7 +1438,7 @@ header h1 {
   border-right: 2px solid rgba(255, 255, 255, 0.05);
 }
 
-/* line 70, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 72, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .stringUI {
   display: table-cell;
   min-width: 120px;
@@ -1447,7 +1448,7 @@ header h1 {
   border-right: 2px solid rgba(255, 255, 255, 0.05);
 }
 
-/* line 79, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 81, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .note {
   display: inline-block;
   width: 40px;
@@ -1457,18 +1458,18 @@ header h1 {
   line-height: 40px;
 }
 
-/* line 87, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 89, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .inactive {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 92, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 94, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .pos-0 {
   background: rgba(255, 255, 255, 0.03);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 97, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 99, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete-w1 {
   position: absolute;
   top: 1px;
@@ -1479,7 +1480,7 @@ header h1 {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
 }
 
-/* line 105, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 107, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete {
   background: url('../images/canvas.png?1346355484');
   cursor: pointer;
@@ -1491,24 +1492,24 @@ header h1 {
   padding: 10px;
 }
 
-/* line 117, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 119, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete .selected {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 120, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 122, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete div {
   padding: 2px 5px;
   white-space: nowrap;
 }
 
-/* line 124, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 126, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete strong {
   font-weight: normal;
   color: #39f;
 }
 
-/* line 130, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 132, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input, textarea {
   border: none;
   width: 330px;
@@ -1519,12 +1520,12 @@ input, textarea {
   padding-left: 36px;
   color: #dad7c8;
 }
-/* line 145, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 147, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input:focus, textarea:focus {
   outline: none;
 }
 
-/* line 150, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 152, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .definition {
   display: table;
   float: right;
@@ -1533,13 +1534,13 @@ input:focus, textarea:focus {
   border-radius: 60px;
 }
 
-/* line 158, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 160, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .name {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 163, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 165, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .name > h1 {
   color: #dad7c8;
   font-family: "Sail";
@@ -1548,35 +1549,36 @@ input:focus, textarea:focus {
   padding: 0px 14px 12px;
 }
 
-/* line 170, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 172, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 ul.note-list, ul.interval-list {
   padding: 0 8px;
 }
 
-/* line 173, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 175, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 li.note {
   margin: 4px 4px;
 }
 
-/* line 177, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 179, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 div.stringUI a {
   font-size: 19px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.2);
   padding: 0 5px;
 }
-/* line 182, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 184, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 div.stringUI a:hover {
   color: #dad7c8;
 }
 
-/* line 188, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 190, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related {
   margin: 10px 0;
   padding: 0 10px;
 }
-/* line 193, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 195, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related h1 {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   clear: right;
   font-family: "Sail";
   font-size: 32px;
@@ -1586,38 +1588,40 @@ div.stringUI a:hover {
   display: block;
   width: 100%;
 }
-/* line 205, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 208, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related .definition {
   width: 32%;
   float: left;
   margin: 5px;
-  padding: 2px 10px 5px 10px;
+  padding: 0px 0px 0px 0px;
   border-radius: 16px;
 }
-/* line 213, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 215, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related .definition h1 {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   font-size: 16px;
   width: 97px;
   text-align: center;
   line-height: 18px;
   padding: 10px;
 }
-/* line 220, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 223, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related .definition .note {
   display: inline-block;
   width: 25px;
   height: 25px;
   text-align: center;
-  font-size: 10px;
-  line-height: 25px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  line-height: 26px;
 }
-/* line 228, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 232, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related .definition ul.note-list, #related .definition ul.interval-list {
   padding: 8px;
   float: left;
 }
 
-/* line 235, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
+/* line 239, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .tag {
   text-decoration: none;
 }
