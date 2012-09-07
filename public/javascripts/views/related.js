@@ -54,7 +54,6 @@ var App = (function (App) {
         },
 
         submitQuery:function(e){
-
            App.notesCollection.setActiveNotes(e.srcElement.innerText);
         }
 
