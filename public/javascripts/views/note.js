@@ -28,7 +28,6 @@ var App = (function (App){
             } else {
                 $(this.el)
                 .html('<div class="note inactive">' + this.model.attributes.note + '</div>');
-               
             }
 
 

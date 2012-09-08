@@ -12,7 +12,7 @@ var App = (function (App) {
 
         },
         reset:function(){
-            this.set({ active:false, interval:'' });
+            this.set({ active:false, interval:'' },true);
         }
     });
 

@@ -23,17 +23,17 @@ var App = (function (App) {
            var html,result,
                regEx= /\Bmajor/;
                var trim = function (o){
-                   console.log(o.charAt(2));
+
                      return o.charAt(2)==="/" ?  o.substr(0,2) : o;
                };
 
 
            if (e.isScale) {
                result = this.dict.getChordsOfScale(e.query);
-               html="<h1>"+e.query+" scale includes the following chords:</h1>";
+               html="<h1>"+e.query+" scale includes the these chords:</h1>";
            } else {
                result = this.dict.getScalesOfChord(e.query);
-               html="<h1>the "+e.query+" chord appears in the following scales:</h1>";
+               html="<h1>the "+e.query+" chord appears in these scales:</h1>";
            }
 
            for (var i=0,l=result.length; i<l; i++){

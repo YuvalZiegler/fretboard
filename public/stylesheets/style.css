@@ -100,7 +100,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /*  Font Awesome styles
     ------------------------------------------------------- */
-/* line 41, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 41, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   font-family: FontAwesome;
@@ -110,7 +110,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-decoration: inherit;
 }
 
-/* line 50, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 50, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline-block;
@@ -118,45 +118,45 @@ a [class*=" icon-"] {
 }
 
 /* makes the font 33% larger relative to the icon container */
-/* line 56, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 56, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-large:before {
   vertical-align: middle;
   font-size: 4/3em;
 }
 
-/* line 63, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 63, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .btn [class^="icon-"],
 .btn [class*=" icon-"], .nav-tabs [class^="icon-"], .nav-tabs [class*=" icon-"] {
   /* keeps button heights with and without icons the same */
   line-height: .9em;
 }
 
-/* line 71, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 71, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 li [class^="icon-"],
 li [class*=" icon-"] {
   display: inline-block;
   width: 1.25em;
   text-align: center;
 }
-/* line 77, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 77, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 li .icon-large:before,
 li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
   width: 1.875em;
 }
 
-/* line 83, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 83, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 ul.icons {
   list-style-type: none;
   margin-left: 2em;
   text-indent: -0.8em;
 }
-/* line 90, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 90, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 ul.icons li [class^="icon-"],
 ul.icons li [class*=" icon-"] {
   width: .8em;
 }
-/* line 94, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 94, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 ul.icons li .icon-large:before,
 ul.icons li .icon-large:before {
   /* 1.5 increased font size for icon-large * 1.25 width */
@@ -165,1053 +165,1053 @@ ul.icons li .icon-large:before {
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
-/* line 104, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 104, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-glass:before {
   content: "\f000";
 }
 
-/* line 105, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 105, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-music:before {
   content: "\f001";
 }
 
-/* line 106, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 106, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-search:before {
   content: "\f002";
 }
 
-/* line 107, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 107, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-envelope:before {
   content: "\f003";
 }
 
-/* line 108, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 108, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-heart:before {
   content: "\f004";
 }
 
-/* line 109, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 109, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-star:before {
   content: "\f005";
 }
 
-/* line 110, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 110, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-star-empty:before {
   content: "\f006";
 }
 
-/* line 111, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 111, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-user:before {
   content: "\f007";
 }
 
-/* line 112, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 112, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-film:before {
   content: "\f008";
 }
 
-/* line 113, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 113, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-th-large:before {
   content: "\f009";
 }
 
-/* line 114, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 114, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-th:before {
   content: "\f00a";
 }
 
-/* line 115, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 115, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-th-list:before {
   content: "\f00b";
 }
 
-/* line 116, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 116, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-ok:before {
   content: "\f00c";
 }
 
-/* line 117, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 117, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-remove:before {
   content: "\f00d";
 }
 
-/* line 118, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 118, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-zoom-in:before {
   content: "\f00e";
 }
 
-/* line 120, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 120, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-zoom-out:before {
   content: "\f010";
 }
 
-/* line 121, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 121, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-off:before {
   content: "\f011";
 }
 
-/* line 122, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 122, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-signal:before {
   content: "\f012";
 }
 
-/* line 123, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 123, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-cog:before {
   content: "\f013";
 }
 
-/* line 124, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 124, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-trash:before {
   content: "\f014";
 }
 
-/* line 125, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 125, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-home:before {
   content: "\f015";
 }
 
-/* line 126, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 126, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-file:before {
   content: "\f016";
 }
 
-/* line 127, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 127, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-time:before {
   content: "\f017";
 }
 
-/* line 128, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 128, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-road:before {
   content: "\f018";
 }
 
-/* line 129, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 129, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-download-alt:before {
   content: "\f019";
 }
 
-/* line 130, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 130, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-download:before {
   content: "\f01a";
 }
 
-/* line 131, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 131, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-upload:before {
   content: "\f01b";
 }
 
-/* line 132, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 132, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-inbox:before {
   content: "\f01c";
 }
 
-/* line 133, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 133, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-play-circle:before {
   content: "\f01d";
 }
 
-/* line 134, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 134, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-repeat:before {
   content: "\f01e";
 }
 
 /* \f020 doesn't work in Safari. all shifted one down */
-/* line 137, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 137, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-refresh:before {
   content: "\f021";
 }
 
-/* line 138, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 138, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-list-alt:before {
   content: "\f022";
 }
 
-/* line 139, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 139, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-lock:before {
   content: "\f023";
 }
 
-/* line 140, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 140, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-flag:before {
   content: "\f024";
 }
 
-/* line 141, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 141, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-headphones:before {
   content: "\f025";
 }
 
-/* line 142, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 142, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-volume-off:before {
   content: "\f026";
 }
 
-/* line 143, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 143, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-volume-down:before {
   content: "\f027";
 }
 
-/* line 144, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 144, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-volume-up:before {
   content: "\f028";
 }
 
-/* line 145, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 145, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-qrcode:before {
   content: "\f029";
 }
 
-/* line 146, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 146, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-barcode:before {
   content: "\f02a";
 }
 
-/* line 147, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 147, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-tag:before {
   content: "\f02b";
 }
 
-/* line 148, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 148, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-tags:before {
   content: "\f02c";
 }
 
-/* line 149, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 149, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-book:before {
   content: "\f02d";
 }
 
-/* line 150, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 150, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-bookmark:before {
   content: "\f02e";
 }
 
-/* line 151, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 151, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-print:before {
   content: "\f02f";
 }
 
-/* line 153, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 153, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-camera:before {
   content: "\f030";
 }
 
-/* line 154, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 154, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-font:before {
   content: "\f031";
 }
 
-/* line 155, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 155, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-bold:before {
   content: "\f032";
 }
 
-/* line 156, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 156, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-italic:before {
   content: "\f033";
 }
 
-/* line 157, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 157, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-text-height:before {
   content: "\f034";
 }
 
-/* line 158, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 158, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-text-width:before {
   content: "\f035";
 }
 
-/* line 159, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 159, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-align-left:before {
   content: "\f036";
 }
 
-/* line 160, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 160, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-align-center:before {
   content: "\f037";
 }
 
-/* line 161, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 161, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-align-right:before {
   content: "\f038";
 }
 
-/* line 162, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 162, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-align-justify:before {
   content: "\f039";
 }
 
-/* line 163, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 163, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-list:before {
   content: "\f03a";
 }
 
-/* line 164, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 164, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-indent-left:before {
   content: "\f03b";
 }
 
-/* line 165, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 165, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-indent-right:before {
   content: "\f03c";
 }
 
-/* line 166, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 166, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-facetime-video:before {
   content: "\f03d";
 }
 
-/* line 167, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 167, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-picture:before {
   content: "\f03e";
 }
 
-/* line 169, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 169, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-pencil:before {
   content: "\f040";
 }
 
-/* line 170, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 170, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-map-marker:before {
   content: "\f041";
 }
 
-/* line 171, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 171, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-adjust:before {
   content: "\f042";
 }
 
-/* line 172, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 172, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-tint:before {
   content: "\f043";
 }
 
-/* line 173, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 173, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-edit:before {
   content: "\f044";
 }
 
-/* line 174, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 174, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-share:before {
   content: "\f045";
 }
 
-/* line 175, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 175, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-check:before {
   content: "\f046";
 }
 
-/* line 176, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 176, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-move:before {
   content: "\f047";
 }
 
-/* line 177, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 177, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-step-backward:before {
   content: "\f048";
 }
 
-/* line 178, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 178, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-fast-backward:before {
   content: "\f049";
 }
 
-/* line 179, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 179, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-backward:before {
   content: "\f04a";
 }
 
-/* line 180, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 180, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-play:before {
   content: "\f04b";
 }
 
-/* line 181, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 181, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-pause:before {
   content: "\f04c";
 }
 
-/* line 182, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 182, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-stop:before {
   content: "\f04d";
 }
 
-/* line 183, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 183, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-forward:before {
   content: "\f04e";
 }
 
-/* line 185, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 185, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-fast-forward:before {
   content: "\f050";
 }
 
-/* line 186, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 186, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-step-forward:before {
   content: "\f051";
 }
 
-/* line 187, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 187, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-eject:before {
   content: "\f052";
 }
 
-/* line 188, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 188, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-chevron-left:before {
   content: "\f053";
 }
 
-/* line 189, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 189, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-chevron-right:before {
   content: "\f054";
 }
 
-/* line 190, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 190, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-plus-sign:before {
   content: "\f055";
 }
 
-/* line 191, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 191, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-minus-sign:before {
   content: "\f056";
 }
 
-/* line 192, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 192, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-remove-sign:before {
   content: "\f057";
 }
 
-/* line 193, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 193, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-ok-sign:before {
   content: "\f058";
 }
 
-/* line 194, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 194, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-question-sign:before {
   content: "\f059";
 }
 
-/* line 195, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 195, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-info-sign:before {
   content: "\f05a";
 }
 
-/* line 196, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 196, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-screenshot:before {
   content: "\f05b";
 }
 
-/* line 197, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 197, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-remove-circle:before {
   content: "\f05c";
 }
 
-/* line 198, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 198, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-ok-circle:before {
   content: "\f05d";
 }
 
-/* line 199, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 199, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-ban-circle:before {
   content: "\f05e";
 }
 
-/* line 201, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 201, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-arrow-left:before {
   content: "\f060";
 }
 
-/* line 202, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 202, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-arrow-right:before {
   content: "\f061";
 }
 
-/* line 203, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 203, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-arrow-up:before {
   content: "\f062";
 }
 
-/* line 204, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 204, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-arrow-down:before {
   content: "\f063";
 }
 
-/* line 205, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 205, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-share-alt:before {
   content: "\f064";
 }
 
-/* line 206, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 206, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-resize-full:before {
   content: "\f065";
 }
 
-/* line 207, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 207, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-resize-small:before {
   content: "\f066";
 }
 
-/* line 208, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 208, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-plus:before {
   content: "\f067";
 }
 
-/* line 209, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 209, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-minus:before {
   content: "\f068";
 }
 
-/* line 210, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 210, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-asterisk:before {
   content: "\f069";
 }
 
-/* line 211, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 211, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-exclamation-sign:before {
   content: "\f06a";
 }
 
-/* line 212, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 212, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-gift:before {
   content: "\f06b";
 }
 
-/* line 213, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 213, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-leaf:before {
   content: "\f06c";
 }
 
-/* line 214, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 214, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-fire:before {
   content: "\f06d";
 }
 
-/* line 215, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 215, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-eye-open:before {
   content: "\f06e";
 }
 
-/* line 217, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 217, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-eye-close:before {
   content: "\f070";
 }
 
-/* line 218, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 218, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-warning-sign:before {
   content: "\f071";
 }
 
-/* line 219, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 219, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-plane:before {
   content: "\f072";
 }
 
-/* line 220, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 220, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-calendar:before {
   content: "\f073";
 }
 
-/* line 221, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 221, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-random:before {
   content: "\f074";
 }
 
-/* line 222, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 222, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-comment:before {
   content: "\f075";
 }
 
-/* line 223, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 223, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-magnet:before {
   content: "\f076";
 }
 
-/* line 224, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 224, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-chevron-up:before {
   content: "\f077";
 }
 
-/* line 225, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 225, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-chevron-down:before {
   content: "\f078";
 }
 
-/* line 226, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 226, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-retweet:before {
   content: "\f079";
 }
 
-/* line 227, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 227, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-shopping-cart:before {
   content: "\f07a";
 }
 
-/* line 228, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 228, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-folder-close:before {
   content: "\f07b";
 }
 
-/* line 229, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 229, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-folder-open:before {
   content: "\f07c";
 }
 
-/* line 230, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 230, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-resize-vertical:before {
   content: "\f07d";
 }
 
-/* line 231, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 231, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-resize-horizontal:before {
   content: "\f07e";
 }
 
-/* line 233, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 233, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-bar-chart:before {
   content: "\f080";
 }
 
-/* line 234, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 234, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-twitter-sign:before {
   content: "\f081";
 }
 
-/* line 235, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 235, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-facebook-sign:before {
   content: "\f082";
 }
 
-/* line 236, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 236, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-camera-retro:before {
   content: "\f083";
 }
 
-/* line 237, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 237, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-key:before {
   content: "\f084";
 }
 
-/* line 238, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 238, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-cogs:before {
   content: "\f085";
 }
 
-/* line 239, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 239, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-comments:before {
   content: "\f086";
 }
 
-/* line 240, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 240, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-thumbs-up:before {
   content: "\f087";
 }
 
-/* line 241, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 241, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-thumbs-down:before {
   content: "\f088";
 }
 
-/* line 242, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 242, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-star-half:before {
   content: "\f089";
 }
 
-/* line 243, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 243, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-heart-empty:before {
   content: "\f08a";
 }
 
-/* line 244, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 244, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-signout:before {
   content: "\f08b";
 }
 
-/* line 245, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 245, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-linkedin-sign:before {
   content: "\f08c";
 }
 
-/* line 246, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 246, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-pushpin:before {
   content: "\f08d";
 }
 
-/* line 247, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 247, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-external-link:before {
   content: "\f08e";
 }
 
-/* line 249, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 249, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-signin:before {
   content: "\f090";
 }
 
-/* line 250, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 250, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-trophy:before {
   content: "\f091";
 }
 
-/* line 251, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 251, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-github-sign:before {
   content: "\f092";
 }
 
-/* line 252, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 252, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-upload-alt:before {
   content: "\f093";
 }
 
-/* line 253, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 253, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-lemon:before {
   content: "\f094";
 }
 
-/* line 254, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 254, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-phone:before {
   content: "\f095";
 }
 
-/* line 255, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 255, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-check-empty:before {
   content: "\f096";
 }
 
-/* line 256, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 256, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-bookmark-empty:before {
   content: "\f097";
 }
 
-/* line 257, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 257, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-phone-sign:before {
   content: "\f098";
 }
 
-/* line 258, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 258, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-twitter:before {
   content: "\f099";
 }
 
-/* line 259, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 259, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-facebook:before {
   content: "\f09a";
 }
 
-/* line 260, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 260, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-github:before {
   content: "\f09b";
 }
 
-/* line 261, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 261, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-unlock:before {
   content: "\f09c";
 }
 
-/* line 262, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 262, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-credit-card:before {
   content: "\f09d";
 }
 
-/* line 263, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 263, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-rss:before {
   content: "\f09e";
 }
 
-/* line 265, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 265, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-hdd:before {
   content: "\f0a0";
 }
 
-/* line 266, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 266, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-bullhorn:before {
   content: "\f0a1";
 }
 
-/* line 267, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 267, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-bell:before {
   content: "\f0a2";
 }
 
-/* line 268, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 268, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-certificate:before {
   content: "\f0a3";
 }
 
-/* line 269, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 269, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-hand-right:before {
   content: "\f0a4";
 }
 
-/* line 270, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 270, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-hand-left:before {
   content: "\f0a5";
 }
 
-/* line 271, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 271, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-hand-up:before {
   content: "\f0a6";
 }
 
-/* line 272, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 272, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-hand-down:before {
   content: "\f0a7";
 }
 
-/* line 273, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 273, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-circle-arrow-left:before {
   content: "\f0a8";
 }
 
-/* line 274, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 274, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-circle-arrow-right:before {
   content: "\f0a9";
 }
 
-/* line 275, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 275, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-circle-arrow-up:before {
   content: "\f0aa";
 }
 
-/* line 276, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 276, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-circle-arrow-down:before {
   content: "\f0ab";
 }
 
-/* line 277, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 277, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-globe:before {
   content: "\f0ac";
 }
 
-/* line 278, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 278, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-wrench:before {
   content: "\f0ad";
 }
 
-/* line 279, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 279, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-tasks:before {
   content: "\f0ae";
 }
 
-/* line 281, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 281, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-filter:before {
   content: "\f0b0";
 }
 
-/* line 282, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 282, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-briefcase:before {
   content: "\f0b1";
 }
 
-/* line 283, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 283, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-fullscreen:before {
   content: "\f0b2";
 }
 
-/* line 285, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 285, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-group:before {
   content: "\f0c0";
 }
 
-/* line 286, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 286, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-link:before {
   content: "\f0c1";
 }
 
-/* line 287, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 287, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-cloud:before {
   content: "\f0c2";
 }
 
-/* line 288, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 288, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-beaker:before {
   content: "\f0c3";
 }
 
-/* line 289, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 289, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-cut:before {
   content: "\f0c4";
 }
 
-/* line 290, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 290, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-copy:before {
   content: "\f0c5";
 }
 
-/* line 291, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 291, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-paper-clip:before {
   content: "\f0c6";
 }
 
-/* line 292, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 292, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-save:before {
   content: "\f0c7";
 }
 
-/* line 293, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 293, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-sign-blank:before {
   content: "\f0c8";
 }
 
-/* line 294, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 294, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-reorder:before {
   content: "\f0c9";
 }
 
-/* line 295, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 295, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-list-ul:before {
   content: "\f0ca";
 }
 
-/* line 296, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 296, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-list-ol:before {
   content: "\f0cb";
 }
 
-/* line 297, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 297, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-strikethrough:before {
   content: "\f0cc";
 }
 
-/* line 298, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 298, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-underline:before {
   content: "\f0cd";
 }
 
-/* line 299, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 299, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-table:before {
   content: "\f0ce";
 }
 
-/* line 301, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 301, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-magic:before {
   content: "\f0d0";
 }
 
-/* line 302, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 302, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-truck:before {
   content: "\f0d1";
 }
 
-/* line 303, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 303, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-pinterest:before {
   content: "\f0d2";
 }
 
-/* line 304, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 304, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-pinterest-sign:before {
   content: "\f0d3";
 }
 
-/* line 305, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 305, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-google-plus-sign:before {
   content: "\f0d4";
 }
 
-/* line 306, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 306, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-google-plus:before {
   content: "\f0d5";
 }
 
-/* line 307, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 307, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-money:before {
   content: "\f0d6";
 }
 
-/* line 308, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 308, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-caret-down:before {
   content: "\f0d7";
 }
 
-/* line 309, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 309, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-caret-up:before {
   content: "\f0d8";
 }
 
-/* line 310, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 310, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-caret-left:before {
   content: "\f0d9";
 }
 
-/* line 311, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 311, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-caret-right:before {
   content: "\f0da";
 }
 
-/* line 312, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 312, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-columns:before {
   content: "\f0db";
 }
 
-/* line 313, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 313, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-sort:before {
   content: "\f0dc";
 }
 
-/* line 314, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 314, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-sort-down:before {
   content: "\f0dd";
 }
 
-/* line 315, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 315, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-sort-up:before {
   content: "\f0de";
 }
 
-/* line 317, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 317, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-envelope-alt:before {
   content: "\f0e0";
 }
 
-/* line 318, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 318, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-linkedin:before {
   content: "\f0e1";
 }
 
-/* line 319, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 319, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-undo:before {
   content: "\f0e2";
 }
 
-/* line 320, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 320, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-legal:before {
   content: "\f0e3";
 }
 
-/* line 321, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 321, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-dashboard:before {
   content: "\f0e4";
 }
 
-/* line 322, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 322, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-comment-alt:before {
   content: "\f0e5";
 }
 
-/* line 323, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 323, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-comments-alt:before {
   content: "\f0e6";
 }
 
-/* line 324, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 324, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-bolt:before {
   content: "\f0e7";
 }
 
-/* line 325, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 325, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-sitemap:before {
   content: "\f0e8";
 }
 
-/* line 326, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 326, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-umbrella:before {
   content: "\f0e9";
 }
 
-/* line 327, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 327, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-paste:before {
   content: "\f0ea";
 }
 
-/* line 329, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
+/* line 329, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_font-awesome.scss */
 .icon-user-md:before {
   content: "\f200";
 }
@@ -1221,7 +1221,7 @@ ul.icons li .icon-large:before {
   src: url('fonts/../../fonts/Sail-Regular.ttf') format('truetype');
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P1 {
   background-color: #f4223b;
   color: white;
@@ -1230,9 +1230,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m2 {
   background-color: #ff8694;
   color: white;
@@ -1241,9 +1249,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M2 {
   background-color: #fcbe00;
   color: #fffefc;
@@ -1252,9 +1268,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m3 {
   background-color: #125f3a;
   color: #88e8ba;
@@ -1263,9 +1287,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M3 {
   background-color: #02ad5b;
   color: #b0fed9;
@@ -1274,9 +1306,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P4 {
   background-color: #693b7c;
   color: #e0cee8;
@@ -1285,9 +1325,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .d5 {
   background-color: #995da8;
   color: white;
@@ -1296,9 +1344,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .P5 {
   background-color: #ff8111;
   color: white;
@@ -1307,9 +1363,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m6 {
   background-color: #165caa;
   color: #c7def8;
@@ -1318,9 +1382,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M6 {
   background-color: #4198f9;
   color: white;
@@ -1329,9 +1401,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .m7 {
   background-color: #717171;
   color: #f1f1f1;
@@ -1340,9 +1420,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 36, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .M7 {
   background-color: #9f9f9f;
   color: white;
@@ -1351,9 +1439,17 @@ ul.icons li .icon-large:before {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
 }
 
-/* line 48, /Users/user/Sites/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
+/* line 47, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/partials/_varsAndMixins.scss */
 .inset, .string, input, textarea, .definition, #related {
   background: rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
@@ -1361,47 +1457,47 @@ ul.icons li .icon-large:before {
   box-shadow: 0 1px rgba(255, 255, 255, 0.25), 0 -1px rgba(0, 0, 0, 0.5), inset 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
-/* line 16, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 16, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 19, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 19, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 a {
   text-decoration: none;
   color: #dad7c8;
 }
 
-/* line 24, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 24, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 body {
   padding: 40px;
   font-family: "Helvetica";
   color: #dad7c8;
-  background: url('../images/canvas.png?1346458209'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222222), color-stop(100%, #222222));
-  background: url('../images/canvas.png?1346458209'), -webkit-linear-gradient(top, #222222, #222222);
-  background: url('../images/canvas.png?1346458209'), -moz-linear-gradient(top, #222222, #222222);
-  background: url('../images/canvas.png?1346458209'), -o-linear-gradient(top, #222222, #222222);
-  background: url('../images/canvas.png?1346458209'), linear-gradient(top, #222222, #222222);
+  background: url('../images/canvas.jpg?1347047861'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #222222), color-stop(100%, #222222));
+  background: url('../images/canvas.jpg?1347047861'), -webkit-linear-gradient(top, #222222, #222222);
+  background: url('../images/canvas.jpg?1347047861'), -moz-linear-gradient(top, #222222, #222222);
+  background: url('../images/canvas.jpg?1347047861'), -o-linear-gradient(top, #222222, #222222);
+  background: url('../images/canvas.jpg?1347047861'), linear-gradient(top, #222222, #222222);
 }
 
-/* line 30, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 30, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .left {
   float: left;
 }
 
-/* line 33, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 33, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #content {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 37, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 37, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 header {
   width: 100%;
   float: left;
 }
 
-/* line 42, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 42, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 header h1 {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   font-family: "Sail";
@@ -1410,14 +1506,14 @@ header h1 {
   line-height: 80px;
 }
 
-/* line 51, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 51, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #fretboard {
   clear: both;
   display: table;
   width: 100%;
 }
 
-/* line 57, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 57, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .string {
   display: block;
   margin: 5px 10px;
@@ -1428,7 +1524,7 @@ header h1 {
   border-radius: 20px 0 0 20px;
 }
 
-/* line 63, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 63, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .fret {
   display: table-cell;
   width: 8%;
@@ -1438,7 +1534,7 @@ header h1 {
   border-right: 2px solid rgba(255, 255, 255, 0.05);
 }
 
-/* line 72, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 72, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .stringUI {
   display: table-cell;
   min-width: 120px;
@@ -1448,7 +1544,7 @@ header h1 {
   border-right: 2px solid rgba(255, 255, 255, 0.05);
 }
 
-/* line 81, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 81, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .note {
   display: inline-block;
   width: 40px;
@@ -1458,18 +1554,18 @@ header h1 {
   line-height: 40px;
 }
 
-/* line 89, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 89, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .inactive {
   color: rgba(255, 255, 255, 0.3);
 }
 
-/* line 94, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 94, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .pos-0 {
   background: rgba(255, 255, 255, 0.03);
   border-right: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* line 99, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 99, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete-w1 {
   position: absolute;
   top: 1px;
@@ -1480,9 +1576,9 @@ header h1 {
   box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 5px;
 }
 
-/* line 107, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 107, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete {
-  background: url('../images/canvas.png?1346458209');
+  background: url('../images/canvas.jpg?1347047861');
   cursor: pointer;
   text-align: left;
   max-height: 350px;
@@ -1492,24 +1588,24 @@ header h1 {
   padding: 10px;
 }
 
-/* line 119, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 119, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete .selected {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* line 122, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 122, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete div {
   padding: 2px 5px;
   white-space: nowrap;
 }
 
-/* line 126, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 126, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .autocomplete strong {
   font-weight: normal;
   color: #39f;
 }
 
-/* line 132, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 132, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input, textarea {
   border: none;
   width: 330px;
@@ -1520,12 +1616,12 @@ input, textarea {
   padding-left: 36px;
   color: #dad7c8;
 }
-/* line 147, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 147, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 input:focus, textarea:focus {
   outline: none;
 }
 
-/* line 152, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 152, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .definition {
   display: table;
   float: right;
@@ -1534,13 +1630,13 @@ input:focus, textarea:focus {
   border-radius: 60px;
 }
 
-/* line 160, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 160, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .name {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 165, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 165, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .name > h1 {
   color: #dad7c8;
   font-family: "Sail";
@@ -1549,34 +1645,34 @@ input:focus, textarea:focus {
   padding: 0px 14px 12px;
 }
 
-/* line 172, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 172, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 ul.note-list, ul.interval-list {
   padding: 0 8px;
 }
 
-/* line 175, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 175, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 li.note {
   margin: 4px 4px;
 }
 
-/* line 179, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 179, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 div.stringUI a {
   font-size: 19px;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.2);
   padding: 0 5px;
 }
-/* line 184, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 184, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 div.stringUI a:hover {
   color: #dad7c8;
 }
 
-/* line 190, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 190, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related {
-  margin: 10px 0;
-  padding: 0 10px;
+  margin: 0;
+  padding: 0 0 0 10px;
 }
-/* line 195, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 195, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related h1 {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   clear: right;
@@ -1588,15 +1684,15 @@ div.stringUI a:hover {
   display: block;
   width: 100%;
 }
-/* line 208, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 208, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related .definition {
-  width: 32%;
+  width: 24.3%;
   float: left;
   margin: 5px;
   padding: 0px 0px 0px 0px;
   border-radius: 16px;
 }
-/* line 215, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 215, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related .definition h1 {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
   font-size: 16px;
@@ -1605,7 +1701,7 @@ div.stringUI a:hover {
   line-height: 18px;
   padding: 10px;
 }
-/* line 223, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 223, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related .definition .note {
   display: inline-block;
   width: 25px;
@@ -1615,13 +1711,13 @@ div.stringUI a:hover {
   letter-spacing: 1px;
   line-height: 26px;
 }
-/* line 232, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 232, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 #related .definition ul.note-list, #related .definition ul.interval-list {
   padding: 2px 8px;
   float: left;
 }
 
-/* line 239, /Users/user/Sites/fretboard/public/stylesheets/sass/style.scss */
+/* line 239, /Volumes/HD/web_projects/fretboard/public/stylesheets/sass/style.scss */
 .tag {
   text-decoration: none;
 }

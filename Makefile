@@ -2,7 +2,6 @@ test:
 	@./node_modules/mocha/bin/mocha -R spec
 
 pack-js:
-	cat ./public/javascripts/underscore.config.js > ./public/javascripts/app.js
 	cat ./public/javascripts/note-dictionary.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/router/router.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/models/note.collection.js >> ./public/javascripts/app.js

@@ -8,5 +8,12 @@
     "cdir": "~0.1.0",
     "stylus": "~0.26.0",
     "nib": "~0.4.1"
+  },
+  "subdomain": "yz.fretboard",
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "0.8.x"
   }
 }

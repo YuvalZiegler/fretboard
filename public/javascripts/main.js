@@ -16,4 +16,5 @@ var App = (function (App){
 
 })(App||{});
 
-App.start();
+
+$().ready(App.start());

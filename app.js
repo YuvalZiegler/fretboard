@@ -6,9 +6,10 @@
 var express = require('express'),
     routes  = require('./routes');
 
-var app = module.exports = express.createServer();
 
-//app.settings.env = "production";
+var app = module.exports = express.createServer();
+var PORT = process.env.PORT || 3000;
+
 // Configuration
 
 app.configure(function(){
@@ -21,6 +22,7 @@ app.configure(function(){
   app.use(express.favicon());
   app.use(express.logger('dev'));
   app.use(express.static(__dirname + '/public'));
+
 
 });
 
@@ -37,9 +39,6 @@ app.get('/', routes.index);
 app.get('/instrument/:name', routes.index);
 app.get('/tuning/:strings', routes.index);
 
-
-
-
-app.listen(3000, function(){
+app.listen(PORT, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
 });

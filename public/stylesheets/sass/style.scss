@@ -189,8 +189,8 @@ div.stringUI a {
 // Related chords
 #related {
   @extend .inset;
-  margin: 10px 0;
-  padding: 0 10px;
+  margin:  0;
+  padding: 0 0 0 10px;
 
   h1 {
     @include text-shadow(2px 2px 1px rgba(black,0.5));
@@ -206,7 +206,7 @@ div.stringUI a {
   }
 
   .definition {
-    width: 32%;
+    width: 24.3%;
     float: left;
     margin: 5px;
     padding: 0px 0px 0px 0px;

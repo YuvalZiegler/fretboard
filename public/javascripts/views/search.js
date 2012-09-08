@@ -4,19 +4,19 @@ var App = (function (App) {
         el: '#search',
 
         events : {
-            'keyup' : 'handleEnter'
+            'keyup' : 'handleKeyDown'
         },
 
         initialize: function (){
-            _.bindAll(this, 'render','handleEnter');
-            $(this.el).autocomplete({lookup:NoteDictionary.getAllDefinitions(), onSelect: this.handleEnter });
-            $(this.el).on('keydown', this.handleEnter);
+            _.bindAll(this, 'render','handleKeyDown');
+            $(this.el).autocomplete({lookup:NoteDictionary.getAllDefinitions(), onSelect: this.handleKeyDown });
+            $(this.el).on('keydown', this.handleKeyDown);
             App.dispatcher.on("chordChange", this.render);
             App.dispatcher.on("scaleChange", this.render);
             $(this.el).focus();
         },
 
-        handleEnter : function (event) {
+        handleKeyDown : function (event) {
 
             if ($(this.el).val()){
                   try {

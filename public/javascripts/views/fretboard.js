@@ -18,9 +18,10 @@ var App = (function (App) {
             }
         },
         update: function(e){
+
             $(this.el).empty();
             this.render();
-            console.log("update function triggered in FretBoard view",e);
+
         }
 
 
