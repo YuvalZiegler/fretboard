@@ -1,5 +1,5 @@
 /*global Backbone _ NoteDictionary */
-var App = (function (App) {
+var Fretboard = (function (App) {
 
     App.NotesCollection = Backbone.Collection.extend({
 
@@ -63,4 +63,4 @@ var App = (function (App) {
     });
 
     return App;
-})(App || {});
+})(Fretboard || {});

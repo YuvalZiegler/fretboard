@@ -1,6 +1,7 @@
 /*global Backbone _ NoteDictionary */
 
-var App = (function (App) {
+var Fretboard = (function (App) {
+
     App.FretboardView = Backbone.View.extend({
         el:'#fretboard',
 
@@ -27,4 +28,4 @@ var App = (function (App) {
 
     });
     return App;
-})(App || {});
+})(Fretboard || {});

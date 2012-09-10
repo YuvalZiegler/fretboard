@@ -37,7 +37,9 @@ app.configure('production', function(){
 // Routes
 app.get('/', routes.index);
 app.get('/instrument/:name', routes.index);
+app.get('/instrument/:name/:query', routes.index);
 app.get('/tuning/:strings', routes.index);
+app.get('/tuning/:strings/:query', routes.index);
 
 app.listen(PORT, function(){
   console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

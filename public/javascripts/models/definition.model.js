@@ -1,6 +1,6 @@
 /*global Backbone NoteDictionary _ */
 
-var App = (function (App) {
+var Fretboard = (function (App) {
 
     App.ChordDefinitionModel  = Backbone.Model.extend({
         defaults:{
@@ -41,4 +41,4 @@ var App = (function (App) {
     });
 
     return App;
-})(App || {});
+})(Fretboard || {});

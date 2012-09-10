@@ -1,5 +1,5 @@
 /*global Backbone */
-var App = (function (App) {
+var Fretboard = (function (App) {
 
     App.NoteModel = Backbone.Model.extend({
         defaults: {
@@ -17,4 +17,4 @@ var App = (function (App) {
     });
 
     return App;
-})(App || {});
+})(Fretboard || {});

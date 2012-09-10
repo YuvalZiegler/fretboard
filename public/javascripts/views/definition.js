@@ -1,5 +1,5 @@
 /*global Backbone _ NoteDictionary */
-var App = (function (App) {
+var Fretboard = (function (App) {
 
     App.ChordDefinitionView = Backbone.View.extend({
 
@@ -19,4 +19,4 @@ var App = (function (App) {
         }
     });
     return App;
-})(App || {});
+})(Fretboard || {});

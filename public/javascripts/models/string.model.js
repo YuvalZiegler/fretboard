@@ -1,6 +1,6 @@
 /*global Backbone NoteDictionary */
 
-var App = (function (App) {
+var Fretboard = (function (App) {
     App.StringModel = Backbone.Model.extend({
         defaults: {
             key:undefined,
@@ -17,4 +17,4 @@ var App = (function (App) {
 
     });
     return App;
-})(App || {});
+})(Fretboard || {});

@@ -6,12 +6,12 @@ var NoteDictionary = (function (){
     // Private
     ////////////////////////////////////////////////
 
-    var noteList    =   ['A','A#','Bb','B','C','C#','Db','D','D#','Eb','E','F','F#','Gb','G','G#','Ab'];
-    var	notes       =   ['A','A#/Bb', 'B', 'C','C#/Db','D','D#/Eb','E','F','F#/Gb','G','G#/Ab'];
-    var notesSharp  =   ['A'	,'A#', 'B'	, 'C'	, 'C#'	, 'D'	, 'D#'  ,   'E'	, 'F'	, 'F#' 	, 'G'	, 'G#'	];
-    var	notesFlat   =   ['A'	,'Bb', 'B'	, 'C'	, 'Db'	, 'D'	, 'Eb'  ,   'E'	, 'F'	, 'Gb' 	, 'G'	, 'Ab'	];
-    var intervals	=   ['P1'	, 'm2'	, 'M2'	, 'm3'	, 'M3'	, 'P4'	, 'd5'	, 'P5'	, 'm6'	, 'M6'	, 'm7'	, 'M7' ];
-    var intervalsAlt=   ['ROOT' , 'b2'	, '2'	, 'b3'	, '3'	, '4'	, 'b5'	, '5'	, 'b6'	, '6'	, 'b7'	, '7' ];
+    var noteList = ['A', 'A#', 'Bb', 'B', 'C', 'C#', 'Db', 'D', 'D#', 'Eb', 'E', 'F', 'F#', 'Gb', 'G', 'G#', 'Ab'];
+    var notes = ['A', 'A#/Bb', 'B', 'C', 'C#/Db', 'D', 'D#/Eb', 'E', 'F', 'F#/Gb', 'G', 'G#/Ab'];
+    var notesSharp = ['A'    , 'A#', 'B'    , 'C'    , 'C#'    , 'D'    , 'D#'  , 'E'    , 'F'    , 'F#'     , 'G'    , 'G#'    ];
+    var notesFlat = ['A'    , 'Bb', 'B'    , 'C'    , 'Db'    , 'D'    , 'Eb'  , 'E'    , 'F'    , 'Gb'     , 'G'    , 'Ab'    ];
+    var intervals = ['P1'    , 'm2'    , 'M2'    , 'm3'    , 'M3'    , 'P4'    , 'd5'    , 'P5'    , 'm6'    , 'M6'    , 'm7'    , 'M7' ];
+    var intervalsAlt = ['ROOT' , 'b2'    , '2'    , 'b3'    , '3'    , '4'    , 'b5'    , '5'    , 'b6'    , '6'    , 'b7'    , '7' ];
 
     var scales = {
                'chromatic'      :   {intervals:intervals},
@@ -33,38 +33,38 @@ var NoteDictionary = (function (){
     };
 
     var chords = {
-                'major'		: {intervals:['P1','M3','P5']},
-                'm'			: {intervals:['P1','m3','P5']},
-                'dim'   	: {intervals:['P1','m3','d5']},
-                'aug'		: {intervals:['P1','M3','m6']},
-                '6'     	: {intervals:['P1','M3','P5', 'M6']},
-                'm6'    	: {intervals:['P1','m3','P5', 'M6']},
-                '6/9'		: {intervals:['P1','M2','M3','P5', 'M6']},
-                'maj7'		: {intervals:['P1','M3','P5', 'M7']},
-                '7'			: {intervals:['P1','M3','P5', 'm7']},
-                '7b5'		: {intervals:['P1','M3','d5', 'm7']},
-                '7#5'		: {intervals:['P1','M3','m6', 'm7']},
-                'm7'		: {intervals:['P1','m3','P5', 'm7']},
-                'm(maj7)'	: {intervals:['P1','m3','P5', 'M7']},
-                'm7b5'		: {intervals:['P1','m3','d5', 'm7']},
-                'dim7'		: {intervals:['P1','m3','d5', 'm7']},
-                '9'			: {intervals:['P1','M2','M3','P5','m7']},
-                '9b5'		: {intervals:['P1','M2','M3','d5','m7']},
-                '9#5'		: {intervals:['P1','M2','M3','m6','m7']},
-                'maj9'		: {intervals:['P1','M2','M3','P5','M7']},
-                'm9'		: {intervals:['P1','M2','m3','P5','m7']},
-                'm11'		: {intervals:['P1','m3','P4','P5','m7']},
-                '13'		: {intervals:['P1','M3','P5','M6','m7']},
-                'maj13'		: {intervals:['P1','M3','P5','M6','M7']},
-                'maj7b6'    : {intervals:['P1','M3','P5','m6','M7']},
-                'm7b6'      : {intervals:['P1','m3','P5','m6','M7']},
-                'sus4'		: {intervals:['P1','P4','P5']},
-                'sus2'		: {intervals:['P1','M2','P5']},
-                '7sus4'		: {intervals:['P1','P4','P5','m7']},
-                '7sus2'		: {intervals:['P1','M2','P5','m7']},
-                '9sus4'		: {intervals:['P1','M2','P4','P5','m7']},
-                '9sus2'		: {intervals:['P1','M2', 'P5','m7']},
-                '5'     	: {intervals:['P1','P5']}
+        'major':{intervals:['P1', 'M3', 'P5']},
+        'm':{intervals:['P1', 'm3', 'P5']},
+        'dim':{intervals:['P1', 'm3', 'd5']},
+        'aug':{intervals:['P1', 'M3', 'm6']},
+        '6':{intervals:['P1', 'M3', 'P5', 'M6']},
+        'm6':{intervals:['P1', 'm3', 'P5', 'M6']},
+        '6/9':{intervals:['P1', 'M2', 'M3', 'P5', 'M6']},
+        'maj7':{intervals:['P1', 'M3', 'P5', 'M7']},
+        '7':{intervals:['P1', 'M3', 'P5', 'm7']},
+        '7b5':{intervals:['P1', 'M3', 'd5', 'm7']},
+        '7#5':{intervals:['P1', 'M3', 'm6', 'm7']},
+        'm7':{intervals:['P1', 'm3', 'P5', 'm7']},
+        'm(maj7)':{intervals:['P1', 'm3', 'P5', 'M7']},
+        'm7b5':{intervals:['P1', 'm3', 'd5', 'm7']},
+        'dim7':{intervals:['P1', 'm3', 'd5', 'm7']},
+        '9':{intervals:['P1', 'M2', 'M3', 'P5', 'm7']},
+        '9b5':{intervals:['P1', 'M2', 'M3', 'd5', 'm7']},
+        '9#5':{intervals:['P1', 'M2', 'M3', 'm6', 'm7']},
+        'maj9':{intervals:['P1', 'M2', 'M3', 'P5', 'M7']},
+        'm9':{intervals:['P1', 'M2', 'm3', 'P5', 'm7']},
+        'm11':{intervals:['P1', 'm3', 'P4', 'P5', 'm7']},
+        '13':{intervals:['P1', 'M3', 'P5', 'M6', 'm7']},
+        'maj13':{intervals:['P1', 'M3', 'P5', 'M6', 'M7']},
+        'maj7b6':{intervals:['P1', 'M3', 'P5', 'm6', 'M7']},
+        'm7b6':{intervals:['P1', 'm3', 'P5', 'm6', 'M7']},
+        'sus4':{intervals:['P1', 'P4', 'P5']},
+        'sus2':{intervals:['P1', 'M2', 'P5']},
+        '7sus4':{intervals:['P1', 'P4', 'P5', 'm7']},
+        '7sus2':{intervals:['P1', 'M2', 'P5', 'm7']},
+        '9sus4':{intervals:['P1', 'M2', 'P4', 'P5', 'm7']},
+        '9sus2':{intervals:['P1', 'M2', 'P5', 'm7']},
+        '5':{intervals:['P1', 'P5']}
     };
 
     function notesToChord(noteArray){
@@ -77,7 +77,7 @@ var NoteDictionary = (function (){
         });
     }
     function notesToIndexes(noteArray){
-        var n = shiftNotes(_.indexOf(notes, noteArray[0]))
+        var n = shiftNotes(_.indexOf(notes, noteArray[0]));
         return _.map(noteArray , function (note) { return(_.indexOf(n, note)); });
     }
     function IntervalsToIndexes(intervalArray){
@@ -115,17 +115,17 @@ var NoteDictionary = (function (){
     }
     function getScale(key, scale){
         if (scales[scale]){
-            return {key:key, scale:scale, notes:getNotes(key, scales[scale].intervals ), intervals: scales[scale].intervals, isScale:true}
+            return {key:key, scale:scale, notes:getNotes(key, scales[scale].intervals ), intervals: scales[scale].intervals, isScale:true};
         }  else {
-            return {key:key, scale:scale, notes:[],intervals:[], isScale:true}
+            return {key:key, scale:scale, notes:[],intervals:[], isScale:true};
         }
     }
     function getChord(key, chord){
         chord = (!chord) ? 'major' : chord;
         if(chords[chord] && key){
-            return {key:key, chord:chord, notes:getNotes(key, chords[chord].intervals ), intervals: chords[chord].intervals, isScale:false}
+            return {key:key, chord:chord, notes:getNotes(key, chords[chord].intervals ), intervals: chords[chord].intervals, isScale:false};
         }  else {
-            return {key:key, chord:chord, notes:[],intervals:[],isScale:false}
+            return {key:key, chord:chord, notes:[],intervals:[],isScale:false};
         }
     }
     ////////////////////////////////////////////////
@@ -154,13 +154,16 @@ var NoteDictionary = (function (){
                 chordArray = [],
                 key;
 
-            for (var i=0, l=scale.notes.length; i<l ; i++){
-                triads[i] = notesToChord([scaleNotes[0],scaleNotes[2],scaleNotes[4]]);
+            for (var i=0, l=scale.notes.length; i<l ; i++) {
+                triads[i] = notesToChord([scaleNotes[0], scaleNotes[2], scaleNotes[4]]);
 
-                key = (scaleNotes[0].length>2) ? scaleNotes[0].substr(0,2) : scaleNotes[0]
+                key = (scaleNotes[0].length > 2) ? scaleNotes[0].substr(0, 2) : scaleNotes[0];
 
-                returnAsObject ? chordArray.push(this.getChord(key,triads[i])) :
-                                 chordArray.push( key+""+(triads[i]==="major"? "":triads[i]));
+                if (returnAsObject) {
+                    chordArray.push(this.getChord(key, triads[i]));
+                } else {
+                    chordArray.push(key + "" + (triads[i] === "major" ? "" : triads[i]));
+                }
                 scaleNotes.push(scaleNotes.shift());
             }
             return chordArray;
@@ -170,16 +173,19 @@ var NoteDictionary = (function (){
         },
         getScalesOfChord:function(query, returnAsObject){
             var chord= this.parseQuery(query), scalesArray = [], noteArray;
-            if(chord.key.charAt(1)=="b") {noteArray=notesFlat} else {noteArray=notesSharp}
+            if(chord.key.charAt(1)==="b") {noteArray=notesFlat;} else {noteArray=notesSharp;}
             // loop through all notes
             for (var i=0, l = noteArray.length; i<l; i++){
                // loop through all scales
                for (var mod in scales){
                 if (mod!=="chromatic"){
                     var scale = this.parseQuery(noteArray[i]+" "+ mod);
-                    if (this.isChordInScale(chord, scale)){
-                        returnAsObject ? scalesArray.push(scale) :
-                                         scalesArray.push(noteArray[i] + " " + scale.scale);
+                    if (this.isChordInScale(chord, scale)) {
+                        if (returnAsObject) {
+                            scalesArray.push(scale);
+                        } else {
+                            scalesArray.push(noteArray[i] + " " + scale.scale);
+                        }
                     }
                 }
                }
@@ -187,11 +193,11 @@ var NoteDictionary = (function (){
             return scalesArray;
         },
         getAllDefinitions:function(){
-            var definitions = [],  modifiers = []
+            var definitions = [],  modifiers = [];
 
-            for(var key in chords) {
-                if(chords.hasOwnProperty(key)) {
-                    modifiers.push(key === 'major' ? '' : key);
+            for(var mod in chords) {
+                if(chords.hasOwnProperty(mod)) {
+                    modifiers.push(mod === 'major' ? '' : mod);
                 }
             }
             // convert the scale keys to an array of strings

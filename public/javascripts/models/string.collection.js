@@ -1,5 +1,5 @@
 /*global Backbone */
-var App = (function (App) {
+var Fretboard = (function (App) {
     App.StringCollection = Backbone.Collection.extend({
         initialize: function(strings){
             // reversing the array to create the strings from top to bottom
@@ -13,4 +13,4 @@ var App = (function (App) {
     });
 
     return App;
-})(App || {});
+})(Fretboard || {});

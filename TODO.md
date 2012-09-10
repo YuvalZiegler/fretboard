@@ -1,17 +1,16 @@
-# Relation View
-- Create Template   
+# UI
+* INTERVAL / NOTE SWITCH IN FOR THE CHORD DEF VIEW
+- Note Selector
+- Scale / Chord Switch
+- Free form mode (turn intervals on to create custom chords) (?)
+- Save & Share Options
+- Sound
+
 
 # ISSUES:
 - changes in url should not completely refresh page - should be a one page app.
 - adding strings re-renders all strings
  
-# UI
-* Note Selector
-- Note Name / Interval Name / Freq - switch
-- Scale / Chord Switch
-- Free form mode (turn intervals on to create custom chords) (?)
-- Save & Share Options
-- Sound
 
 # Definition View
 - Note Name / Interval Name  - switch

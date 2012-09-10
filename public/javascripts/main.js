@@ -5,7 +5,7 @@
  * Time: 2:09 PM
  */
 
-var App = (function (App){
+var Fretboard = (function (App){
 
     App.start = function(){
         App.router =  new App.Router();
@@ -14,7 +14,7 @@ var App = (function (App){
 
     return App;
 
-})(App||{});
+})(Fretboard||{});
 
 
-$().ready(App.start());
+$().ready(Fretboard.start());

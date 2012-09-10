@@ -1,5 +1,5 @@
 /*global Backbone _ NoteDictionary */
-var App = (function (App) {
+var Fretboard = (function (App) {
     App.SearchView = Backbone.View.extend({
         el: '#search',
 
@@ -21,8 +21,9 @@ var App = (function (App) {
             if ($(this.el).val()){
                   try {
                         App.notesCollection.setActiveNotes($(this.el).val());
+
                   } catch (e) {
-                       console.log('App.dispatcher.trigger("onError",e)', e);
+                       console.log('Fretboard.dispatcher.trigger("onError",e)', e);
                   }
             }
         },
@@ -34,4 +35,4 @@ var App = (function (App) {
 
     });
     return App;
-})(App || {});
+})(Fretboard || {});

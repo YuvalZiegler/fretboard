@@ -1,20 +1,25 @@
 /*global Backbone _ NoteDictionary */
-var App = (function (App){
+var Fretboard = (function (App){
 
     App.Router = Backbone.Router.extend({
 
         routes:{
             '':  'setInstrument',
             'instrument/:name' : 'setInstrument',
-            'tuning/:strings' : 'setTuning'
+            'tuning/:strings' : 'setTuning',
+            'tuning/:strings/:query' : 'setTuning',
+            'instrument/:name/:query' : 'setInstrument'
         },
+
         initialize:function(options){
             // Setup the event dispatcher and an octave of NoteModels
+
             App.dispatcher = _.clone(Backbone.Events);
             App.notesCollection  = new App.NotesCollection();
         },
 
-        setInstrument : function(name){
+
+        setInstrument : function(name, query){
             var instrument = {
                 "bass":     ["E", "A", "D", "G"],
                 "guitar":   ["E", "A", "D", "G", "B", "E"],
@@ -23,11 +28,18 @@ var App = (function (App){
             name = name ? name.toLowerCase() : "guitar";
             var strings = instrument[name];
             this.createFretboardView(strings);
+            if (query) {
+                App.notesCollection.setActiveNotes(query);
+            }
         },
 
-        setTuning : function(tuning){
+
+        setTuning : function(tuning, query){
             var strings = tuning.split(",");
             this.createFretboardView(strings);
+            if (query) {
+                App.notesCollection.setActiveNotes(query);
+            }
         },
 
         createFretboardView: function(strings){
@@ -43,5 +55,5 @@ var App = (function (App){
 
     return App;
 
-})(App || {});
+})(Fretboard || {});
 
