@@ -1,6 +1,9 @@
 /*global Backbone _ NoteDictionary */
 var Fretboard = (function (App){
 
+    // State settings
+    App.DISPLAY_AS_INTERVALS=false;
+
     App.Router = Backbone.Router.extend({
 
         routes:{
@@ -41,6 +44,8 @@ var Fretboard = (function (App){
                 App.notesCollection.setActiveNotes(query);
             }
         },
+
+
 
         createFretboardView: function(strings){
             App.searchView = App.searchView  || new App.SearchView();

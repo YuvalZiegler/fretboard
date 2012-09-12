@@ -54,6 +54,7 @@ var Fretboard = (function (App) {
         },
 
         submitQuery:function(e){
+
            App.notesCollection.setActiveNotes(e.srcElement.innerText);
         }
 

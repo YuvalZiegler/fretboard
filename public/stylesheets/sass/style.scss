@@ -22,29 +22,35 @@ a {
 
 }
 body {
-  padding: 40px;
-  font-family: "Helvetica";
+  
+  font-family: $ff2;
   color:$font-color;
-  @include background($backgroundImage,linear-gradient(top, $backgroundColor, $backgroundColor));
+  background:$backgroundImage;
 }
-.left{
-  float:left;
+.title{
+
+    text-align: center;
+    width: 100%;
+
 }
+
 #content {
+  padding: 0 40px;
   width: 100%;
   margin: 0 auto;
 }
 header{
   width:100%;
-  float:left;
+  margin-bottom: 20px;
+  background:$backgroundImage;
 }
 
 header h1 {
-  @include text-shadow(2px 2px 1px rgba(black,0.5));
+  padding: 20px 0 0 0;
   font-family: $ff1;
   color: $font-color;
-  font-size: 79px;
-  line-height: 80px;
+  font-size: 110px;
+
 
 }
 
@@ -57,8 +63,9 @@ header h1 {
 .string {
   @extend .inset;
   display: block;
-  margin: 5px 10px;
+  margin: 5px 0px;
   @include border-radius(20px 0 0 20px);
+  background:$backgroundImage2;
 }
 .fret {
   display: table-cell;
@@ -99,7 +106,7 @@ header h1 {
 .autocomplete-w1 {
   position: absolute;
   top: 1px;
-  left: 20px;
+  left: 0px;
   background: 0;
   @include box-shadow(rgba(black,0.5) 0px 2px 5px);
 }
@@ -129,33 +136,46 @@ header h1 {
   
 }
 
+.search{
+  float:left;
+  @extend .inset;
+  @include border-radius(20px);
+  padding-left:14px;
+  margin-bottom: 20px;
+}
+
 input,textarea {
   
-  @extend .inset;
-
   border: none;
   width: 330px;
-  height: 30px;
-
-  border-radius: 30px;
-  margin: 10px;
+  height: 40px;
+  background-color:transparent;
+  padding: 0 10px;
   font-size: 16px;
-  padding-left: 36px;
-
   color: $font-color;
-
   &:focus{
    outline: none;
   }
 }
 // Note Dicitionary
+
 .definition{
-  @extend .inset;
+  float:right;
+  //@extend .inset;
   display: table;
-  float: right;
-  margin: 6px 0px;
-  padding: 10px 30px 10px 6px;
-  border-radius: 60px;
+  @include border-radius(20px);
+  .note {
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    line-height: 32px;
+    width: 30px;
+    height:30px;
+  }
+}
+.legend{
+  display: table-cell;
+  vertical-align: middle;
 }
 .name {
   display: table-cell;
@@ -164,10 +184,9 @@ input,textarea {
 
 .name > h1 {
   color: $font-color;
-  font-family:$ff1;
-  font-size: 30px;
-  border-right:1px solid;
-  padding: 0px 14px 12px;
+  font-size: 16px;
+  padding: 0 10px;
+  text-align: center;
 }
 ul.note-list, ul.interval-list {
   padding: 0 8px;
@@ -188,14 +207,15 @@ div.stringUI a {
 
 // Related chords
 #related {
+  //visibility: hidden;
   @extend .inset;
   margin:  0;
-  padding: 0 0 0 10px;
+  padding: 0;
 
   h1 {
     @include text-shadow(2px 2px 1px rgba(black,0.5));
     clear: right;
-    font-family: "Sail";
+
     font-size: 32px;
     float: left;
     line-height: 48px;
@@ -206,31 +226,33 @@ div.stringUI a {
   }
 
   .definition {
-    width: 24.3%;
+
     float: left;
     margin: 5px;
     padding: 0px 0px 0px 0px;
-    border-radius: 16px;
+    box-shadow:none;
+    @include border-radius(20px);
+    background-color:rgba(black,0.2);
 
     h1{
       @include text-shadow(2px 2px 1px rgba(black,0.5));
       font-size: 16px;
-      width: 97px;
+
       text-align: center;
       line-height: 18px;
-      padding: 10px;
+      padding: 10px 0px 10px 20px;
     }
     .note {
       display: inline-block;
-      width: 25px;
-      height: 25px;
+      width: 17px;
+      height: 17px;
       text-align: center;
       font-size: 8px;
       letter-spacing: 1px;
-      line-height: 26px;
+      line-height: 18px;
     }
     ul.note-list, ul.interval-list {
-      padding: 2px 8px;
+      //padding: 2px 8px;
       float: left;
     }
 

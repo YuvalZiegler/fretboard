@@ -1,13 +1,17 @@
-div#content
-
-  header
-    div.left
-      h1= title
-      input#search(type="text", name="search", placeholder="Enter scale or chord name", class="icon-search")
-    div#chord-definition
+header
+  div.title
+    h1= title
     
+div#content
+  div#ui
+    div.search.icon-search
+      input#search(type="text", name="search", placeholder="Enter scale or chord name")
+    div#chord-definition
+      
   div#chord-navigator
     #fretboard
+
+
 
   div#related
 

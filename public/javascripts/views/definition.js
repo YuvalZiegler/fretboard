@@ -9,7 +9,7 @@ var Fretboard = (function (App) {
         initialize: function(){
             _.bindAll(this, 'render');
             this.model.bind('change', this.render);
-            //$('#definitionTemplate').remove();
+
         },
 
         render: function(){
