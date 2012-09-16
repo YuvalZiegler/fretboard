@@ -22,8 +22,8 @@ a {
 
 }
 body {
-  
   font-family: $ff2;
+  font-weight:200;
   color:$font-color;
   background:$backgroundImage;
 }
@@ -83,6 +83,7 @@ header h1 {
   text-align: center;
   vertical-align: middle;
   border-right: 2px solid rgba(255, 255, 255, 0.05);
+
 }
 
 .note {
@@ -139,6 +140,7 @@ header h1 {
 .search{
   float:left;
   @extend .inset;
+  //background:$backgroundImage2;
   @include border-radius(20px);
   padding-left:14px;
   margin-bottom: 20px;
@@ -158,19 +160,20 @@ input,textarea {
   }
 }
 // Note Dicitionary
-
-.definition{
-  float:right;
-  //@extend .inset;
-  display: table;
-  @include border-radius(20px);
-  .note {
-    display: inline-block;
-    text-align: center;
-    font-size: 12px;
-    line-height: 32px;
-    width: 30px;
-    height:30px;
+#chord-definition{
+  .definition{
+    float:right;
+    //@extend .inset;
+    display: table;
+    @include border-radius(20px);
+    .note {
+      display: inline-block;
+      text-align: center;
+      font-size: 12px;
+      line-height: 32px;
+      width: 30px;
+      height:30px;
+    }
   }
 }
 .legend{
@@ -198,8 +201,9 @@ li.note {
 div.stringUI a {
   font-size: 19px;
   text-decoration: none;
-  color:rgba(255,255,255,0.2);
-  padding:0 5px;
+  color: rgba(white,0.2);
+  padding: 0 4px;
+  line-height: 9px;
   &:hover{
     color:$font-color;
   }
@@ -208,26 +212,19 @@ div.stringUI a {
 // Related chords
 #related {
   //visibility: hidden;
-  @extend .inset;
+  width:100%;
   margin:  0;
   padding: 0;
-
+  text-align:justify;
   h1 {
     @include text-shadow(2px 2px 1px rgba(black,0.5));
-    clear: right;
-
     font-size: 32px;
-    float: left;
     line-height: 48px;
     text-align: center;
-    display: block;
-    width: 100%;
-
   }
 
   .definition {
-
-    float: left;
+    //float: left;
     margin: 5px;
     padding: 0px 0px 0px 0px;
     box-shadow:none;
@@ -237,13 +234,12 @@ div.stringUI a {
     h1{
       @include text-shadow(2px 2px 1px rgba(black,0.5));
       font-size: 16px;
-
       text-align: center;
       line-height: 18px;
       padding: 10px 0px 10px 20px;
     }
     .note {
-      display: inline-block;
+      //display: inline-block;
       width: 17px;
       height: 17px;
       text-align: center;
@@ -253,7 +249,7 @@ div.stringUI a {
     }
     ul.note-list, ul.interval-list {
       //padding: 2px 8px;
-      float: left;
+     // float: left;
     }
 
   }

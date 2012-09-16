@@ -224,22 +224,30 @@ var NoteDictionary = (function (){
 if (typeof exports !== 'undefined') { exports = module.exports = NoteDictionary; }
 
 /*global Backbone _ NoteDictionary */
-var App = (function (App){
+var Fretboard = (function (App){
+
+    // State settings
+    App.DISPLAY_AS_INTERVALS=false;
 
     App.Router = Backbone.Router.extend({
 
         routes:{
             '':  'setInstrument',
             'instrument/:name' : 'setInstrument',
-            'tuning/:strings' : 'setTuning'
+            'tuning/:strings' : 'setTuning',
+            'tuning/:strings/:query' : 'setTuning',
+            'instrument/:name/:query' : 'setInstrument'
         },
+
         initialize:function(options){
             // Setup the event dispatcher and an octave of NoteModels
+
             App.dispatcher = _.clone(Backbone.Events);
             App.notesCollection  = new App.NotesCollection();
         },
 
-        setInstrument : function(name){
+
+        setInstrument : function(name, query){
             var instrument = {
                 "bass":     ["E", "A", "D", "G"],
                 "guitar":   ["E", "A", "D", "G", "B", "E"],
@@ -248,12 +256,21 @@ var App = (function (App){
             name = name ? name.toLowerCase() : "guitar";
             var strings = instrument[name];
             this.createFretboardView(strings);
+            if (query) {
+                App.notesCollection.setActiveNotes(query);
+            }
         },
 
-        setTuning : function(tuning){
+
+        setTuning : function(tuning, query){
             var strings = tuning.split(",");
             this.createFretboardView(strings);
+            if (query) {
+                App.notesCollection.setActiveNotes(query);
+            }
         },
+
+
 
         createFretboardView: function(strings){
             App.searchView = App.searchView  || new App.SearchView();
@@ -268,10 +285,10 @@ var App = (function (App){
 
     return App;
 
-})(App || {});
+})(Fretboard || {});
 
 /*global Backbone _ NoteDictionary */
-var App = (function (App) {
+var Fretboard = (function (App) {
 
     App.NotesCollection = Backbone.Collection.extend({
 
@@ -335,9 +352,9 @@ var App = (function (App) {
     });
 
     return App;
-})(App || {});
+})(Fretboard || {});
 /*global Backbone */
-var App = (function (App) {
+var Fretboard = (function (App) {
 
     App.NoteModel = Backbone.Model.extend({
         defaults: {
@@ -355,9 +372,9 @@ var App = (function (App) {
     });
 
     return App;
-})(App || {});/*global Backbone NoteDictionary */
+})(Fretboard || {});/*global Backbone NoteDictionary */
 
-var App = (function (App) {
+var Fretboard = (function (App) {
     App.StringModel = Backbone.Model.extend({
         defaults: {
             key:undefined,
@@ -374,8 +391,8 @@ var App = (function (App) {
 
     });
     return App;
-})(App || {});/*global Backbone */
-var App = (function (App) {
+})(Fretboard || {});/*global Backbone */
+var Fretboard = (function (App) {
     App.StringCollection = Backbone.Collection.extend({
         initialize: function(strings){
             // reversing the array to create the strings from top to bottom
@@ -389,9 +406,9 @@ var App = (function (App) {
     });
 
     return App;
-})(App || {});/*global Backbone NoteDictionary _ */
+})(Fretboard || {});/*global Backbone NoteDictionary _ */
 
-var App = (function (App) {
+var Fretboard = (function (App) {
 
     App.ChordDefinitionModel  = Backbone.Model.extend({
         defaults:{
@@ -432,8 +449,8 @@ var App = (function (App) {
     });
 
     return App;
-})(App || {});/*global Backbone _ NoteDictionary */
-var App = (function (App) {
+})(Fretboard || {});/*global Backbone _ NoteDictionary */
+var Fretboard = (function (App) {
     App.SearchView = Backbone.View.extend({
         el: '#search',
 
@@ -455,6 +472,7 @@ var App = (function (App) {
             if ($(this.el).val()){
                   try {
                         App.notesCollection.setActiveNotes($(this.el).val());
+
                   } catch (e) {
                        console.log('Fretboard.dispatcher.trigger("onError",e)', e);
                   }
@@ -468,9 +486,9 @@ var App = (function (App) {
 
     });
     return App;
-})(App || {});/*global Backbone _ NoteDictionary */
+})(Fretboard || {});/*global Backbone _ NoteDictionary */
 
-var App = (function (App){
+var Fretboard = (function (App){
 
     App.NoteView = Backbone.View.extend({
 
@@ -505,8 +523,8 @@ var App = (function (App){
 
     });
     return App;
-})(App||{});/*global Backbone _ NoteDictionary */
-var App = (function (App) {
+})(Fretboard||{});/*global Backbone _ NoteDictionary */
+var Fretboard = (function (App) {
 
     App.StringView = Backbone.View.extend({
 
@@ -567,9 +585,10 @@ var App = (function (App) {
         }
     });
     return App;
-})(App || {});/*global Backbone _ NoteDictionary */
+})(Fretboard || {});/*global Backbone _ NoteDictionary */
 
-var App = (function (App) {
+var Fretboard = (function (App) {
+
     App.FretboardView = Backbone.View.extend({
         el:'#fretboard',
 
@@ -596,9 +615,9 @@ var App = (function (App) {
 
     });
     return App;
-})(App || {});
+})(Fretboard || {});
 /*global Backbone _ NoteDictionary */
-var App = (function (App) {
+var Fretboard = (function (App) {
 
     App.ChordDefinitionView = Backbone.View.extend({
 
@@ -608,7 +627,7 @@ var App = (function (App) {
         initialize: function(){
             _.bindAll(this, 'render');
             this.model.bind('change', this.render);
-            //$('#definitionTemplate').remove();
+
         },
 
         render: function(){
@@ -618,9 +637,9 @@ var App = (function (App) {
         }
     });
     return App;
-})(App || {});/*global Backbone _ NoteDictionary */
+})(Fretboard || {});/*global Backbone _ NoteDictionary */
 
-var App = (function (App) {
+var Fretboard = (function (App) {
 
 
     App.RelatedView = Backbone.View.extend({
@@ -674,19 +693,21 @@ var App = (function (App) {
         },
 
         submitQuery:function(e){
+
            App.notesCollection.setActiveNotes(e.srcElement.innerText);
         }
 
     });
     return App;
-})(App || {});/*global Backbone  */
+})(Fretboard || {});/*global Backbone  */
 /**
  * Author: YZ
  * Date: 4/5/12
  * Time: 2:09 PM
  */
 
-var App = (function (App){
+var Fretboard = (function (App){
+
 
     App.start = function(){
         App.router =  new App.Router();
@@ -695,7 +716,7 @@ var App = (function (App){
 
     return App;
 
-})(App||{});
+})(Fretboard||{});
 
 
-$().ready(App.start());
+$().ready(Fretboard.start());

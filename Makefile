@@ -28,6 +28,12 @@ pack-js:
 
 package:
 	make pack-js
-	compass
+	compass compile --force -c compass-production.rb
 
-.PHONY: test pack-js package
+run:
+	make package
+	@NODE_ENV=production PORT=8888 @node app&
+	open http://localhost:8888
+
+
+.PHONY: run test pack-js package
