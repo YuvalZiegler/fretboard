@@ -1,3 +1,8 @@
+////////////
+// FRETBOARD
+// (c) 2012 Yuval Ziegler.
+// Fretboard is freely distributable under the MIT license.
+///////////////////////////////////////////////////////////
 /*global Backbone _ */
 
 var NoteDictionary = (function (){
@@ -494,31 +499,34 @@ var Fretboard = (function (App){
 
         className:'fret',
 
+
         initialize:function(options){
-            _.bindAll(this,'render');
+            _.bindAll(this,'render','update');
             this.note = options.note;
             this.stringPosition = options.stringPosition;
             this.model = App.notesCollection.getModel(this.note);
-            this.model.bind('change', this.render);
+            this.model.bind('change', this.update);
             // set fret classes
             $(this.el)
                 .html('<div class="note inactive">' + this.model.attributes.note + '</div>')
                 .removeClass()
                 .addClass('fret ' + "pos-"+this.stringPosition);
+
             this.render();
         },
 
         render:function(){
             if(this.model.attributes.active){
-                $(this.el)
-                .html('<div class="note '+this.model.attributes.interval+' active">' + this.model.attributes.note + '</div>');
-              
+                $(this.el).html('<div class="note '+this.model.attributes.interval+' active">' + this.model.attributes.note + '</div>');
             } else {
-                $(this.el)
-                .html('<div class="note inactive">' + this.model.attributes.note + '</div>');
+                $(this.el).html('<div class="note inactive">' + this.model.attributes.note + '</div>');
             }
-
-
+        },
+        update:function(e){
+            var cssClass =  this.model.attributes.active ? "note active " + this.model.attributes.interval : "note inactive";
+            $(this.el.firstChild)
+                .removeClass()
+                .addClass(cssClass);
         }
 
     });
@@ -700,14 +708,8 @@ var Fretboard = (function (App) {
     });
     return App;
 })(Fretboard || {});/*global Backbone  */
-/**
- * Author: YZ
- * Date: 4/5/12
- * Time: 2:09 PM
- */
 
 var Fretboard = (function (App){
-
 
     App.start = function(){
         App.router =  new App.Router();

@@ -13,17 +13,18 @@ var Fretboard = (function (App) {
         },
 
         initialize: function (){
-            _.bindAll(this, 'render', 'submitQuery');
+
+            _.bindAll(this, 'render', 'submitQuery', 'update');
             App.dispatcher.on("chordChange", this.render);
             App.dispatcher.on("scaleChange", this.render);
-
+            App.dispatcher.bind("change", this.update);
         },
 
         render:function(e){
+
            var html,result,
                regEx= /\Bmajor/;
                var trim = function (o){
-
                      return o.charAt(2)==="/" ?  o.substr(0,2) : o;
                };
 
@@ -39,22 +40,19 @@ var Fretboard = (function (App) {
            for (var i=0,l=result.length; i<l; i++){
 
                var json = this.dict.parseQuery(result[i]);
-
                var notes = _.map(json.notes, trim);
                json.notes= notes;
                json.name= result[i].replace(regEx,"");
-
-
                html+=(_.template(this.template, json));
-
 
            }
 
            $(this.el).html(html);
         },
+        update:function(){
 
+        },
         submitQuery:function(e){
-
            App.notesCollection.setActiveNotes(e.srcElement.innerText);
         }
 

@@ -16,12 +16,12 @@
 
 
 # ISSUES:
-- changes in url should not completely refresh page - should be a one page app.
-- adding strings re-renders all strings
- 
+
+
+# Related View
+- Refactor each related result into its own view
 
 # Definition View
-- Note Name / Interval Name  - switch
 - Sound (?)
 
 # Note Dictionary

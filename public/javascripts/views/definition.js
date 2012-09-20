@@ -9,7 +9,7 @@ var Fretboard = (function (App) {
         initialize: function(){
             _.bindAll(this, 'render');
             this.model.bind('change', this.render);
-
+            App.dispatcher.bind('change', this.render);
         },
 
         render: function(){

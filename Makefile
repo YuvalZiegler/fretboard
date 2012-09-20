@@ -3,7 +3,8 @@ test:
 
 pack-js:
 	@echo "---> Creating app.js"
-	cat ./public/javascripts/note-dictionary.js > ./public/javascripts/app.js
+	cat ./license.txt > ./public/javascripts/app.js
+	cat ./public/javascripts/note-dictionary.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/router/router.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/models/note.collection.js >> ./public/javascripts/app.js
 	cat ./public/javascripts/models/note.model.js >> ./public/javascripts/app.js
@@ -22,9 +23,10 @@ pack-js:
 	cat ./public/javascripts/libs/jquery-1.8.1.min.js > ./public/javascripts/app.min.js
 	cat ./public/javascripts/libs/underscore-min.js >> ./public/javascripts/app.min.js
 	cat ./public/javascripts/libs/backbone-min.js >> ./public/javascripts/app.min.js
-	cat ./public/javascripts/libs/jquery.autocomplete-min.js >> ./public/javascripts/app.min.js
+	cat ./public/javascripts/libs/plugins/jquery.autocomplete-min.js >> ./public/javascripts/app.min.js
+	cat ./public/javascripts/libs/plugins/jquery.switch/jquery.switch.min.js >> ./public/javascripts/app.min.js
 	@echo "----> Uglifiying app.js"
-	uglifyjs -nc --no-seqs ./public/javascripts/app.js >> ./public/javascripts/app.min.js
+	uglifyjs --no-seqs ./public/javascripts/app.js >> ./public/javascripts/app.min.js
 
 package:
 	make pack-js
@@ -32,8 +34,7 @@ package:
 
 run:
 	make package
-	@NODE_ENV=production PORT=8888 @node app&
+	@NODE_ENV=production PORT=8888 node app&
 	open http://localhost:8888
-
 
 .PHONY: run test pack-js package

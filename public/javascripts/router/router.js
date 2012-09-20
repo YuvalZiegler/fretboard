@@ -1,8 +1,6 @@
 /*global Backbone _ NoteDictionary */
 var Fretboard = (function (App){
 
-    // State settings
-    App.DISPLAY_AS_INTERVALS=false;
 
     App.Router = Backbone.Router.extend({
 
@@ -15,9 +13,7 @@ var Fretboard = (function (App){
         },
 
         initialize:function(options){
-            // Setup the event dispatcher and an octave of NoteModels
-
-            App.dispatcher = _.clone(Backbone.Events);
+            // Setup an octave of NoteModels
             App.notesCollection  = new App.NotesCollection();
         },
 
@@ -35,7 +31,6 @@ var Fretboard = (function (App){
                 App.notesCollection.setActiveNotes(query);
             }
         },
-
 
         setTuning : function(tuning, query){
             var strings = tuning.split(",");

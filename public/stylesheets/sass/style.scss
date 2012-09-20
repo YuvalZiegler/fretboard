@@ -28,10 +28,8 @@ body {
   background:$backgroundImage;
 }
 .title{
-
     text-align: center;
     width: 100%;
-
 }
 
 #content {
@@ -39,6 +37,7 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+
 header{
   width:100%;
   margin-bottom: 20px;
@@ -50,8 +49,6 @@ header h1 {
   font-family: $ff1;
   color: $font-color;
   font-size: 110px;
-
-
 }
 
 #fretboard {
@@ -95,7 +92,12 @@ header h1 {
   line-height: 40px;
 }
 .inactive {
-  color: rgba(255,255,255,0.3)
+  color: rgba(255,255,255,0.3);
+  background-color: transparent;
+
+  @include border-radius(10px);
+  @include transition-property(all);
+  @include transition-duration(0.5s);
 }
 
 
@@ -218,7 +220,7 @@ div.stringUI a {
   text-align:justify;
   h1 {
     @include text-shadow(2px 2px 1px rgba(black,0.5));
-    font-size: 32px;
+    font-size: 25px;
     line-height: 48px;
     text-align: center;
   }

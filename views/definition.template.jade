@@ -4,4 +4,4 @@ script#definitionTemplate(type="text/html")
       h1
         a.tag(href="javascript:void(0)"):<%=name%>
     div.legend
-      ul.note-list      <% var list = Fretboard.DISPLAY_AS_INTERVALS ? intervals : notes; _.each(list,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>
+      ul.note-list <% var list = Fretboard.DISPLAY_AS_INTERVALS ? intervals : notes; _.each(list,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%>

@@ -5,8 +5,7 @@ var Fretboard = (function (App) {
         defaults: {
             note: undefined,
             active:false,
-            interval: ''
-
+            interval: undefined
         },
         initialize:function(){
 

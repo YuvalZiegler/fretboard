@@ -1,0 +1,5 @@
+////////////
+// FRETBOARD
+// (c) 2012 Yuval Ziegler.
+// Fretboard is freely distributable under the MIT license.
+///////////////////////////////////////////////////////////
