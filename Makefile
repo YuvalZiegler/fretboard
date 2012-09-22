@@ -20,11 +20,10 @@ pack-js:
 	cat ./public/javascripts/main.js >> ./public/javascripts/app.js
 	@echo "---> Creating app.min.js"
 	@echo "----> Merging libraries"
-	cat ./public/javascripts/libs/jquery-1.8.1.min.js > ./public/javascripts/app.min.js
+	cat ./public/javascripts/libs/jquery.min.js > ./public/javascripts/app.min.js
 	cat ./public/javascripts/libs/underscore-min.js >> ./public/javascripts/app.min.js
 	cat ./public/javascripts/libs/backbone-min.js >> ./public/javascripts/app.min.js
 	cat ./public/javascripts/libs/plugins/jquery.autocomplete-min.js >> ./public/javascripts/app.min.js
-	cat ./public/javascripts/libs/plugins/jquery.switch/jquery.switch.min.js >> ./public/javascripts/app.min.js
 	@echo "----> Uglifiying app.js"
 	uglifyjs --no-seqs ./public/javascripts/app.js >> ./public/javascripts/app.min.js
 

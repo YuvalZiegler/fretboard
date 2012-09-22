@@ -231,8 +231,6 @@ if (typeof exports !== 'undefined') { exports = module.exports = NoteDictionary;
 /*global Backbone _ NoteDictionary */
 var Fretboard = (function (App){
 
-    // State settings
-    App.DISPLAY_AS_INTERVALS=false;
 
     App.Router = Backbone.Router.extend({
 
@@ -245,9 +243,7 @@ var Fretboard = (function (App){
         },
 
         initialize:function(options){
-            // Setup the event dispatcher and an octave of NoteModels
-
-            App.dispatcher = _.clone(Backbone.Events);
+            // Setup an octave of NoteModels
             App.notesCollection  = new App.NotesCollection();
         },
 
@@ -265,7 +261,6 @@ var Fretboard = (function (App){
                 App.notesCollection.setActiveNotes(query);
             }
         },
-
 
         setTuning : function(tuning, query){
             var strings = tuning.split(",");
@@ -365,8 +360,7 @@ var Fretboard = (function (App) {
         defaults: {
             note: undefined,
             active:false,
-            interval: ''
-
+            interval: undefined
         },
         initialize:function(){
 
@@ -499,13 +493,13 @@ var Fretboard = (function (App){
 
         className:'fret',
 
-
         initialize:function(options){
             _.bindAll(this,'render','update');
             this.note = options.note;
             this.stringPosition = options.stringPosition;
             this.model = App.notesCollection.getModel(this.note);
             this.model.bind('change', this.update);
+            App.dispatcher.bind('change', this.update);
             // set fret classes
             $(this.el)
                 .html('<div class="note inactive">' + this.model.attributes.note + '</div>')
@@ -516,18 +510,22 @@ var Fretboard = (function (App){
         },
 
         render:function(){
+            var displayText= App.DISPLAY_AS_INTERVALS ? this.model.attributes.interval :  this.model.attributes.note;
             if(this.model.attributes.active){
-                $(this.el).html('<div class="note '+this.model.attributes.interval+' active">' + this.model.attributes.note + '</div>');
+                $(this.el).html('<div class="note '+this.model.attributes.interval+' active">' + displayText + '</div>');
             } else {
                 $(this.el).html('<div class="note inactive">' + this.model.attributes.note + '</div>');
             }
         },
-        update:function(e){
+        update:function(){
+            var displayText = App.DISPLAY_AS_INTERVALS ? this.model.attributes.interval :  this.model.attributes.note;
             var cssClass =  this.model.attributes.active ? "note active " + this.model.attributes.interval : "note inactive";
             $(this.el.firstChild)
                 .removeClass()
-                .addClass(cssClass);
+                .addClass(cssClass)
+                .html(displayText || this.model.attributes.note);
         }
+
 
     });
     return App;
@@ -635,7 +633,7 @@ var Fretboard = (function (App) {
         initialize: function(){
             _.bindAll(this, 'render');
             this.model.bind('change', this.render);
-
+            App.dispatcher.bind('change', this.render);
         },
 
         render: function(){
@@ -660,17 +658,18 @@ var Fretboard = (function (App) {
         },
 
         initialize: function (){
-            _.bindAll(this, 'render', 'submitQuery');
+
+            _.bindAll(this, 'render', 'submitQuery', 'update');
             App.dispatcher.on("chordChange", this.render);
             App.dispatcher.on("scaleChange", this.render);
-
+            App.dispatcher.bind("change", this.update);
         },
 
         render:function(e){
+
            var html,result,
                regEx= /\Bmajor/;
                var trim = function (o){
-
                      return o.charAt(2)==="/" ?  o.substr(0,2) : o;
                };
 
@@ -686,30 +685,37 @@ var Fretboard = (function (App) {
            for (var i=0,l=result.length; i<l; i++){
 
                var json = this.dict.parseQuery(result[i]);
-
                var notes = _.map(json.notes, trim);
                json.notes= notes;
                json.name= result[i].replace(regEx,"");
-
-
                html+=(_.template(this.template, json));
-
 
            }
 
            $(this.el).html(html);
         },
+        update:function(){
 
+        },
         submitQuery:function(e){
-
            App.notesCollection.setActiveNotes(e.srcElement.innerText);
         }
 
     });
     return App;
-})(Fretboard || {});/*global Backbone  */
+})(Fretboard || {});/*global Backbone _ */
 
 var Fretboard = (function (App){
+    // MAIN EVENT DISPATCHER
+    App.dispatcher = _.clone(Backbone.Events);
+
+    // State settings
+    App.DISPLAY_AS_INTERVALS=false;
+
+    App.displayTypeToggle = function(){
+        App.DISPLAY_AS_INTERVALS=!App.DISPLAY_AS_INTERVALS;
+        App.dispatcher.trigger("change");
+    };
 
     App.start = function(){
         App.router =  new App.Router();
