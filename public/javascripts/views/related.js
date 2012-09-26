@@ -16,7 +16,7 @@ var Fretboard = (function (App) {
             _.bindAll(this, 'render', 'submitQuery', 'update');
             App.dispatcher.on("chordChange", this.render);
             App.dispatcher.on("scaleChange", this.render);
-            App.dispatcher.bind("change", this.update);
+            App.dispatcher.bind("displayToggle", this.update);
         },
 
         render:function(e){
@@ -32,21 +32,18 @@ var Fretboard = (function (App) {
            }
 
            for (var i=0,l=result.length; i<l; i++){
-               html+=(_.template(this.template, this.getChildEl(result[i])));
+             //html +=
+               this.createChildEl(result[i]);
            }
 
            $(this.el).html(html);
+
         },
-        getChildEl:function(data) {
-            console.log(data);
-            var regEx= /\Bmajor/;
-            var trim = function (o){
-                return o.charAt(2)==="/" ?  o.substr(0,2) : o;
-            };
-            var props = this.dict.parseQuery(data);
-            props.notes= _.map(props.notes, trim);
-            props.name= data.replace(regEx,"");
-            return props;
+        createChildEl:function(q) {
+           var data = this.dict.parseQuery(q);
+           var view =  new App.DefinitionView();
+           var el = view.make("div", {"class": data.name}, "Bold! ");
+           console.log(model);
         },
         update:function(){
 

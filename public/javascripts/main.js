@@ -9,7 +9,7 @@ var Fretboard = (function (App){
 
     App.displayTypeToggle = function(){
         App.DISPLAY_AS_INTERVALS=!App.DISPLAY_AS_INTERVALS;
-        App.dispatcher.trigger("change");
+        App.dispatcher.trigger("displayToggle", App.DISPLAY_AS_INTERVALS);
     };
 
     App.start = function(){

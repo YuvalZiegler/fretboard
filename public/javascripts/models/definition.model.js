@@ -10,6 +10,7 @@ var Fretboard = (function (App) {
         },
 
         initialize:function(attributes){
+
             _.bindAll(this,'update');
             if (attributes.bindEvents){
                 App.dispatcher.on("chordChange", this.update);

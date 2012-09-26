@@ -12,7 +12,9 @@ var Fretboard = (function (App){
             this.stringPosition = options.stringPosition;
             this.model = App.notesCollection.getModel(this.note);
             this.model.bind('change', this.update);
-            App.dispatcher.bind('change', this.update);
+
+            App.dispatcher.bind('displayToggle', this.update);
+
             // set fret classes
             $(this.el)
                 .html('<div class="note inactive">' + this.model.attributes.note + '</div>')

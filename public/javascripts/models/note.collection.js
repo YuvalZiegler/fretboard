@@ -42,13 +42,7 @@ var Fretboard = (function (App) {
             var result = this.dictionary.parseQuery(query);
             if(result && result.notes.length!==0) {
                 if (result.notes[0].length>1){
-                    var c = result.notes[0].charAt(1);
-                    if (c ==="#"){
-                        this.flatNeutralSharp = 1;
-                    } else {
-                        this.flatNeutralSharp = -1;
-                    }
-
+                    this.flatNeutralSharp = result.notes[0].charAt(1) ==="#" ?  1 : -1;
                 } else {
                     this.flatNeutralSharp = 0;
                 }

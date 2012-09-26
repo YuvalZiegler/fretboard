@@ -23,9 +23,7 @@
 
 
 # ISSUES:
-
-
-
+- Figure out where we should use the cached jquery elem ($el instead of $(el))
 
 # Definition View
 - Sound (?)
