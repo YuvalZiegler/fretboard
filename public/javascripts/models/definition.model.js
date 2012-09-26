@@ -6,24 +6,27 @@ var Fretboard = (function (App) {
         defaults:{
             name:undefined,
             notes:undefined,
-            intervals:[]
+            intervals:[],
+            isScale:false
         },
 
         initialize:function(attributes){
-
-            _.bindAll(this,'update');
+            if (attributes) { this.parseAndUpdate(attributes);}
+            _.bindAll(this,'parseAndUpdate');
             if (attributes.bindEvents){
-                App.dispatcher.on("chordChange", this.update);
-                App.dispatcher.on("scaleChange", this.update);
+                App.dispatcher.on("chordChange", this.parseAndUpdate);
+                App.dispatcher.on("scaleChange", this.parseAndUpdate);
             }
         },
 
-        update:function (e){
-            var name;
-            if (e.isScale) {
-                name = e.key+" " + e.scale ;
+
+
+        parseAndUpdate:function (e){
+
+            if ( e.isScale) {
+                this.attributes.name = e.key+" " + e.scale ;
             }  else    {
-                name = e.key+""+ (e.chord==="major" ? "" : e.chord );
+                this.attributes.name = e.key+""+ (e.chord==="major" ? "" : e.chord );
             }
 
             var intr =  e.intervals;
@@ -39,8 +42,7 @@ var Fretboard = (function (App) {
                 }
                 return note;
             });
-
-            this.set({key:e.key, name:name, intervals:intr, notes:notes});
+            this.set({key:e.key, name:this.attributes.name, intervals:intr, notes:notes, isScale: e.isScale});
         }
     });
 

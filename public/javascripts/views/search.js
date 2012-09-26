@@ -28,7 +28,7 @@ var Fretboard = (function (App) {
             }
         },
         render:function(e){
-            if (e.query!== $(this.el).val()) {
+            if (e.query!== this.$el.val()) {
                 $(this.el).val(e.query);
             }
         }

@@ -13,40 +13,42 @@ var Fretboard = (function (App) {
         },
 
         initialize: function (){
-            _.bindAll(this, 'render', 'submitQuery', 'update');
+            this.model = new App.DefinitionModel({});
+            _.bindAll(this, 'render', 'submitQuery', 'updateNoteDisplay');
             App.dispatcher.on("chordChange", this.render);
             App.dispatcher.on("scaleChange", this.render);
-            App.dispatcher.bind("displayToggle", this.update);
+            App.dispatcher.bind("displayToggle", this.updateNoteDisplay);
         },
 
         render:function(e){
-
+           if (this.model !== e) {
+               this.model.parseAndUpdate(e);
+           }
            var html,result;
+           var q=this.model.get('name');
 
-           if (e.isScale) {
-               result = this.dict.getChordsOfScale(e.query);
-               html="<h1>"+e.query+" scale includes the these chords:</h1>";
+           if (this.model.attributes.isScale) {
+               result = this.dict.getChordsOfScale(q);
+               html="<h1>"+q+" scale includes the these chords:</h1>";
            } else {
-               result = this.dict.getScalesOfChord(e.query);
-               html="<h1>the "+e.query+" chord appears in these scales:</h1>";
+               result = this.dict.getScalesOfChord(q);
+               html="<h1>the "+q+" chord appears in these scales:</h1>";
            }
 
            for (var i=0,l=result.length; i<l; i++){
-             //html +=
-               this.createChildEl(result[i]);
+              html += (this.createChildEl(result[i]));
            }
-
            $(this.el).html(html);
-
         },
         createChildEl:function(q) {
            var data = this.dict.parseQuery(q);
-           var view =  new App.DefinitionView();
-           var el = view.make("div", {"class": data.name}, "Bold! ");
-           console.log(model);
-        },
-        update:function(){
+           var view = new Backbone.View({model : new App.DefinitionModel(data)});
+           var json = view.model.toJSON();
+           return _.template(this.template,json);
 
+        },
+        updateNoteDisplay:function(e){
+           this.render(this.model);
         },
         submitQuery:function(e){
            App.notesCollection.setActiveNotes(e.srcElement.innerText);

@@ -6,7 +6,6 @@ var Fretboard = (function (App) {
         template: $('#definitionTemplate').html(),
 
         initialize: function(){
-
             _.bindAll(this, 'render');
             this.model.bind('change', this.render);
             App.dispatcher.bind('displayToggle', this.render);
