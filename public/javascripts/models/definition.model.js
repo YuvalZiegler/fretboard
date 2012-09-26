@@ -2,19 +2,22 @@
 
 var Fretboard = (function (App) {
 
-    App.ChordDefinitionModel  = Backbone.Model.extend({
+    App.DefinitionModel  = Backbone.Model.extend({
         defaults:{
             name:undefined,
             notes:undefined,
             intervals:[]
         },
-        initialize:function(){
-            _.bindAll(this,'update');
-            App.dispatcher.on("chordChange", this.update);
-            App.dispatcher.on("scaleChange", this.update);
-        },
-        update:function (e){
 
+        initialize:function(attributes){
+            _.bindAll(this,'update');
+            if (attributes.bindEvents){
+                App.dispatcher.on("chordChange", this.update);
+                App.dispatcher.on("scaleChange", this.update);
+            }
+        },
+
+        update:function (e){
             var name;
             if (e.isScale) {
                 name = e.key+" " + e.scale ;

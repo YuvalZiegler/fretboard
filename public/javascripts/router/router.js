@@ -41,10 +41,9 @@ var Fretboard = (function (App){
         },
 
 
-
         createFretboardView: function(strings){
             App.searchView = App.searchView  || new App.SearchView();
-            App.chordDefinitionView = App.chordDefinitionView || new App.ChordDefinitionView({model: new App.ChordDefinitionModel()});
+            App.definitionView = App.definitionView || new App.DefinitionView({model: new App.DefinitionModel({bindEvents:true})});
             App.stringsCollection = App.stringsCollection || new App.StringCollection([]);
             App.relatedView = App.relatedView || new App.RelatedView();
             App.stringsCollection.reset();

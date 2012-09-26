@@ -1,8 +1,8 @@
 # Current Task
 ## Related View
-- Refactor each related result into its own view. Use DefinitionView as a single related Item view. 
 - Refactor ChordDefinitionView -> DefinitionView
 - Move event binding out of initialization mathod. Into a function or even out of the DefinitionView
+- Refactor each related result into it  s own view. Use DefinitionView as a single related Item view.
 
 # UI
 

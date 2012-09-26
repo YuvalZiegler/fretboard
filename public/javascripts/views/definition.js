@@ -1,7 +1,7 @@
 /*global Backbone _ NoteDictionary */
 var Fretboard = (function (App) {
 
-    App.ChordDefinitionView = Backbone.View.extend({
+    App.DefinitionView = Backbone.View.extend({
 
         el: '#chord-definition',
         template: $('#definitionTemplate').html(),

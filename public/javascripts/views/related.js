@@ -13,7 +13,6 @@ var Fretboard = (function (App) {
         },
 
         initialize: function (){
-
             _.bindAll(this, 'render', 'submitQuery', 'update');
             App.dispatcher.on("chordChange", this.render);
             App.dispatcher.on("scaleChange", this.render);
@@ -22,12 +21,7 @@ var Fretboard = (function (App) {
 
         render:function(e){
 
-           var html,result,
-               regEx= /\Bmajor/;
-               var trim = function (o){
-                     return o.charAt(2)==="/" ?  o.substr(0,2) : o;
-               };
-
+           var html,result;
 
            if (e.isScale) {
                result = this.dict.getChordsOfScale(e.query);
@@ -38,16 +32,21 @@ var Fretboard = (function (App) {
            }
 
            for (var i=0,l=result.length; i<l; i++){
-
-               var json = this.dict.parseQuery(result[i]);
-               var notes = _.map(json.notes, trim);
-               json.notes= notes;
-               json.name= result[i].replace(regEx,"");
-               html+=(_.template(this.template, json));
-
+               html+=(_.template(this.template, this.getChildEl(result[i])));
            }
 
            $(this.el).html(html);
+        },
+        getChildEl:function(data) {
+            console.log(data);
+            var regEx= /\Bmajor/;
+            var trim = function (o){
+                return o.charAt(2)==="/" ?  o.substr(0,2) : o;
+            };
+            var props = this.dict.parseQuery(data);
+            props.notes= _.map(props.notes, trim);
+            props.name= data.replace(regEx,"");
+            return props;
         },
         update:function(){
 
@@ -57,5 +56,6 @@ var Fretboard = (function (App) {
         }
 
     });
+
     return App;
 })(Fretboard || {});
