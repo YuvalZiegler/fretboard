@@ -24,20 +24,23 @@ var Fretboard = (function (App) {
            if (this.model !== e) {
                this.model.parseAndUpdate(e);
            }
-           var html,result;
+           var html,result,warpperClass;
            var q=this.model.get('name');
 
            if (this.model.attributes.isScale) {
+               warpperClass="chords";
                result = this.dict.getChordsOfScale(q);
                html="<h1>"+q+" scale includes the these chords:</h1>";
            } else {
+               warpperClass="scales";
                result = this.dict.getScalesOfChord(q);
                html="<h1>the "+q+" chord appears in these scales:</h1>";
            }
-
+           html+='<div id="relatedWrapper" class="'+warpperClass+'">';
            for (var i=0,l=result.length; i<l; i++){
               html += (this.createChildEl(result[i]));
            }
+            html+='</div>';
            $(this.el).html(html);
         },
         createChildEl:function(q) {

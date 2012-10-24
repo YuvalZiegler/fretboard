@@ -271,10 +271,9 @@ var Fretboard = (function (App){
         },
 
 
-
         createFretboardView: function(strings){
             App.searchView = App.searchView  || new App.SearchView();
-            App.chordDefinitionView = App.chordDefinitionView || new App.ChordDefinitionView({model: new App.ChordDefinitionModel()});
+            App.definitionView = App.definitionView || new App.DefinitionView({el: '#chord-definition', model: new App.DefinitionModel({bindEvents:true})});
             App.stringsCollection = App.stringsCollection || new App.StringCollection([]);
             App.relatedView = App.relatedView || new App.RelatedView();
             App.stringsCollection.reset();
@@ -331,13 +330,7 @@ var Fretboard = (function (App) {
             var result = this.dictionary.parseQuery(query);
             if(result && result.notes.length!==0) {
                 if (result.notes[0].length>1){
-                    var c = result.notes[0].charAt(1);
-                    if (c ==="#"){
-                        this.flatNeutralSharp = 1;
-                    } else {
-                        this.flatNeutralSharp = -1;
-                    }
-
+                    this.flatNeutralSharp = result.notes[0].charAt(1) ==="#" ?  1 : -1;
                 } else {
                     this.flatNeutralSharp = 0;
                 }
@@ -409,24 +402,31 @@ var Fretboard = (function (App) {
 
 var Fretboard = (function (App) {
 
-    App.ChordDefinitionModel  = Backbone.Model.extend({
+    App.DefinitionModel  = Backbone.Model.extend({
         defaults:{
             name:undefined,
             notes:undefined,
-            intervals:[]
+            intervals:[],
+            isScale:false
         },
-        initialize:function(){
-            _.bindAll(this,'update');
-            App.dispatcher.on("chordChange", this.update);
-            App.dispatcher.on("scaleChange", this.update);
-        },
-        update:function (e){
 
-            var name;
-            if (e.isScale) {
-                name = e.key+" " + e.scale ;
+        initialize:function(attributes){
+            if (attributes) { this.parseAndUpdate(attributes);}
+            _.bindAll(this,'parseAndUpdate');
+            if (attributes.bindEvents){
+                App.dispatcher.on("chordChange", this.parseAndUpdate);
+                App.dispatcher.on("scaleChange", this.parseAndUpdate);
+            }
+        },
+
+
+
+        parseAndUpdate:function (e){
+
+            if ( e.isScale) {
+                this.attributes.name = e.key+" " + e.scale ;
             }  else    {
-                name = e.key+""+ (e.chord==="major" ? "" : e.chord );
+                this.attributes.name = e.key+""+ (e.chord==="major" ? "" : e.chord );
             }
 
             var intr =  e.intervals;
@@ -442,8 +442,7 @@ var Fretboard = (function (App) {
                 }
                 return note;
             });
-
-            this.set({key:e.key, name:name, intervals:intr, notes:notes});
+            this.set({key:e.key, name:this.attributes.name, intervals:intr, notes:notes, isScale: e.isScale});
         }
     });
 
@@ -478,7 +477,7 @@ var Fretboard = (function (App) {
             }
         },
         render:function(e){
-            if (e.query!== $(this.el).val()) {
+            if (e.query!== this.$el.val()) {
                 $(this.el).val(e.query);
             }
         }
@@ -499,7 +498,9 @@ var Fretboard = (function (App){
             this.stringPosition = options.stringPosition;
             this.model = App.notesCollection.getModel(this.note);
             this.model.bind('change', this.update);
-            App.dispatcher.bind('change', this.update);
+
+            App.dispatcher.bind('displayToggle', this.update);
+
             // set fret classes
             $(this.el)
                 .html('<div class="note inactive">' + this.model.attributes.note + '</div>')
@@ -625,20 +626,20 @@ var Fretboard = (function (App) {
 /*global Backbone _ NoteDictionary */
 var Fretboard = (function (App) {
 
-    App.ChordDefinitionView = Backbone.View.extend({
+    App.DefinitionView = Backbone.View.extend({
 
-        el: '#chord-definition',
         template: $('#definitionTemplate').html(),
 
         initialize: function(){
             _.bindAll(this, 'render');
             this.model.bind('change', this.render);
-            App.dispatcher.bind('change', this.render);
+            App.dispatcher.bind('displayToggle', this.render);
         },
 
         render: function(){
+
             var json = this.model.toJSON();
-            $(this.el).html(_.template(this.template, json));
+            this.$el.html(_.template(this.template, json));
             return this;
         }
     });
@@ -658,50 +659,52 @@ var Fretboard = (function (App) {
         },
 
         initialize: function (){
-
-            _.bindAll(this, 'render', 'submitQuery', 'update');
+            this.model = new App.DefinitionModel({});
+            _.bindAll(this, 'render', 'submitQuery', 'updateNoteDisplay');
             App.dispatcher.on("chordChange", this.render);
             App.dispatcher.on("scaleChange", this.render);
-            App.dispatcher.bind("change", this.update);
+            App.dispatcher.bind("displayToggle", this.updateNoteDisplay);
         },
 
         render:function(e){
+           if (this.model !== e) {
+               this.model.parseAndUpdate(e);
+           }
+           var html,result,warpperClass;
+           var q=this.model.get('name');
 
-           var html,result,
-               regEx= /\Bmajor/;
-               var trim = function (o){
-                     return o.charAt(2)==="/" ?  o.substr(0,2) : o;
-               };
-
-
-           if (e.isScale) {
-               result = this.dict.getChordsOfScale(e.query);
-               html="<h1>"+e.query+" scale includes the these chords:</h1>";
+           if (this.model.attributes.isScale) {
+               warpperClass="chords";
+               result = this.dict.getChordsOfScale(q);
+               html="<h1>"+q+" scale includes the these chords:</h1>";
            } else {
-               result = this.dict.getScalesOfChord(e.query);
-               html="<h1>the "+e.query+" chord appears in these scales:</h1>";
+               warpperClass="scales";
+               result = this.dict.getScalesOfChord(q);
+               html="<h1>the "+q+" chord appears in these scales:</h1>";
            }
-
+           html+='<div id="relatedWrapper" class="'+warpperClass+'">';
            for (var i=0,l=result.length; i<l; i++){
-
-               var json = this.dict.parseQuery(result[i]);
-               var notes = _.map(json.notes, trim);
-               json.notes= notes;
-               json.name= result[i].replace(regEx,"");
-               html+=(_.template(this.template, json));
-
+              html += (this.createChildEl(result[i]));
            }
-
+            html+='</div>';
            $(this.el).html(html);
         },
-        update:function(){
+        createChildEl:function(q) {
+           var data = this.dict.parseQuery(q);
+           var view = new Backbone.View({model : new App.DefinitionModel(data)});
+           var json = view.model.toJSON();
+           return _.template(this.template,json);
 
+        },
+        updateNoteDisplay:function(e){
+           this.render(this.model);
         },
         submitQuery:function(e){
            App.notesCollection.setActiveNotes(e.srcElement.innerText);
         }
 
     });
+
     return App;
 })(Fretboard || {});/*global Backbone _ */
 
@@ -714,7 +717,7 @@ var Fretboard = (function (App){
 
     App.displayTypeToggle = function(){
         App.DISPLAY_AS_INTERVALS=!App.DISPLAY_AS_INTERVALS;
-        App.dispatcher.trigger("change");
+        App.dispatcher.trigger("displayToggle", App.DISPLAY_AS_INTERVALS);
     };
 
     App.start = function(){

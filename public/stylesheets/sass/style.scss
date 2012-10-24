@@ -212,8 +212,23 @@ div.stringUI a {
 }
 
 // Related chords
+
+#relatedWrapper {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1080px;
+  &.scales > .definition {
+    width: 350px;
+  }
+  &.chords {
+    max-width: 680px;
+    .definition {
+      width: 160px;
+    }
+  }
+}
+
 #related {
-  //visibility: hidden;
   width:100%;
   margin:  0;
   padding: 0;
@@ -226,13 +241,12 @@ div.stringUI a {
   }
 
   .definition {
-    //float: left;
     margin: 5px;
     padding: 0px 0px 0px 0px;
     box-shadow:none;
     @include border-radius(20px);
     background-color:rgba(black,0.2);
-
+    float: left;
     h1{
       @include text-shadow(2px 2px 1px rgba(black,0.5));
       font-size: 16px;
