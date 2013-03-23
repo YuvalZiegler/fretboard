@@ -1,4 +1,4 @@
-/*global Backbone _ NoteDictionary */
+/*global Backbone, _, NoteDictionary */
 var Fretboard = (function (App) {
     App.SearchView = Backbone.View.extend({
         el: '#search',
@@ -16,12 +16,11 @@ var Fretboard = (function (App) {
             $(this.el).focus();
         },
 
-        handleKeyDown : function (event) {
+        handleKeyDown : function () {
 
             if ($(this.el).val()){
                   try {
                         App.notesCollection.setActiveNotes($(this.el).val());
-
                   } catch (e) {
                        console.log('Fretboard.dispatcher.trigger("onError",e)', e);
                   }

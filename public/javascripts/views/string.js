@@ -1,4 +1,4 @@
-/*global Backbone _ NoteDictionary */
+/*global Backbone, _, NoteDictionary */
 var Fretboard = (function (App) {
 
     App.StringView = Backbone.View.extend({
@@ -15,7 +15,7 @@ var Fretboard = (function (App) {
 
         initialize:function(){
             _.bindAll(this,'render','update');
-            this.UI.remove();
+            
             this.model.bind('change', this.update);
             this.render();
 
@@ -28,12 +28,13 @@ var Fretboard = (function (App) {
             // creating views for each note
             for (var i= 0; i<12; i++){
                 var n = new App.NoteView({note:this.model.attributes.octave[i], stringPosition:i});
-                $(this.el).append(n.el);
+                this.$el.append(n.el);
             }
            
 
         },
         update: function(){
+
             $(this.el).empty();
             this.render();
         },

@@ -58,9 +58,9 @@ header h1 {
 }
 
 .string {
-  @extend .inset;
+  //@extend .inset;
   display: block;
-  margin: 5px 0px;
+  margin: 2px 0px;
   @include border-radius(20px 0 0 20px);
   background:$backgroundImage2;
 }
