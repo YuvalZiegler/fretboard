@@ -1,6 +1,7 @@
 /*global Backbone */
 var Fretboard = (function (App) {
     App.StringCollection = Backbone.Collection.extend({
+
         initialize: function(strings){
             if(strings.length){
                var l = strings.length;

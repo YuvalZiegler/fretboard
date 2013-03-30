@@ -1,4 +1,4 @@
-/*global Backbone _ */
+/*global Backbone,  _ */
 
 var Fretboard = (function (App){
     // MAIN EVENT DISPATCHER
