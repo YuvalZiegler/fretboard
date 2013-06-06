@@ -39,7 +39,7 @@ $i: 1;
     $color:nth($colors, $i);
     background-color: $color;
     color:lighten($color, 50);
-    @include box-shadow(1px 1px 10px rgba(black, 0.5));
+    //@include box-shadow(0 0 10px rgba($color, 0.5));
     @include border-radius(50px);
     @include transition-property(all);
     @include transition-duration(1s);

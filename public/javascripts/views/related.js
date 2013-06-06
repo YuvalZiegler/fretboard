@@ -1,4 +1,4 @@
-/*global Backbone _ NoteDictionary */
+/*global Backbone, _, NoteDictionary */
 
 var Fretboard = (function (App) {
 

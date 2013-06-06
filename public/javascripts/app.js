@@ -240,6 +240,7 @@ var Fretboard = (function (App){
             'tuning/:strings' : 'setTuning',
             'tuning/:strings/:query' : 'setTuning',
             'instrument/:name/:query' : 'setInstrument'
+
         },
 
         initialize:function(options){
@@ -270,7 +271,9 @@ var Fretboard = (function (App){
             }
         },
 
-
+        fourOfour:function(){
+            console.log("OOPS not found");
+        },
         createFretboardView: function(strings){
             App.searchView = App.searchView  || new App.SearchView();
             App.definitionView = App.definitionView || new App.DefinitionView({el: '#chord-definition', model: new App.DefinitionModel({bindEvents:true})});
