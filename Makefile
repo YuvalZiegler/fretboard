@@ -25,7 +25,7 @@ pack-js:
 	cat ./public/javascripts/libs/backbone-min.js >> ./public/javascripts/app.min.js
 	cat ./public/javascripts/libs/plugins/jquery.autocomplete-min.js >> ./public/javascripts/app.min.js
 	@echo "----> Uglifiying app.js"
-	uglifyjs --no-seqs ./public/javascripts/app.js >> ./public/javascripts/app.min.js
+	node_modules/uglify-js/bin/uglifyjs --no-seqs ./public/javascripts/app.js >> ./public/javascripts/app.min.js
 
 package:
 	make pack-js
