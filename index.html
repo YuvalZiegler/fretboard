@@ -4,46 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fretboard</title>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
-  <header></header>
-
-  <div id="content">
-    <div id="ui">
-      <div class="search icon-search">
-        <input id="search" type="text" name="search" placeholder="Enter a scale or chord name, do it!">
-      </div>
-      <div id="chord-definition"></div>
-    </div>
-    <div id="chord-navigator">
-      <div id="fretboard"></div>
-    </div>
-    <div id="related"></div>
-  </div>
-
-  <!-- UNDERSCORE TEMPLATES -->
-  <script id="definitionTemplate" type="text/html">
-    <div class="definition">
-      <div class="name">
-        <h1><a class="tag" href="javascript:void(0)" title="show on fretboard"><%=name%></a></h1>
-      </div>
-      <div class="legend">
-        <ul class="note-list"><% var list = Fretboard.DISPLAY_AS_INTERVALS ? intervals : notes; _.each(list,function(n, index){ print("<li class='note " + intervals[index] + " '>" + n + "</li>") })%></ul>
-      </div>
-    </div>
-  </script>
-
-  <script id="stringUITemplate" type="text/html">
-    <div class="stringUI">
-      <a href="javascript:void(0)" class="add" title="Add string"><span class="icon-plus-sign"></span></a>
-      <a href="javascript:void(0)" class="remove" title="Delete string"><span class="icon-remove-sign"></span></a>
-      <a href="javascript:void(0)" class="shiftLeft" title="Shift left / Tune Up"><span class="icon-circle-arrow-left"></span></a>
-      <a href="javascript:void(0)" class="shiftRight" title="Shift right / Tune Down"><span class="icon-circle-arrow-right"></span></a>
-    </div>
-  </script>
-
-  <script type="module" src="/src/main.js"></script>
+  <div id="app"></div>
+  <script type="module" src="/src/index.jsx"></script>
 </body>
 </html>
