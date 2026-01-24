@@ -4,3 +4,16 @@ assets
 .idea
 .autosave-config
 projectFilesBackup
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
